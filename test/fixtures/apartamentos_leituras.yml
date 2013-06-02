@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  apartamento: 
+  leitura: 
+  leitura_apartamento: 1.5
+  consumo: 1.5
+  valor: 1.5
+  data: 2013-04-07
+
+two:
+  apartamento: 
+  leitura: 
+  leitura_apartamento: 1.5
+  consumo: 1.5
+  valor: 1.5
+  data: 2013-04-07

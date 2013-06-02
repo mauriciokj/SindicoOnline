@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  data_leitura: 2013-04-07
+  data_vencimento: 2013-04-07
+  leitura_anterior: 1.5
+  leitura_atual: 1.5
+  consumo: 1.5
+  valor: 1.5
+  matricula: 1
+
+two:
+  data_leitura: 2013-04-07
+  data_vencimento: 2013-04-07
+  leitura_anterior: 1.5
+  leitura_atual: 1.5
+  consumo: 1.5
+  valor: 1.5
+  matricula: 1
