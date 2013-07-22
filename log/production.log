@@ -25,3 +25,325 @@ ActiveScaffold: Missing date picker localization for your locale: en
 Connecting to database specified by database.yml
 Connecting to database specified by database.yml
 Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Compiled jquery.js  (2ms)  (pid 5168)
+Compiled jquery_ujs.js  (0ms)  (pid 5168)
+Compiled twitter/bootstrap/bootstrap-transition.js  (0ms)  (pid 5168)
+Compiled twitter/bootstrap/bootstrap-alert.js  (0ms)  (pid 5168)
+Compiled twitter/bootstrap/bootstrap-modal.js  (0ms)  (pid 5168)
+Compiled twitter/bootstrap/bootstrap-dropdown.js  (0ms)  (pid 5168)
+Compiled twitter/bootstrap/bootstrap-scrollspy.js  (0ms)  (pid 5168)
+Compiled twitter/bootstrap/bootstrap-tab.js  (0ms)  (pid 5168)
+Compiled twitter/bootstrap/bootstrap-tooltip.js  (0ms)  (pid 5168)
+Compiled twitter/bootstrap/bootstrap-popover.js  (0ms)  (pid 5168)
+Compiled twitter/bootstrap/bootstrap-button.js  (0ms)  (pid 5168)
+Compiled twitter/bootstrap/bootstrap-collapse.js  (0ms)  (pid 5168)
+Compiled twitter/bootstrap/bootstrap-carousel.js  (0ms)  (pid 5168)
+Compiled twitter/bootstrap/bootstrap-typeahead.js  (0ms)  (pid 5168)
+Compiled twitter/bootstrap/bootstrap-affix.js  (0ms)  (pid 5168)
+Compiled twitter/bootstrap.js  (596ms)  (pid 5168)
+Compiled bootstrap.js  (765ms)  (pid 5168)
+Compiled imoveis.js  (140ms)  (pid 5168)
+Compiled principal.js  (168ms)  (pid 5168)
+Compiled jquery-ui.js  (7ms)  (pid 5168)
+Compiled jquery-ui-timepicker-addon.js  (0ms)  (pid 5168)
+Compiled jquery/active_scaffold.js  (0ms)  (pid 5168)
+Compiled jquery/jquery.editinplace.js  (1ms)  (pid 5168)
+ActiveScaffold: Missing date picker localization for your locale: af
+ActiveScaffold: Missing date picker localization for your locale: ar
+ActiveScaffold: Missing date picker localization for your locale: az
+ActiveScaffold: Missing date picker localization for your locale: bg
+ActiveScaffold: Missing date picker localization for your locale: bn
+ActiveScaffold: Missing date picker localization for your locale: bs
+ActiveScaffold: Missing date picker localization for your locale: ca
+ActiveScaffold: Missing date picker localization for your locale: cs
+ActiveScaffold: Missing date picker localization for your locale: cy
+ActiveScaffold: Missing date picker localization for your locale: da
+ActiveScaffold: Missing date picker localization for your locale: el
+ActiveScaffold: Missing date picker localization for your locale: eo
+ActiveScaffold: Missing date picker localization for your locale: et
+ActiveScaffold: Missing date picker localization for your locale: eu
+ActiveScaffold: Missing date picker localization for your locale: fa
+ActiveScaffold: Missing date picker localization for your locale: fi
+ActiveScaffold: Missing date picker localization for your locale: gl
+ActiveScaffold: Missing date picker localization for your locale: he
+ActiveScaffold: Missing date picker localization for your locale: hi-IN
+ActiveScaffold: Missing date picker localization for your locale: hi
+ActiveScaffold: Missing date picker localization for your locale: hr
+ActiveScaffold: Missing date picker localization for your locale: id
+ActiveScaffold: Missing date picker localization for your locale: is
+ActiveScaffold: Missing date picker localization for your locale: it-CH
+ActiveScaffold: Missing date picker localization for your locale: it
+ActiveScaffold: Missing date picker localization for your locale: kn
+ActiveScaffold: Missing date picker localization for your locale: ko
+ActiveScaffold: Missing date picker localization for your locale: lo
+ActiveScaffold: Missing date picker localization for your locale: lt
+ActiveScaffold: Missing date picker localization for your locale: lv
+ActiveScaffold: Missing date picker localization for your locale: mk
+ActiveScaffold: Missing date picker localization for your locale: mn
+ActiveScaffold: Missing date picker localization for your locale: nb
+ActiveScaffold: Missing date picker localization for your locale: ne
+ActiveScaffold: Missing date picker localization for your locale: nl
+ActiveScaffold: Missing date picker localization for your locale: nn
+ActiveScaffold: Missing date picker localization for your locale: pl
+ActiveScaffold: Missing date picker localization for your locale: pt-BR
+ActiveScaffold: Missing date picker localization for your locale: pt
+ActiveScaffold: Missing date picker localization for your locale: rm
+ActiveScaffold: Missing date picker localization for your locale: ro
+ActiveScaffold: Missing date picker localization for your locale: sk
+ActiveScaffold: Missing date picker localization for your locale: sl
+ActiveScaffold: Missing date picker localization for your locale: sr
+ActiveScaffold: Missing date picker localization for your locale: sv
+ActiveScaffold: Missing date picker localization for your locale: sw
+ActiveScaffold: Missing date picker localization for your locale: th
+ActiveScaffold: Missing date picker localization for your locale: tl
+ActiveScaffold: Missing date picker localization for your locale: tr
+ActiveScaffold: Missing date picker localization for your locale: uk
+ActiveScaffold: Missing date picker localization for your locale: uz
+ActiveScaffold: Missing date picker localization for your locale: vi
+ActiveScaffold: Missing date picker localization for your locale: wo
+ActiveScaffold: Missing date picker localization for your locale: zh-CN
+ActiveScaffold: Missing date picker localization for your locale: zh-TW
+ActiveScaffold: Missing date picker localization for your locale: my
+ActiveScaffold: Missing datetime picker localization for your locale: en
+ActiveScaffold: Missing datetime picker localization for your locale: af
+ActiveScaffold: Missing datetime picker localization for your locale: ar
+ActiveScaffold: Missing datetime picker localization for your locale: az
+ActiveScaffold: Missing datetime picker localization for your locale: bg
+ActiveScaffold: Missing datetime picker localization for your locale: bn
+ActiveScaffold: Missing datetime picker localization for your locale: bs
+ActiveScaffold: Missing datetime picker localization for your locale: ca
+ActiveScaffold: Missing datetime picker localization for your locale: cs
+ActiveScaffold: Missing datetime picker localization for your locale: cy
+ActiveScaffold: Missing datetime picker localization for your locale: da
+ActiveScaffold: Missing datetime picker localization for your locale: el
+ActiveScaffold: Missing datetime picker localization for your locale: en-AU
+ActiveScaffold: Missing datetime picker localization for your locale: en-CA
+ActiveScaffold: Missing datetime picker localization for your locale: en-GB
+ActiveScaffold: Missing datetime picker localization for your locale: en-IN
+ActiveScaffold: Missing datetime picker localization for your locale: eo
+ActiveScaffold: Missing datetime picker localization for your locale: et
+ActiveScaffold: Missing datetime picker localization for your locale: eu
+ActiveScaffold: Missing datetime picker localization for your locale: fa
+ActiveScaffold: Missing datetime picker localization for your locale: fi
+ActiveScaffold: Missing datetime picker localization for your locale: gl
+ActiveScaffold: Missing datetime picker localization for your locale: he
+ActiveScaffold: Missing datetime picker localization for your locale: hi-IN
+ActiveScaffold: Missing datetime picker localization for your locale: hi
+ActiveScaffold: Missing datetime picker localization for your locale: hr
+ActiveScaffold: Missing datetime picker localization for your locale: hu
+ActiveScaffold: Missing datetime picker localization for your locale: id
+ActiveScaffold: Missing datetime picker localization for your locale: is
+ActiveScaffold: Missing datetime picker localization for your locale: it-CH
+ActiveScaffold: Missing datetime picker localization for your locale: it
+ActiveScaffold: Missing datetime picker localization for your locale: ja
+ActiveScaffold: Missing datetime picker localization for your locale: kn
+ActiveScaffold: Missing datetime picker localization for your locale: ko
+ActiveScaffold: Missing datetime picker localization for your locale: lo
+ActiveScaffold: Missing datetime picker localization for your locale: lt
+ActiveScaffold: Missing datetime picker localization for your locale: lv
+ActiveScaffold: Missing datetime picker localization for your locale: mk
+ActiveScaffold: Missing datetime picker localization for your locale: mn
+ActiveScaffold: Missing datetime picker localization for your locale: nb
+ActiveScaffold: Missing datetime picker localization for your locale: ne
+ActiveScaffold: Missing datetime picker localization for your locale: nl
+ActiveScaffold: Missing datetime picker localization for your locale: nn
+ActiveScaffold: Missing datetime picker localization for your locale: pl
+ActiveScaffold: Missing datetime picker localization for your locale: pt-BR
+ActiveScaffold: Missing datetime picker localization for your locale: pt
+ActiveScaffold: Missing datetime picker localization for your locale: rm
+ActiveScaffold: Missing datetime picker localization for your locale: ro
+ActiveScaffold: Missing datetime picker localization for your locale: ru
+ActiveScaffold: Missing datetime picker localization for your locale: sk
+ActiveScaffold: Missing datetime picker localization for your locale: sl
+ActiveScaffold: Missing datetime picker localization for your locale: sr
+ActiveScaffold: Missing datetime picker localization for your locale: sv
+ActiveScaffold: Missing datetime picker localization for your locale: sw
+ActiveScaffold: Missing datetime picker localization for your locale: th
+ActiveScaffold: Missing datetime picker localization for your locale: tl
+ActiveScaffold: Missing datetime picker localization for your locale: tr
+ActiveScaffold: Missing datetime picker localization for your locale: uk
+ActiveScaffold: Missing datetime picker localization for your locale: uz
+ActiveScaffold: Missing datetime picker localization for your locale: vi
+ActiveScaffold: Missing datetime picker localization for your locale: wo
+ActiveScaffold: Missing datetime picker localization for your locale: zh-CN
+ActiveScaffold: Missing datetime picker localization for your locale: zh-TW
+ActiveScaffold: Missing datetime picker localization for your locale: my
+Compiled jquery/date_picker_bridge.js  (3359ms)  (pid 5168)
+Compiled jquery/draggable_lists.js  (0ms)  (pid 5168)
+Compiled active_scaffold.js  (3693ms)  (pid 5168)
+Compiled application.js  (5578ms)  (pid 5168)
+Compiled bootstrap-responsive.css  (0ms)  (pid 5168)
+Compiled bootstrap.css  (1ms)  (pid 5168)
+Compiled twitter-bootstrap-static/bootstrap.css  (36ms)  (pid 5168)
+Compiled twitter-bootstrap-static/fontawesome.css  (73ms)  (pid 5168)
+Compiled bootstrap_and_overrides.css  (199ms)  (pid 5168)
+Compiled imoveis.css  (51ms)  (pid 5168)
+Compiled principal.css  (1ms)  (pid 5168)
+Compiled scaffolds.css  (9ms)  (pid 5168)
+Compiled active_scaffold_layout.css  (0ms)  (pid 5168)
+Compiled jquery-ui.css  (0ms)  (pid 5168)
+Compiled active_scaffold_extensions.css  (1ms)  (pid 5168)
+Compiled active_scaffold.css  (909ms)  (pid 5168)
+Compiled application.css  (1322ms)  (pid 5168)
+Connecting to database specified by database.yml
+Compiled jquery.js  (1ms)  (pid 5168)
+Compiled jquery_ujs.js  (0ms)  (pid 5168)
+Compiled twitter/bootstrap/bootstrap-transition.js  (0ms)  (pid 5168)
+Compiled twitter/bootstrap/bootstrap-alert.js  (0ms)  (pid 5168)
+Compiled twitter/bootstrap/bootstrap-modal.js  (0ms)  (pid 5168)
+Compiled twitter/bootstrap/bootstrap-dropdown.js  (0ms)  (pid 5168)
+Compiled twitter/bootstrap/bootstrap-scrollspy.js  (0ms)  (pid 5168)
+Compiled twitter/bootstrap/bootstrap-tab.js  (0ms)  (pid 5168)
+Compiled twitter/bootstrap/bootstrap-tooltip.js  (0ms)  (pid 5168)
+Compiled twitter/bootstrap/bootstrap-popover.js  (0ms)  (pid 5168)
+Compiled twitter/bootstrap/bootstrap-button.js  (0ms)  (pid 5168)
+Compiled twitter/bootstrap/bootstrap-collapse.js  (0ms)  (pid 5168)
+Compiled twitter/bootstrap/bootstrap-carousel.js  (0ms)  (pid 5168)
+Compiled twitter/bootstrap/bootstrap-typeahead.js  (0ms)  (pid 5168)
+Compiled twitter/bootstrap/bootstrap-affix.js  (0ms)  (pid 5168)
+Compiled twitter/bootstrap.js  (125ms)  (pid 5168)
+Compiled bootstrap.js  (205ms)  (pid 5168)
+Compiled imoveis.js  (143ms)  (pid 5168)
+Compiled principal.js  (136ms)  (pid 5168)
+Compiled jquery-ui.js  (25ms)  (pid 5168)
+Compiled jquery-ui-timepicker-addon.js  (0ms)  (pid 5168)
+Compiled jquery/active_scaffold.js  (0ms)  (pid 5168)
+Compiled jquery/jquery.editinplace.js  (0ms)  (pid 5168)
+ActiveScaffold: Missing date picker localization for your locale: af
+ActiveScaffold: Missing date picker localization for your locale: ar
+ActiveScaffold: Missing date picker localization for your locale: az
+ActiveScaffold: Missing date picker localization for your locale: bg
+ActiveScaffold: Missing date picker localization for your locale: bn
+ActiveScaffold: Missing date picker localization for your locale: bs
+ActiveScaffold: Missing date picker localization for your locale: ca
+ActiveScaffold: Missing date picker localization for your locale: cs
+ActiveScaffold: Missing date picker localization for your locale: cy
+ActiveScaffold: Missing date picker localization for your locale: da
+ActiveScaffold: Missing date picker localization for your locale: el
+ActiveScaffold: Missing date picker localization for your locale: eo
+ActiveScaffold: Missing date picker localization for your locale: et
+ActiveScaffold: Missing date picker localization for your locale: eu
+ActiveScaffold: Missing date picker localization for your locale: fa
+ActiveScaffold: Missing date picker localization for your locale: fi
+ActiveScaffold: Missing date picker localization for your locale: gl
+ActiveScaffold: Missing date picker localization for your locale: he
+ActiveScaffold: Missing date picker localization for your locale: hi-IN
+ActiveScaffold: Missing date picker localization for your locale: hi
+ActiveScaffold: Missing date picker localization for your locale: hr
+ActiveScaffold: Missing date picker localization for your locale: id
+ActiveScaffold: Missing date picker localization for your locale: is
+ActiveScaffold: Missing date picker localization for your locale: it-CH
+ActiveScaffold: Missing date picker localization for your locale: it
+ActiveScaffold: Missing date picker localization for your locale: kn
+ActiveScaffold: Missing date picker localization for your locale: ko
+ActiveScaffold: Missing date picker localization for your locale: lo
+ActiveScaffold: Missing date picker localization for your locale: lt
+ActiveScaffold: Missing date picker localization for your locale: lv
+ActiveScaffold: Missing date picker localization for your locale: mk
+ActiveScaffold: Missing date picker localization for your locale: mn
+ActiveScaffold: Missing date picker localization for your locale: nb
+ActiveScaffold: Missing date picker localization for your locale: ne
+ActiveScaffold: Missing date picker localization for your locale: nl
+ActiveScaffold: Missing date picker localization for your locale: nn
+ActiveScaffold: Missing date picker localization for your locale: pl
+ActiveScaffold: Missing date picker localization for your locale: pt-BR
+ActiveScaffold: Missing date picker localization for your locale: pt
+ActiveScaffold: Missing date picker localization for your locale: rm
+ActiveScaffold: Missing date picker localization for your locale: ro
+ActiveScaffold: Missing date picker localization for your locale: sk
+ActiveScaffold: Missing date picker localization for your locale: sl
+ActiveScaffold: Missing date picker localization for your locale: sr
+ActiveScaffold: Missing date picker localization for your locale: sv
+ActiveScaffold: Missing date picker localization for your locale: sw
+ActiveScaffold: Missing date picker localization for your locale: th
+ActiveScaffold: Missing date picker localization for your locale: tl
+ActiveScaffold: Missing date picker localization for your locale: tr
+ActiveScaffold: Missing date picker localization for your locale: uk
+ActiveScaffold: Missing date picker localization for your locale: uz
+ActiveScaffold: Missing date picker localization for your locale: vi
+ActiveScaffold: Missing date picker localization for your locale: wo
+ActiveScaffold: Missing date picker localization for your locale: zh-CN
+ActiveScaffold: Missing date picker localization for your locale: zh-TW
+ActiveScaffold: Missing date picker localization for your locale: my
+ActiveScaffold: Missing datetime picker localization for your locale: en
+ActiveScaffold: Missing datetime picker localization for your locale: af
+ActiveScaffold: Missing datetime picker localization for your locale: ar
+ActiveScaffold: Missing datetime picker localization for your locale: az
+ActiveScaffold: Missing datetime picker localization for your locale: bg
+ActiveScaffold: Missing datetime picker localization for your locale: bn
+ActiveScaffold: Missing datetime picker localization for your locale: bs
+ActiveScaffold: Missing datetime picker localization for your locale: ca
+ActiveScaffold: Missing datetime picker localization for your locale: cs
+ActiveScaffold: Missing datetime picker localization for your locale: cy
+ActiveScaffold: Missing datetime picker localization for your locale: da
+ActiveScaffold: Missing datetime picker localization for your locale: el
+ActiveScaffold: Missing datetime picker localization for your locale: en-AU
+ActiveScaffold: Missing datetime picker localization for your locale: en-CA
+ActiveScaffold: Missing datetime picker localization for your locale: en-GB
+ActiveScaffold: Missing datetime picker localization for your locale: en-IN
+ActiveScaffold: Missing datetime picker localization for your locale: eo
+ActiveScaffold: Missing datetime picker localization for your locale: et
+ActiveScaffold: Missing datetime picker localization for your locale: eu
+ActiveScaffold: Missing datetime picker localization for your locale: fa
+ActiveScaffold: Missing datetime picker localization for your locale: fi
+ActiveScaffold: Missing datetime picker localization for your locale: gl
+ActiveScaffold: Missing datetime picker localization for your locale: he
+ActiveScaffold: Missing datetime picker localization for your locale: hi-IN
+ActiveScaffold: Missing datetime picker localization for your locale: hi
+ActiveScaffold: Missing datetime picker localization for your locale: hr
+ActiveScaffold: Missing datetime picker localization for your locale: hu
+ActiveScaffold: Missing datetime picker localization for your locale: id
+ActiveScaffold: Missing datetime picker localization for your locale: is
+ActiveScaffold: Missing datetime picker localization for your locale: it-CH
+ActiveScaffold: Missing datetime picker localization for your locale: it
+ActiveScaffold: Missing datetime picker localization for your locale: ja
+ActiveScaffold: Missing datetime picker localization for your locale: kn
+ActiveScaffold: Missing datetime picker localization for your locale: ko
+ActiveScaffold: Missing datetime picker localization for your locale: lo
+ActiveScaffold: Missing datetime picker localization for your locale: lt
+ActiveScaffold: Missing datetime picker localization for your locale: lv
+ActiveScaffold: Missing datetime picker localization for your locale: mk
+ActiveScaffold: Missing datetime picker localization for your locale: mn
+ActiveScaffold: Missing datetime picker localization for your locale: nb
+ActiveScaffold: Missing datetime picker localization for your locale: ne
+ActiveScaffold: Missing datetime picker localization for your locale: nl
+ActiveScaffold: Missing datetime picker localization for your locale: nn
+ActiveScaffold: Missing datetime picker localization for your locale: pl
+ActiveScaffold: Missing datetime picker localization for your locale: pt-BR
+ActiveScaffold: Missing datetime picker localization for your locale: pt
+ActiveScaffold: Missing datetime picker localization for your locale: rm
+ActiveScaffold: Missing datetime picker localization for your locale: ro
+ActiveScaffold: Missing datetime picker localization for your locale: ru
+ActiveScaffold: Missing datetime picker localization for your locale: sk
+ActiveScaffold: Missing datetime picker localization for your locale: sl
+ActiveScaffold: Missing datetime picker localization for your locale: sr
+ActiveScaffold: Missing datetime picker localization for your locale: sv
+ActiveScaffold: Missing datetime picker localization for your locale: sw
+ActiveScaffold: Missing datetime picker localization for your locale: th
+ActiveScaffold: Missing datetime picker localization for your locale: tl
+ActiveScaffold: Missing datetime picker localization for your locale: tr
+ActiveScaffold: Missing datetime picker localization for your locale: uk
+ActiveScaffold: Missing datetime picker localization for your locale: uz
+ActiveScaffold: Missing datetime picker localization for your locale: vi
+ActiveScaffold: Missing datetime picker localization for your locale: wo
+ActiveScaffold: Missing datetime picker localization for your locale: zh-CN
+ActiveScaffold: Missing datetime picker localization for your locale: zh-TW
+ActiveScaffold: Missing datetime picker localization for your locale: my
+Compiled jquery/date_picker_bridge.js  (2599ms)  (pid 5168)
+Compiled jquery/draggable_lists.js  (0ms)  (pid 5168)
+Compiled active_scaffold.js  (2782ms)  (pid 5168)
+Compiled application.js  (3433ms)  (pid 5168)
+Compiled bootstrap-responsive.css  (0ms)  (pid 5168)
+Compiled bootstrap.css  (1ms)  (pid 5168)
+Compiled twitter-bootstrap-static/bootstrap.css  (37ms)  (pid 5168)
+Compiled twitter-bootstrap-static/fontawesome.css  (21ms)  (pid 5168)
+Compiled bootstrap_and_overrides.css  (128ms)  (pid 5168)
+Compiled imoveis.css  (37ms)  (pid 5168)
+Compiled principal.css  (1ms)  (pid 5168)
+Compiled scaffolds.css  (9ms)  (pid 5168)
+Compiled active_scaffold_layout.css  (0ms)  (pid 5168)
+Compiled jquery-ui.css  (0ms)  (pid 5168)
+Compiled active_scaffold_extensions.css  (0ms)  (pid 5168)
+Compiled active_scaffold.css  (729ms)  (pid 5168)
+Compiled application.css  (1064ms)  (pid 5168)
