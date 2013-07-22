@@ -8,6 +8,7 @@ ActiveSupport::Inflector.inflections do |inflect|
    inflect.irregular 'ApartamentoLeitura', 'ApartamentosLeituras'
    inflect.irregular 'apartamento_leitura', 'apartamentos_leituras'
    inflect.irregular 'imovel', 'imoveis'
+   
 #   inflect.uncountable %w( fish sheep )
 end
 #

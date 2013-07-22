@@ -1,4 +1,5 @@
 class ApartamentosLeiturasController < ApplicationController
+	before_filter :authenticate_usuario!
 	active_scaffold :apartamento_leitura do |conf|
 		conf.create.columns.exclude [:consumo, :valor,:diferenca_ajustada, :porcentagem]
 		conf.list.columns.exclude [:diferenca_ajustada, :porcentagem, :created_at, :updated_at]

@@ -1,0 +1,27 @@
+    <div class="form-signin">
+
+    <%= form_for(resource, :as => resource_name, :url => session_path(resource_name) ) do |f| %>
+
+        <h2 class="form-signin-heading">Logar</h2>
+          <%= bootstrap_flash %>
+         <%= devise_error_messages! %>
+        <%= f.label :email %>
+         <%= f.email_field :email,  :class => "input-block-level",  :placeholder => "Endereço de e-mail" %>
+
+        <%= f.label :password %>
+        <%= f.password_field :password,  :class => "input-block-level",  :placeholder => "Senha"%>
+
+        <% if devise_mapping.rememberable? -%>
+            <label  class="checkbox"> Lembrar-se
+                <%= f.check_box :remember_me %>
+            </label>
+        <% end -%>
+
+        <%= f.submit "Acessar", :class => "btn btn-large btn-primary" %>
+
+        <%= render "devise/shared/links" %>
+    <% end %>
+    </div>
+
+
+

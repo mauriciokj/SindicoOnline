@@ -1,6 +1,15 @@
 SindicoOnline::Application.routes.draw do
 
 
+  devise_for :usuarios
+
+  resources :cidades do as_routes end
+
+  resources :estados do as_routes end
+
+  resources :imoveis do as_routes end
+
+
   resources :apartamentos_leituras do as_routes end
 
   resources :leituras do as_routes end
@@ -57,7 +66,7 @@ SindicoOnline::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  root :to => 'principal#index'
 
   # See how all your routes lay out with "rake routes"
 

@@ -1,0 +1,48 @@
+imovel
+has_many :apartamentos
+
+nome
+blocos
+cep
+rua
+bairro
+numero
+sindico
+email_sindico
+telefone_sindico
+foto
+regras
+observacao
+
+
+devise
+usuario
+sindico?
+belongs_to :imovel
+belongs_to :apartamento
+
+
+conta
+descricao
+matricula
+has_many :leituras (agua, gas, luz_condominio, condominio)
+formula
+
+
+leitura
+belongs_to conta
+
+leitura
+paga?
+
+apartamento_leitura
+paga?
+
+
+apartamento
+moradores
+telefone
+
+usar o notificador do ulisses
+
+

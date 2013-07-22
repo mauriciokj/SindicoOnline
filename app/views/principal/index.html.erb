@@ -1,0 +1,33 @@
+<div class="navbar navbar-fluid-top navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container-fluid">
+      <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a class="brand" href="/">Apartamento número: <%= @apartamento.numero %> bloco: <%= @apartamento.bloco %></a>
+      <div class="nav-collapse">
+        <% if usuario_signed_in? %>
+        <ul class="nav pull-right">
+          <!-- <li> -->
+            <!-- <a href="/contas/">Contas</a> -->
+          <!-- </li> -->
+
+          <li>
+            <a href="/">Home</a>
+          </li>
+
+          <li>
+              <a rel="nofollow" data-method="delete" href="/usuarios/sign_out">
+                <span class="label label-important">Terminar Sessão</span>
+              </a>
+          </li>
+
+         </ul>
+         <% end %>
+      </div><!--/.nav-collapse -->
+
+    </div>
+  </div>
+</div>
