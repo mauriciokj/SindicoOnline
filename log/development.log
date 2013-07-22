@@ -24695,3 +24695,4 @@ Served asset /jquery/date_picker_bridge.js - 304 Not Modified (0ms)
 
 Started GET "/assets/active_scaffold.js?body=1" for 127.0.0.1 at 2013-07-22 19:18:10 -0300
 Served asset /active_scaffold.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
