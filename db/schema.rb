@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130722202225) do
+ActiveRecord::Schema.define(:version => 20130722230946) do
 
   create_table "apartamentos", :force => true do |t|
     t.integer  "numero"
@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(:version => 20130722202225) do
     t.datetime "updated_at",          :null => false
     t.float    "diferenca_ajustada"
     t.float    "porcentagem"
+    t.boolean  "paga"
   end
 
   add_index "apartamentos_leituras", ["apartamento_id"], :name => "index_apartamentos_leituras_on_apartamento_id"
@@ -76,6 +77,7 @@ ActiveRecord::Schema.define(:version => 20130722202225) do
     t.integer  "matricula"
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
+    t.boolean  "paga"
   end
 
   create_table "usuarios", :force => true do |t|

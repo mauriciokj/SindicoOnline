@@ -24697,3 +24697,2832 @@ Started GET "/assets/active_scaffold.js?body=1" for 127.0.0.1 at 2013-07-22 19:1
 Served asset /active_scaffold.js - 304 Not Modified (0ms)
 Connecting to database specified by database.yml
 Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-22 20:00:27 -0300
+Processing by PrincipalController#index as HTML
+  [1m[36mUsuario Load (1.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = 1 LIMIT 1[0m
+  [1m[35mApartamento Load (18.0ms)[0m  SELECT "apartamentos".* FROM "apartamentos" WHERE "apartamentos"."id" = 1 LIMIT 1
+  [1m[36mApartamentoLeitura Load (1.1ms)[0m  [1mSELECT "apartamentos_leituras".* FROM "apartamentos_leituras" WHERE "apartamentos_leituras"."apartamento_id" = 1 ORDER BY created_at DESC[0m
+  [1m[35mLeitura Load (0.5ms)[0m  SELECT "leituras".* FROM "leituras" WHERE "leituras"."id" = 9 LIMIT 1
+  [1m[36mLeitura Load (0.5ms)[0m  [1mSELECT "leituras".* FROM "leituras" WHERE "leituras"."id" = 8 LIMIT 1[0m
+  [1m[35mLeitura Load (0.3ms)[0m  SELECT "leituras".* FROM "leituras" WHERE "leituras"."id" = 7 LIMIT 1
+  [1m[36mLeitura Load (0.3ms)[0m  [1mSELECT "leituras".* FROM "leituras" WHERE "leituras"."id" = 6 LIMIT 1[0m
+  [1m[35mLeitura Load (0.3ms)[0m  SELECT "leituras".* FROM "leituras" WHERE "leituras"."id" = 5 LIMIT 1
+  [1m[36mLeitura Load (0.5ms)[0m  [1mSELECT "leituras".* FROM "leituras" WHERE "leituras"."id" = 4 LIMIT 1[0m
+  [1m[35mLeitura Load (0.4ms)[0m  SELECT "leituras".* FROM "leituras" WHERE "leituras"."id" = 3 LIMIT 1
+  [1m[36mLeitura Load (0.3ms)[0m  [1mSELECT "leituras".* FROM "leituras" WHERE "leituras"."id" = 2 LIMIT 1[0m
+  Rendered principal/index.html.erb within layouts/application (1807.5ms)
+Compiled bootstrap-responsive.css  (0ms)  (pid 6160)
+Compiled bootstrap.css  (0ms)  (pid 6160)
+Compiled twitter-bootstrap-static/bootstrap.css  (35ms)  (pid 6160)
+Compiled twitter-bootstrap-static/fontawesome.css  (20ms)  (pid 6160)
+Compiled bootstrap_and_overrides.css  (89ms)  (pid 6160)
+Compiled imoveis.css  (5ms)  (pid 6160)
+Compiled principal.css  (0ms)  (pid 6160)
+Compiled scaffolds.css  (6ms)  (pid 6160)
+Compiled active_scaffold_layout.css  (0ms)  (pid 6160)
+Compiled jquery-ui.css  (0ms)  (pid 6160)
+Compiled active_scaffold_extensions.css  (21ms)  (pid 6160)
+Compiled active_scaffold.css  (587ms)  (pid 6160)
+Compiled application.css  (713ms)  (pid 6160)
+Compiled jquery.js  (1ms)  (pid 6160)
+Compiled jquery_ujs.js  (0ms)  (pid 6160)
+Compiled twitter/bootstrap/bootstrap-transition.js  (0ms)  (pid 6160)
+Compiled twitter/bootstrap/bootstrap-alert.js  (0ms)  (pid 6160)
+Compiled twitter/bootstrap/bootstrap-modal.js  (0ms)  (pid 6160)
+Compiled twitter/bootstrap/bootstrap-dropdown.js  (0ms)  (pid 6160)
+Compiled twitter/bootstrap/bootstrap-scrollspy.js  (0ms)  (pid 6160)
+Compiled twitter/bootstrap/bootstrap-tab.js  (0ms)  (pid 6160)
+Compiled twitter/bootstrap/bootstrap-tooltip.js  (0ms)  (pid 6160)
+Compiled twitter/bootstrap/bootstrap-popover.js  (0ms)  (pid 6160)
+Compiled twitter/bootstrap/bootstrap-button.js  (0ms)  (pid 6160)
+Compiled twitter/bootstrap/bootstrap-collapse.js  (0ms)  (pid 6160)
+Compiled twitter/bootstrap/bootstrap-carousel.js  (0ms)  (pid 6160)
+Compiled twitter/bootstrap/bootstrap-typeahead.js  (0ms)  (pid 6160)
+Compiled twitter/bootstrap/bootstrap-affix.js  (0ms)  (pid 6160)
+Compiled twitter/bootstrap.js  (80ms)  (pid 6160)
+Compiled bootstrap.js  (161ms)  (pid 6160)
+Compiled imoveis.js  (145ms)  (pid 6160)
+Compiled principal.js  (166ms)  (pid 6160)
+Compiled jquery-ui.js  (6ms)  (pid 6160)
+Compiled jquery-ui-timepicker-addon.js  (0ms)  (pid 6160)
+Compiled jquery/active_scaffold.js  (0ms)  (pid 6160)
+Compiled jquery/jquery.editinplace.js  (0ms)  (pid 6160)
+ActiveScaffold: Missing date picker localization for your locale: af
+ActiveScaffold: Missing date picker localization for your locale: ar
+ActiveScaffold: Missing date picker localization for your locale: az
+ActiveScaffold: Missing date picker localization for your locale: bg
+ActiveScaffold: Missing date picker localization for your locale: bn
+ActiveScaffold: Missing date picker localization for your locale: bs
+ActiveScaffold: Missing date picker localization for your locale: ca
+ActiveScaffold: Missing date picker localization for your locale: cs
+ActiveScaffold: Missing date picker localization for your locale: cy
+ActiveScaffold: Missing date picker localization for your locale: da
+ActiveScaffold: Missing date picker localization for your locale: de-AT
+ActiveScaffold: Missing date picker localization for your locale: de-CH
+ActiveScaffold: Missing date picker localization for your locale: el
+ActiveScaffold: Missing date picker localization for your locale: en-AU
+ActiveScaffold: Missing date picker localization for your locale: en-CA
+ActiveScaffold: Missing date picker localization for your locale: en-GB
+ActiveScaffold: Missing date picker localization for your locale: en-IN
+ActiveScaffold: Missing date picker localization for your locale: eo
+ActiveScaffold: Missing date picker localization for your locale: es-419
+ActiveScaffold: Missing date picker localization for your locale: es-AR
+ActiveScaffold: Missing date picker localization for your locale: es-CL
+ActiveScaffold: Missing date picker localization for your locale: es-CO
+ActiveScaffold: Missing date picker localization for your locale: es-MX
+ActiveScaffold: Missing date picker localization for your locale: es-PE
+ActiveScaffold: Missing date picker localization for your locale: es-VE
+ActiveScaffold: Missing date picker localization for your locale: et
+ActiveScaffold: Missing date picker localization for your locale: eu
+ActiveScaffold: Missing date picker localization for your locale: fa
+ActiveScaffold: Missing date picker localization for your locale: fi
+ActiveScaffold: Missing date picker localization for your locale: fr-CA
+ActiveScaffold: Missing date picker localization for your locale: fr-CH
+ActiveScaffold: Missing date picker localization for your locale: gl
+ActiveScaffold: Missing date picker localization for your locale: he
+ActiveScaffold: Missing date picker localization for your locale: hi-IN
+ActiveScaffold: Missing date picker localization for your locale: hi
+ActiveScaffold: Missing date picker localization for your locale: hr
+ActiveScaffold: Missing date picker localization for your locale: id
+ActiveScaffold: Missing date picker localization for your locale: is
+ActiveScaffold: Missing date picker localization for your locale: it-CH
+ActiveScaffold: Missing date picker localization for your locale: it
+ActiveScaffold: Missing date picker localization for your locale: kn
+ActiveScaffold: Missing date picker localization for your locale: ko
+ActiveScaffold: Missing date picker localization for your locale: lo
+ActiveScaffold: Missing date picker localization for your locale: lt
+ActiveScaffold: Missing date picker localization for your locale: lv
+ActiveScaffold: Missing date picker localization for your locale: mk
+ActiveScaffold: Missing date picker localization for your locale: mn
+ActiveScaffold: Missing date picker localization for your locale: nb
+ActiveScaffold: Missing date picker localization for your locale: ne
+ActiveScaffold: Missing date picker localization for your locale: nl
+ActiveScaffold: Missing date picker localization for your locale: nn
+ActiveScaffold: Missing date picker localization for your locale: pl
+ActiveScaffold: Missing date picker localization for your locale: pt-BR
+ActiveScaffold: Missing date picker localization for your locale: pt
+ActiveScaffold: Missing date picker localization for your locale: rm
+ActiveScaffold: Missing date picker localization for your locale: ro
+ActiveScaffold: Missing date picker localization for your locale: sk
+ActiveScaffold: Missing date picker localization for your locale: sl
+ActiveScaffold: Missing date picker localization for your locale: sr
+ActiveScaffold: Missing date picker localization for your locale: sv
+ActiveScaffold: Missing date picker localization for your locale: sw
+ActiveScaffold: Missing date picker localization for your locale: th
+ActiveScaffold: Missing date picker localization for your locale: tl
+ActiveScaffold: Missing date picker localization for your locale: tr
+ActiveScaffold: Missing date picker localization for your locale: uk
+ActiveScaffold: Missing date picker localization for your locale: uz
+ActiveScaffold: Missing date picker localization for your locale: vi
+ActiveScaffold: Missing date picker localization for your locale: wo
+ActiveScaffold: Missing date picker localization for your locale: zh-CN
+ActiveScaffold: Missing date picker localization for your locale: zh-TW
+ActiveScaffold: Missing datetime picker localization for your locale: en
+ActiveScaffold: Missing datetime picker localization for your locale: hu
+ActiveScaffold: Missing datetime picker localization for your locale: ja
+ActiveScaffold: Missing datetime picker localization for your locale: pt-BR
+ActiveScaffold: Missing datetime picker localization for your locale: ru
+Compiled jquery/date_picker_bridge.js  (187ms)  (pid 6160)
+Compiled jquery/draggable_lists.js  (0ms)  (pid 6160)
+Compiled active_scaffold.js  (279ms)  (pid 6160)
+Compiled application.js  (865ms)  (pid 6160)
+Completed 200 OK in 3870ms (Views: 3657.3ms | ActiveRecord: 83.7ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2013-07-22 20:00:31 -0300
+Served asset /twitter-bootstrap-static/fontawesome.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2013-07-22 20:00:31 -0300
+Served asset /twitter-bootstrap-static/bootstrap.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-07-22 20:00:31 -0300
+Served asset /bootstrap.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-07-22 20:00:31 -0300
+Served asset /bootstrap-responsive.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-22 20:00:31 -0300
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/imoveis.css?body=1" for 127.0.0.1 at 2013-07-22 20:00:31 -0300
+Served asset /imoveis.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/principal.css?body=1" for 127.0.0.1 at 2013-07-22 20:00:31 -0300
+Served asset /principal.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-07-22 20:00:31 -0300
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/active_scaffold.css?body=1" for 127.0.0.1 at 2013-07-22 20:00:32 -0300
+Served asset /active_scaffold.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:32 -0300
+Served asset /jquery.js - 304 Not Modified (40ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:32 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:32 -0300
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:32 -0300
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:32 -0300
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:32 -0300
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:32 -0300
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:32 -0300
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:32 -0300
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:32 -0300
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:32 -0300
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:32 -0300
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:32 -0300
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:32 -0300
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:32 -0300
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:32 -0300
+Served asset /twitter/bootstrap.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:32 -0300
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/imoveis.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:32 -0300
+Served asset /imoveis.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/principal.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:32 -0300
+Served asset /principal.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:32 -0300
+Served asset /jquery-ui.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery-ui-timepicker-addon.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:32 -0300
+Served asset /jquery-ui-timepicker-addon.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery/active_scaffold.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:32 -0300
+Served asset /jquery/active_scaffold.js - 304 Not Modified (49ms)
+
+
+Started GET "/assets/jquery/jquery.editinplace.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:32 -0300
+Served asset /jquery/jquery.editinplace.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery/date_picker_bridge.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:32 -0300
+Served asset /jquery/date_picker_bridge.js - 200 OK (3ms)
+
+
+Started GET "/assets/jquery/draggable_lists.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:32 -0300
+Served asset /jquery/draggable_lists.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/active_scaffold.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:32 -0300
+Served asset /active_scaffold.js - 304 Not Modified (10ms)
+
+
+Started GET "/leituras" for 127.0.0.1 at 2013-07-22 20:00:44 -0300
+Processing by LeiturasController#index as HTML
+  [1m[35mUsuario Load (0.6ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = 1 LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "leituras" [0m
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_header.html.erb (6.2ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_column_headings.html.erb (61.2ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_messages.html.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_messages.html.erb (5.3ms)
+  [1m[35mLeitura Load (1.1ms)[0m  SELECT "leituras".* FROM "leituras" ORDER BY "leituras"."data_leitura" DESC LIMIT 15 OFFSET 0
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_record.html.erb (39.8ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_pagination.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list.html.erb (128.0ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_with_header.html.erb (142.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/list.html.erb within layouts/application (166.3ms)
+Completed 200 OK in 195ms (Views: 185.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-07-22 20:00:45 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2013-07-22 20:00:45 -0300
+Served asset /twitter-bootstrap-static/fontawesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-22 20:00:45 -0300
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2013-07-22 20:00:45 -0300
+Served asset /twitter-bootstrap-static/bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/imoveis.css?body=1" for 127.0.0.1 at 2013-07-22 20:00:45 -0300
+Served asset /imoveis.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-07-22 20:00:45 -0300
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/principal.css?body=1" for 127.0.0.1 at 2013-07-22 20:00:45 -0300
+Served asset /principal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-07-22 20:00:45 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_scaffold.css?body=1" for 127.0.0.1 at 2013-07-22 20:00:45 -0300
+Served asset /active_scaffold.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:45 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:45 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:45 -0300
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:45 -0300
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:45 -0300
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:45 -0300
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:45 -0300
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:45 -0300
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:45 -0300
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:45 -0300
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:45 -0300
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:45 -0300
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:45 -0300
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:45 -0300
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:45 -0300
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:45 -0300
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:45 -0300
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/principal.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:45 -0300
+Served asset /principal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/imoveis.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:45 -0300
+Served asset /imoveis.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:45 -0300
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-timepicker-addon.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:45 -0300
+Served asset /jquery-ui-timepicker-addon.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/active_scaffold.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:45 -0300
+Served asset /jquery/active_scaffold.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/jquery.editinplace.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:45 -0300
+Served asset /jquery/jquery.editinplace.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/draggable_lists.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:45 -0300
+Served asset /jquery/draggable_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_scaffold.js?body=1" for 127.0.0.1 at 2013-07-22 20:00:45 -0300
+Served asset /active_scaffold.js - 304 Not Modified (0ms)
+
+
+Started GET "/leituras/new" for 127.0.0.1 at 2013-07-22 20:00:48 -0300
+Processing by LeiturasController#new as JS
+  [1m[36mUsuario Load (0.5ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = 1 LIMIT 1[0m
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_form_messages.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_form.html.erb (16.2ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_base_form.html.erb (27.0ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_create_form.html.erb (31.5ms)
+Completed 200 OK in 40ms (Views: 35.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-22 20:01:23 -0300
+Processing by PrincipalController#index as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/usuarios/sign_in" for 127.0.0.1 at 2013-07-22 20:01:24 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 37ms (Views: 36.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2013-07-22 20:01:24 -0300
+Served asset /twitter-bootstrap-static/fontawesome.css - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-07-22 20:01:24 -0300
+Served asset /bootstrap-responsive.css - 200 OK (0ms)
+
+
+Started GET "/assets/principal.css?body=1" for 127.0.0.1 at 2013-07-22 20:01:24 -0300
+Served asset /principal.css - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-22 20:01:24 -0300
+Served asset /bootstrap_and_overrides.css - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-07-22 20:01:24 -0300
+Served asset /bootstrap.css - 200 OK (0ms)
+
+
+Started GET "/assets/imoveis.css?body=1" for 127.0.0.1 at 2013-07-22 20:01:24 -0300
+Served asset /imoveis.css - 200 OK (0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2013-07-22 20:01:24 -0300
+Served asset /twitter-bootstrap-static/bootstrap.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-07-22 20:01:24 -0300
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/active_scaffold.css?body=1" for 127.0.0.1 at 2013-07-22 20:01:24 -0300
+Served asset /active_scaffold.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:24 -0300
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:24 -0300
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:24 -0300
+Served asset /twitter/bootstrap/bootstrap-transition.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:24 -0300
+Served asset /twitter/bootstrap/bootstrap-alert.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:24 -0300
+Served asset /twitter/bootstrap/bootstrap-modal.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:24 -0300
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:24 -0300
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:24 -0300
+Served asset /twitter/bootstrap/bootstrap-tab.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:24 -0300
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:24 -0300
+Served asset /twitter/bootstrap/bootstrap-popover.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:24 -0300
+Served asset /twitter/bootstrap/bootstrap-button.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:24 -0300
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:24 -0300
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:24 -0300
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:24 -0300
+Served asset /twitter/bootstrap/bootstrap-affix.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:24 -0300
+Served asset /twitter/bootstrap.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:24 -0300
+Served asset /bootstrap.js - 200 OK (0ms)
+
+
+Started GET "/assets/imoveis.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:24 -0300
+Served asset /imoveis.js - 200 OK (0ms)
+
+
+Started GET "/assets/principal.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:24 -0300
+Served asset /principal.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:24 -0300
+Served asset /jquery-ui.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery-ui-timepicker-addon.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:24 -0300
+Served asset /jquery-ui-timepicker-addon.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery/active_scaffold.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:24 -0300
+Served asset /jquery/active_scaffold.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery/jquery.editinplace.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:24 -0300
+Served asset /jquery/jquery.editinplace.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery/date_picker_bridge.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:24 -0300
+Served asset /jquery/date_picker_bridge.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery/draggable_lists.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:24 -0300
+Served asset /jquery/draggable_lists.js - 200 OK (0ms)
+
+
+Started GET "/assets/active_scaffold.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:24 -0300
+Served asset /active_scaffold.js - 200 OK (0ms)
+
+
+Started POST "/usuarios/sign_in" for 127.0.0.1 at 2013-07-22 20:01:42 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Da1SaUakXj5VsGeXBrRx3AZ0BFOxyCTsKdj/C8kiaNo=", "usuario"=>{"email"=>"mauriciokj@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Acessar"}
+  [1m[35mUsuario Load (1.0ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."email" = 'mauriciokj@gmail.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.7ms)[0m  UPDATE "usuarios" SET "last_sign_in_at" = '2013-07-22 20:33:48.564161', "current_sign_in_at" = '2013-07-22 23:01:42.229176', "sign_in_count" = 5, "updated_at" = '2013-07-22 23:01:42.253045' WHERE "usuarios"."id" = 1
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 225ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-22 20:01:42 -0300
+Processing by PrincipalController#index as HTML
+  [1m[35mUsuario Load (0.6ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = 1 LIMIT 1
+  [1m[36mApartamento Load (0.5ms)[0m  [1mSELECT "apartamentos".* FROM "apartamentos" WHERE "apartamentos"."id" = 1 LIMIT 1[0m
+  [1m[35mApartamentoLeitura Load (0.5ms)[0m  SELECT "apartamentos_leituras".* FROM "apartamentos_leituras" WHERE "apartamentos_leituras"."apartamento_id" = 1 ORDER BY created_at DESC
+  [1m[36mLeitura Load (0.4ms)[0m  [1mSELECT "leituras".* FROM "leituras" WHERE "leituras"."id" = 9 LIMIT 1[0m
+  [1m[35mLeitura Load (0.4ms)[0m  SELECT "leituras".* FROM "leituras" WHERE "leituras"."id" = 8 LIMIT 1
+  [1m[36mLeitura Load (0.6ms)[0m  [1mSELECT "leituras".* FROM "leituras" WHERE "leituras"."id" = 7 LIMIT 1[0m
+  [1m[35mLeitura Load (0.6ms)[0m  SELECT "leituras".* FROM "leituras" WHERE "leituras"."id" = 6 LIMIT 1
+  [1m[36mLeitura Load (0.4ms)[0m  [1mSELECT "leituras".* FROM "leituras" WHERE "leituras"."id" = 5 LIMIT 1[0m
+  [1m[35mLeitura Load (0.3ms)[0m  SELECT "leituras".* FROM "leituras" WHERE "leituras"."id" = 4 LIMIT 1
+  [1m[36mLeitura Load (0.3ms)[0m  [1mSELECT "leituras".* FROM "leituras" WHERE "leituras"."id" = 3 LIMIT 1[0m
+  [1m[35mLeitura Load (0.3ms)[0m  SELECT "leituras".* FROM "leituras" WHERE "leituras"."id" = 2 LIMIT 1
+  Rendered principal/index.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 32ms (Views: 24.7ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-07-22 20:01:42 -0300
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2013-07-22 20:01:42 -0300
+Served asset /twitter-bootstrap-static/bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-22 20:01:42 -0300
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-07-22 20:01:42 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2013-07-22 20:01:42 -0300
+Served asset /twitter-bootstrap-static/fontawesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/imoveis.css?body=1" for 127.0.0.1 at 2013-07-22 20:01:42 -0300
+Served asset /imoveis.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/principal.css?body=1" for 127.0.0.1 at 2013-07-22 20:01:42 -0300
+Served asset /principal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-07-22 20:01:42 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_scaffold.css?body=1" for 127.0.0.1 at 2013-07-22 20:01:42 -0300
+Served asset /active_scaffold.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:42 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:42 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:42 -0300
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:42 -0300
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:42 -0300
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:42 -0300
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:42 -0300
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:42 -0300
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:42 -0300
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:42 -0300
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:42 -0300
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:42 -0300
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:42 -0300
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:42 -0300
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:42 -0300
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:42 -0300
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:42 -0300
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/imoveis.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:42 -0300
+Served asset /imoveis.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/principal.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:42 -0300
+Served asset /principal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:42 -0300
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-timepicker-addon.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:42 -0300
+Served asset /jquery-ui-timepicker-addon.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/active_scaffold.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:42 -0300
+Served asset /jquery/active_scaffold.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/jquery.editinplace.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:42 -0300
+Served asset /jquery/jquery.editinplace.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/date_picker_bridge.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:42 -0300
+Served asset /jquery/date_picker_bridge.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/draggable_lists.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:42 -0300
+Served asset /jquery/draggable_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_scaffold.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:42 -0300
+Served asset /active_scaffold.js - 304 Not Modified (0ms)
+
+
+Started GET "/apartamentos" for 127.0.0.1 at 2013-07-22 20:01:48 -0300
+Processing by ApartamentosController#index as HTML
+  [1m[36mUsuario Load (0.6ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "apartamentos" 
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_header.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_column_headings.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_messages.html.erb (0.1ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_messages.html.erb (3.4ms)
+  [1m[36mApartamento Load (0.7ms)[0m  [1mSELECT "apartamentos".* FROM "apartamentos" ORDER BY "apartamentos"."id" ASC LIMIT 15 OFFSET 0[0m
+  [1m[35mImovel Load (0.9ms)[0m  SELECT "imoveis".* FROM "imoveis" WHERE "imoveis"."id" IN (1)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_record.html.erb (8.6ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_pagination.html.erb (0.2ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list.html.erb (82.2ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_with_header.html.erb (90.3ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/list.html.erb within layouts/application (93.0ms)
+Completed 200 OK in 114ms (Views: 104.7ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-07-22 20:01:49 -0300
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2013-07-22 20:01:49 -0300
+Served asset /twitter-bootstrap-static/fontawesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-07-22 20:01:49 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-22 20:01:49 -0300
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/imoveis.css?body=1" for 127.0.0.1 at 2013-07-22 20:01:49 -0300
+Served asset /imoveis.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2013-07-22 20:01:49 -0300
+Served asset /twitter-bootstrap-static/bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/principal.css?body=1" for 127.0.0.1 at 2013-07-22 20:01:49 -0300
+Served asset /principal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-07-22 20:01:49 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_scaffold.css?body=1" for 127.0.0.1 at 2013-07-22 20:01:49 -0300
+Served asset /active_scaffold.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:49 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:49 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:49 -0300
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:49 -0300
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:49 -0300
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:49 -0300
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:49 -0300
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:49 -0300
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:49 -0300
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:49 -0300
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:49 -0300
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:49 -0300
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:49 -0300
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:49 -0300
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:49 -0300
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:49 -0300
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:49 -0300
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/imoveis.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:49 -0300
+Served asset /imoveis.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/principal.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:49 -0300
+Served asset /principal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:49 -0300
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-timepicker-addon.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:49 -0300
+Served asset /jquery-ui-timepicker-addon.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/active_scaffold.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:49 -0300
+Served asset /jquery/active_scaffold.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/jquery.editinplace.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:49 -0300
+Served asset /jquery/jquery.editinplace.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/date_picker_bridge.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:49 -0300
+Served asset /jquery/date_picker_bridge.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/draggable_lists.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:49 -0300
+Served asset /jquery/draggable_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_scaffold.js?body=1" for 127.0.0.1 at 2013-07-22 20:01:49 -0300
+Served asset /active_scaffold.js - 304 Not Modified (0ms)
+
+
+Started GET "/apartamentos/new" for 127.0.0.1 at 2013-07-22 20:01:51 -0300
+Processing by ApartamentosController#new as JS
+  [1m[36mUsuario Load (0.6ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = 1 LIMIT 1[0m
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_form_messages.html.erb (0.3ms)
+  [1m[35mImovel Load (0.6ms)[0m  SELECT "imoveis".* FROM "imoveis" 
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_form.html.erb (8.3ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_base_form.html.erb (17.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_create_form.html.erb (22.7ms)
+Completed 200 OK in 35ms (Views: 26.8ms | ActiveRecord: 1.1ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-22 20:03:42 -0300
+Processing by PrincipalController#index as HTML
+  [1m[36mUsuario Load (1.0ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = 1 LIMIT 1[0m
+  [1m[35mApartamento Load (0.4ms)[0m  SELECT "apartamentos".* FROM "apartamentos" WHERE "apartamentos"."id" = 1 LIMIT 1
+  [1m[36mApartamentoLeitura Load (1.1ms)[0m  [1mSELECT "apartamentos_leituras".* FROM "apartamentos_leituras" WHERE "apartamentos_leituras"."apartamento_id" = 1 ORDER BY created_at DESC[0m
+  [1m[35mLeitura Load (0.5ms)[0m  SELECT "leituras".* FROM "leituras" WHERE "leituras"."id" = 9 LIMIT 1
+  [1m[36mLeitura Load (0.5ms)[0m  [1mSELECT "leituras".* FROM "leituras" WHERE "leituras"."id" = 8 LIMIT 1[0m
+  [1m[35mLeitura Load (0.4ms)[0m  SELECT "leituras".* FROM "leituras" WHERE "leituras"."id" = 7 LIMIT 1
+  [1m[36mLeitura Load (0.3ms)[0m  [1mSELECT "leituras".* FROM "leituras" WHERE "leituras"."id" = 6 LIMIT 1[0m
+  [1m[35mLeitura Load (0.5ms)[0m  SELECT "leituras".* FROM "leituras" WHERE "leituras"."id" = 5 LIMIT 1
+  [1m[36mLeitura Load (0.4ms)[0m  [1mSELECT "leituras".* FROM "leituras" WHERE "leituras"."id" = 4 LIMIT 1[0m
+  [1m[35mLeitura Load (0.3ms)[0m  SELECT "leituras".* FROM "leituras" WHERE "leituras"."id" = 3 LIMIT 1
+  [1m[36mLeitura Load (0.4ms)[0m  [1mSELECT "leituras".* FROM "leituras" WHERE "leituras"."id" = 2 LIMIT 1[0m
+  Rendered principal/index.html.erb within layouts/application (1991.1ms)
+Compiled bootstrap-responsive.css  (0ms)  (pid 6249)
+Compiled bootstrap.css  (0ms)  (pid 6249)
+Compiled twitter-bootstrap-static/bootstrap.css  (38ms)  (pid 6249)
+Compiled twitter-bootstrap-static/fontawesome.css  (22ms)  (pid 6249)
+Compiled bootstrap_and_overrides.css  (105ms)  (pid 6249)
+Compiled imoveis.css  (36ms)  (pid 6249)
+Compiled principal.css  (1ms)  (pid 6249)
+Compiled scaffolds.css  (14ms)  (pid 6249)
+Compiled active_scaffold_layout.css  (0ms)  (pid 6249)
+Compiled jquery-ui.css  (0ms)  (pid 6249)
+Compiled active_scaffold_extensions.css  (55ms)  (pid 6249)
+Compiled active_scaffold.css  (770ms)  (pid 6249)
+Compiled application.css  (983ms)  (pid 6249)
+Compiled jquery.js  (1ms)  (pid 6249)
+Compiled jquery_ujs.js  (0ms)  (pid 6249)
+Compiled twitter/bootstrap/bootstrap-transition.js  (0ms)  (pid 6249)
+Compiled twitter/bootstrap/bootstrap-alert.js  (0ms)  (pid 6249)
+Compiled twitter/bootstrap/bootstrap-modal.js  (0ms)  (pid 6249)
+Compiled twitter/bootstrap/bootstrap-dropdown.js  (0ms)  (pid 6249)
+Compiled twitter/bootstrap/bootstrap-scrollspy.js  (0ms)  (pid 6249)
+Compiled twitter/bootstrap/bootstrap-tab.js  (0ms)  (pid 6249)
+Compiled twitter/bootstrap/bootstrap-tooltip.js  (0ms)  (pid 6249)
+Compiled twitter/bootstrap/bootstrap-popover.js  (0ms)  (pid 6249)
+Compiled twitter/bootstrap/bootstrap-button.js  (0ms)  (pid 6249)
+Compiled twitter/bootstrap/bootstrap-collapse.js  (0ms)  (pid 6249)
+Compiled twitter/bootstrap/bootstrap-carousel.js  (0ms)  (pid 6249)
+Compiled twitter/bootstrap/bootstrap-typeahead.js  (0ms)  (pid 6249)
+Compiled twitter/bootstrap/bootstrap-affix.js  (0ms)  (pid 6249)
+Compiled twitter/bootstrap.js  (160ms)  (pid 6249)
+Compiled bootstrap.js  (179ms)  (pid 6249)
+Compiled imoveis.js  (166ms)  (pid 6249)
+Compiled principal.js  (150ms)  (pid 6249)
+Compiled jquery-ui.js  (6ms)  (pid 6249)
+Compiled jquery-ui-timepicker-addon.js  (0ms)  (pid 6249)
+Compiled jquery/active_scaffold.js  (0ms)  (pid 6249)
+Compiled jquery/jquery.editinplace.js  (0ms)  (pid 6249)
+ActiveScaffold: Missing date picker localization for your locale: af
+ActiveScaffold: Missing date picker localization for your locale: ar
+ActiveScaffold: Missing date picker localization for your locale: az
+ActiveScaffold: Missing date picker localization for your locale: bg
+ActiveScaffold: Missing date picker localization for your locale: bn
+ActiveScaffold: Missing date picker localization for your locale: bs
+ActiveScaffold: Missing date picker localization for your locale: ca
+ActiveScaffold: Missing date picker localization for your locale: cs
+ActiveScaffold: Missing date picker localization for your locale: cy
+ActiveScaffold: Missing date picker localization for your locale: da
+ActiveScaffold: Missing date picker localization for your locale: de-AT
+ActiveScaffold: Missing date picker localization for your locale: de-CH
+ActiveScaffold: Missing date picker localization for your locale: el
+ActiveScaffold: Missing date picker localization for your locale: en-AU
+ActiveScaffold: Missing date picker localization for your locale: en-CA
+ActiveScaffold: Missing date picker localization for your locale: en-GB
+ActiveScaffold: Missing date picker localization for your locale: en-IN
+ActiveScaffold: Missing date picker localization for your locale: eo
+ActiveScaffold: Missing date picker localization for your locale: es-419
+ActiveScaffold: Missing date picker localization for your locale: es-AR
+ActiveScaffold: Missing date picker localization for your locale: es-CL
+ActiveScaffold: Missing date picker localization for your locale: es-CO
+ActiveScaffold: Missing date picker localization for your locale: es-MX
+ActiveScaffold: Missing date picker localization for your locale: es-PE
+ActiveScaffold: Missing date picker localization for your locale: es-VE
+ActiveScaffold: Missing date picker localization for your locale: et
+ActiveScaffold: Missing date picker localization for your locale: eu
+ActiveScaffold: Missing date picker localization for your locale: fa
+ActiveScaffold: Missing date picker localization for your locale: fi
+ActiveScaffold: Missing date picker localization for your locale: fr-CA
+ActiveScaffold: Missing date picker localization for your locale: fr-CH
+ActiveScaffold: Missing date picker localization for your locale: gl
+ActiveScaffold: Missing date picker localization for your locale: he
+ActiveScaffold: Missing date picker localization for your locale: hi-IN
+ActiveScaffold: Missing date picker localization for your locale: hi
+ActiveScaffold: Missing date picker localization for your locale: hr
+ActiveScaffold: Missing date picker localization for your locale: id
+ActiveScaffold: Missing date picker localization for your locale: is
+ActiveScaffold: Missing date picker localization for your locale: it-CH
+ActiveScaffold: Missing date picker localization for your locale: it
+ActiveScaffold: Missing date picker localization for your locale: kn
+ActiveScaffold: Missing date picker localization for your locale: ko
+ActiveScaffold: Missing date picker localization for your locale: lo
+ActiveScaffold: Missing date picker localization for your locale: lt
+ActiveScaffold: Missing date picker localization for your locale: lv
+ActiveScaffold: Missing date picker localization for your locale: mk
+ActiveScaffold: Missing date picker localization for your locale: mn
+ActiveScaffold: Missing date picker localization for your locale: nb
+ActiveScaffold: Missing date picker localization for your locale: ne
+ActiveScaffold: Missing date picker localization for your locale: nl
+ActiveScaffold: Missing date picker localization for your locale: nn
+ActiveScaffold: Missing date picker localization for your locale: pl
+ActiveScaffold: Missing date picker localization for your locale: pt-BR
+ActiveScaffold: Missing date picker localization for your locale: pt
+ActiveScaffold: Missing date picker localization for your locale: rm
+ActiveScaffold: Missing date picker localization for your locale: ro
+ActiveScaffold: Missing date picker localization for your locale: sk
+ActiveScaffold: Missing date picker localization for your locale: sl
+ActiveScaffold: Missing date picker localization for your locale: sr
+ActiveScaffold: Missing date picker localization for your locale: sv
+ActiveScaffold: Missing date picker localization for your locale: sw
+ActiveScaffold: Missing date picker localization for your locale: th
+ActiveScaffold: Missing date picker localization for your locale: tl
+ActiveScaffold: Missing date picker localization for your locale: tr
+ActiveScaffold: Missing date picker localization for your locale: uk
+ActiveScaffold: Missing date picker localization for your locale: uz
+ActiveScaffold: Missing date picker localization for your locale: vi
+ActiveScaffold: Missing date picker localization for your locale: wo
+ActiveScaffold: Missing date picker localization for your locale: zh-CN
+ActiveScaffold: Missing date picker localization for your locale: zh-TW
+ActiveScaffold: Missing datetime picker localization for your locale: en
+ActiveScaffold: Missing datetime picker localization for your locale: hu
+ActiveScaffold: Missing datetime picker localization for your locale: ja
+ActiveScaffold: Missing datetime picker localization for your locale: pt-BR
+ActiveScaffold: Missing datetime picker localization for your locale: ru
+Compiled jquery/date_picker_bridge.js  (149ms)  (pid 6249)
+Compiled jquery/draggable_lists.js  (0ms)  (pid 6249)
+Compiled active_scaffold.js  (280ms)  (pid 6249)
+Compiled application.js  (1051ms)  (pid 6249)
+Completed 200 OK in 4383ms (Views: 4284.6ms | ActiveRecord: 28.0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-07-22 20:03:47 -0300
+Served asset /bootstrap-responsive.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2013-07-22 20:03:47 -0300
+Served asset /twitter-bootstrap-static/fontawesome.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-07-22 20:03:47 -0300
+Served asset /bootstrap.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2013-07-22 20:03:47 -0300
+Served asset /twitter-bootstrap-static/bootstrap.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-22 20:03:47 -0300
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/imoveis.css?body=1" for 127.0.0.1 at 2013-07-22 20:03:47 -0300
+Served asset /imoveis.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/principal.css?body=1" for 127.0.0.1 at 2013-07-22 20:03:47 -0300
+Served asset /principal.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-07-22 20:03:47 -0300
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/active_scaffold.css?body=1" for 127.0.0.1 at 2013-07-22 20:03:47 -0300
+Served asset /active_scaffold.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:47 -0300
+Served asset /jquery.js - 304 Not Modified (37ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:47 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:47 -0300
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:47 -0300
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:47 -0300
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:47 -0300
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:47 -0300
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:47 -0300
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:47 -0300
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:47 -0300
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:47 -0300
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:47 -0300
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:47 -0300
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:47 -0300
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:47 -0300
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:47 -0300
+Served asset /twitter/bootstrap.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:47 -0300
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/imoveis.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:47 -0300
+Served asset /imoveis.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/principal.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:47 -0300
+Served asset /principal.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:47 -0300
+Served asset /jquery-ui.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery-ui-timepicker-addon.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:47 -0300
+Served asset /jquery-ui-timepicker-addon.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery/active_scaffold.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:47 -0300
+Served asset /jquery/active_scaffold.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery/jquery.editinplace.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:47 -0300
+Served asset /jquery/jquery.editinplace.js - 304 Not Modified (47ms)
+
+
+Started GET "/assets/jquery/date_picker_bridge.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:47 -0300
+Served asset /jquery/date_picker_bridge.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery/draggable_lists.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:47 -0300
+Served asset /jquery/draggable_lists.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_scaffold.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:47 -0300
+Served asset /active_scaffold.js - 304 Not Modified (9ms)
+
+
+Started GET "/apartamentos" for 127.0.0.1 at 2013-07-22 20:03:57 -0300
+Processing by ApartamentosController#index as HTML
+  [1m[35mUsuario Load (0.5ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = 1 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "apartamentos" [0m
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_header.html.erb (4.3ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_column_headings.html.erb (8.0ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_messages.html.erb (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_messages.html.erb (4.5ms)
+  [1m[35mApartamento Load (0.7ms)[0m  SELECT "apartamentos".* FROM "apartamentos" ORDER BY "apartamentos"."id" ASC LIMIT 15 OFFSET 0
+  [1m[36mImovel Load (0.5ms)[0m  [1mSELECT "imoveis".* FROM "imoveis" WHERE "imoveis"."id" IN (1)[0m
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_record.html.erb (10.2ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_pagination.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list.html.erb (82.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_with_header.html.erb (93.5ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/list.html.erb within layouts/application (101.1ms)
+Completed 200 OK in 129ms (Views: 115.3ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-07-22 20:03:57 -0300
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-07-22 20:03:57 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2013-07-22 20:03:57 -0300
+Served asset /twitter-bootstrap-static/bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-22 20:03:57 -0300
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2013-07-22 20:03:57 -0300
+Served asset /twitter-bootstrap-static/fontawesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/imoveis.css?body=1" for 127.0.0.1 at 2013-07-22 20:03:57 -0300
+Served asset /imoveis.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/principal.css?body=1" for 127.0.0.1 at 2013-07-22 20:03:57 -0300
+Served asset /principal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-07-22 20:03:57 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_scaffold.css?body=1" for 127.0.0.1 at 2013-07-22 20:03:57 -0300
+Served asset /active_scaffold.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:57 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:57 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:57 -0300
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:57 -0300
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:57 -0300
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:57 -0300
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:57 -0300
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:57 -0300
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:57 -0300
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:57 -0300
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:57 -0300
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:57 -0300
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:57 -0300
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:57 -0300
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:57 -0300
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:57 -0300
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:57 -0300
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/imoveis.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:57 -0300
+Served asset /imoveis.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/principal.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:57 -0300
+Served asset /principal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:57 -0300
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-timepicker-addon.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:57 -0300
+Served asset /jquery-ui-timepicker-addon.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/active_scaffold.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:57 -0300
+Served asset /jquery/active_scaffold.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/jquery.editinplace.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:57 -0300
+Served asset /jquery/jquery.editinplace.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/date_picker_bridge.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:57 -0300
+Served asset /jquery/date_picker_bridge.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/draggable_lists.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:57 -0300
+Served asset /jquery/draggable_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_scaffold.js?body=1" for 127.0.0.1 at 2013-07-22 20:03:57 -0300
+Served asset /active_scaffold.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_scaffold/indicator.gif" for 127.0.0.1 at 2013-07-22 20:03:57 -0300
+Served asset /active_scaffold/indicator.gif - 304 Not Modified (11ms)
+
+
+Started GET "/assets/active_scaffold/add.png" for 127.0.0.1 at 2013-07-22 20:03:57 -0300
+Served asset /active_scaffold/add.png - 304 Not Modified (6ms)
+
+
+Started GET "/assets/active_scaffold/magnifier.png" for 127.0.0.1 at 2013-07-22 20:03:57 -0300
+Served asset /active_scaffold/magnifier.png - 304 Not Modified (8ms)
+
+
+Started GET "/apartamentos/new" for 127.0.0.1 at 2013-07-22 20:03:59 -0300
+Processing by ApartamentosController#new as JS
+  [1m[35mUsuario Load (0.6ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = 1 LIMIT 1
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_form_messages.html.erb (0.9ms)
+  [1m[36mImovel Load (0.4ms)[0m  [1mSELECT "imoveis".* FROM "imoveis" [0m
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_form.html.erb (9.4ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_base_form.html.erb (21.2ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_create_form.html.erb (26.2ms)
+Completed 200 OK in 37ms (Views: 31.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/apartamentos" for 127.0.0.1 at 2013-07-22 20:04:04 -0300
+Processing by ApartamentosController#index as HTML
+  [1m[35mUsuario Load (0.4ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = 1 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "apartamentos" [0m
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_header.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_column_headings.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_messages.html.erb (0.1ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_messages.html.erb (3.0ms)
+  [1m[35mApartamento Load (0.4ms)[0m  SELECT "apartamentos".* FROM "apartamentos" ORDER BY "apartamentos"."id" ASC LIMIT 15 OFFSET 0
+  [1m[36mImovel Load (0.5ms)[0m  [1mSELECT "imoveis".* FROM "imoveis" WHERE "imoveis"."id" IN (1)[0m
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_record.html.erb (7.6ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_pagination.html.erb (0.2ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list.html.erb (24.8ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_with_header.html.erb (31.3ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/list.html.erb within layouts/application (33.6ms)
+Completed 200 OK in 52ms (Views: 46.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-07-22 20:04:04 -0300
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-22 20:04:04 -0300
+Served asset /application.css - 200 OK (12ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-07-22 20:04:04 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-22 20:04:04 -0300
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2013-07-22 20:04:04 -0300
+Served asset /twitter-bootstrap-static/fontawesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2013-07-22 20:04:04 -0300
+Served asset /twitter-bootstrap-static/bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/imoveis.css?body=1" for 127.0.0.1 at 2013-07-22 20:04:04 -0300
+Served asset /imoveis.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/principal.css?body=1" for 127.0.0.1 at 2013-07-22 20:04:04 -0300
+Served asset /principal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-07-22 20:04:04 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_scaffold.css?body=1" for 127.0.0.1 at 2013-07-22 20:04:04 -0300
+Served asset /active_scaffold.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:04 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:04 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:04 -0300
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:04 -0300
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:04 -0300
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:04 -0300
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:04 -0300
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:04 -0300
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:04 -0300
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:04 -0300
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:04 -0300
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:04 -0300
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:04 -0300
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:04 -0300
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:04 -0300
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:04 -0300
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:04 -0300
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/imoveis.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:04 -0300
+Served asset /imoveis.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/principal.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:04 -0300
+Served asset /principal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:04 -0300
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-timepicker-addon.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:04 -0300
+Served asset /jquery-ui-timepicker-addon.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/active_scaffold.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:04 -0300
+Served asset /jquery/active_scaffold.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/jquery.editinplace.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:04 -0300
+Served asset /jquery/jquery.editinplace.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/date_picker_bridge.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:04 -0300
+Served asset /jquery/date_picker_bridge.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/draggable_lists.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:04 -0300
+Served asset /jquery/draggable_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_scaffold.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:04 -0300
+Served asset /active_scaffold.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_scaffold/indicator.gif" for 127.0.0.1 at 2013-07-22 20:04:04 -0300
+Served asset /active_scaffold/indicator.gif - 304 Not Modified (0ms)
+
+
+Started GET "/apartamentos" for 127.0.0.1 at 2013-07-22 20:04:05 -0300
+Processing by ApartamentosController#index as HTML
+  [1m[35mUsuario Load (0.5ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = 1 LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "apartamentos" [0m
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_header.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_column_headings.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_messages.html.erb (0.1ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_messages.html.erb (3.6ms)
+  [1m[35mApartamento Load (0.5ms)[0m  SELECT "apartamentos".* FROM "apartamentos" ORDER BY "apartamentos"."id" ASC LIMIT 15 OFFSET 0
+  [1m[36mImovel Load (0.5ms)[0m  [1mSELECT "imoveis".* FROM "imoveis" WHERE "imoveis"."id" IN (1)[0m
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_record.html.erb (7.5ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_pagination.html.erb (0.2ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list.html.erb (26.0ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_with_header.html.erb (33.1ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/list.html.erb within layouts/application (35.6ms)
+Completed 200 OK in 55ms (Views: 49.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-22 20:04:05 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-07-22 20:04:05 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-07-22 20:04:05 -0300
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2013-07-22 20:04:05 -0300
+Served asset /twitter-bootstrap-static/bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-22 20:04:05 -0300
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2013-07-22 20:04:05 -0300
+Served asset /twitter-bootstrap-static/fontawesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/imoveis.css?body=1" for 127.0.0.1 at 2013-07-22 20:04:05 -0300
+Served asset /imoveis.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/principal.css?body=1" for 127.0.0.1 at 2013-07-22 20:04:05 -0300
+Served asset /principal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-07-22 20:04:05 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_scaffold.css?body=1" for 127.0.0.1 at 2013-07-22 20:04:05 -0300
+Served asset /active_scaffold.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:05 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:05 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:05 -0300
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:05 -0300
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:05 -0300
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:05 -0300
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:05 -0300
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:05 -0300
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:05 -0300
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:05 -0300
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:05 -0300
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:05 -0300
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:05 -0300
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:05 -0300
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:05 -0300
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:05 -0300
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:05 -0300
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/imoveis.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:05 -0300
+Served asset /imoveis.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/principal.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:05 -0300
+Served asset /principal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:05 -0300
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-timepicker-addon.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:05 -0300
+Served asset /jquery-ui-timepicker-addon.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/active_scaffold.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:05 -0300
+Served asset /jquery/active_scaffold.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/jquery.editinplace.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:05 -0300
+Served asset /jquery/jquery.editinplace.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:05 -0300
+Served asset /application.js - 200 OK (28ms)
+
+
+Started GET "/assets/jquery/draggable_lists.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:05 -0300
+Served asset /jquery/draggable_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_scaffold.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:05 -0300
+Served asset /active_scaffold.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/date_picker_bridge.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:05 -0300
+Served asset /jquery/date_picker_bridge.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_scaffold/indicator.gif" for 127.0.0.1 at 2013-07-22 20:04:05 -0300
+Served asset /active_scaffold/indicator.gif - 304 Not Modified (0ms)
+
+
+Started GET "/apartamentos/new" for 127.0.0.1 at 2013-07-22 20:04:07 -0300
+Processing by ApartamentosController#new as JS
+  [1m[35mUsuario Load (0.5ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = 1 LIMIT 1
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_form_messages.html.erb (0.2ms)
+  [1m[36mImovel Load (0.5ms)[0m  [1mSELECT "imoveis".* FROM "imoveis" [0m
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_form.html.erb (8.0ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_base_form.html.erb (16.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_create_form.html.erb (21.0ms)
+Completed 200 OK in 28ms (Views: 23.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/apartamentos/1/edit" for 127.0.0.1 at 2013-07-22 20:04:10 -0300
+Processing by ApartamentosController#edit as JS
+  Parameters: {"id"=>"1"}
+  [1m[35mUsuario Load (0.5ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = 1 LIMIT 1
+  [1m[36mApartamento Load (0.9ms)[0m  [1mSELECT "apartamentos".* FROM "apartamentos" WHERE "apartamentos"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_form_messages.html.erb (0.3ms)
+  [1m[35mImovel Load (0.5ms)[0m  SELECT "imoveis".* FROM "imoveis" WHERE "imoveis"."id" = 1 LIMIT 1
+  [1m[36mImovel Load (0.3ms)[0m  [1mSELECT "imoveis".* FROM "imoveis" [0m
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_form.html.erb (8.6ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_base_form.html.erb (17.3ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_update_form.html.erb (22.3ms)
+Completed 200 OK in 67ms (Views: 61.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/apartamentos/1?adapter=_list_inline_adapter" for 127.0.0.1 at 2013-07-22 20:04:11 -0300
+Processing by ApartamentosController#show as JS
+  Parameters: {"adapter"=>"_list_inline_adapter", "id"=>"1"}
+  [1m[35mUsuario Load (0.6ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = 1 LIMIT 1
+  [1m[36mApartamento Load (0.3ms)[0m  [1mSELECT "apartamentos".* FROM "apartamentos" WHERE "apartamentos"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35mImovel Load (0.4ms)[0m  SELECT "imoveis".* FROM "imoveis" WHERE "imoveis"."id" IN (1)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_show_columns.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_show.html.erb (17.1ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_messages.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_inline_adapter.html.erb (5.9ms)
+Completed 200 OK in 71ms (Views: 10.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/apartamentos/show_search?adapter=_list_inline_adapter" for 127.0.0.1 at 2013-07-22 20:04:36 -0300
+Processing by ApartamentosController#show_search as JS
+  Parameters: {"adapter"=>"_list_inline_adapter"}
+  [1m[36mUsuario Load (0.4ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = 1 LIMIT 1[0m
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_search.html.erb (2.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_messages.html.erb (0.1ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_inline_adapter.html.erb (4.5ms)
+Completed 200 OK in 35ms (Views: 8.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/apartamentos" for 127.0.0.1 at 2013-07-22 20:04:46 -0300
+Processing by ApartamentosController#index as HTML
+  [1m[35mUsuario Load (0.6ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = 1 LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "apartamentos" [0m
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_header.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_column_headings.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_messages.html.erb (0.1ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_messages.html.erb (3.4ms)
+  [1m[35mApartamento Load (0.5ms)[0m  SELECT "apartamentos".* FROM "apartamentos" ORDER BY "apartamentos"."id" ASC LIMIT 15 OFFSET 0
+  [1m[36mImovel Load (0.3ms)[0m  [1mSELECT "imoveis".* FROM "imoveis" WHERE "imoveis"."id" IN (1)[0m
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_record.html.erb (7.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_pagination.html.erb (0.2ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list.html.erb (25.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_with_header.html.erb (33.2ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/list.html.erb within layouts/application (35.7ms)
+Completed 200 OK in 55ms (Views: 49.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-22 20:04:46 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-07-22 20:04:46 -0300
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2013-07-22 20:04:46 -0300
+Served asset /twitter-bootstrap-static/fontawesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2013-07-22 20:04:46 -0300
+Served asset /twitter-bootstrap-static/bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-22 20:04:46 -0300
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-07-22 20:04:46 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/imoveis.css?body=1" for 127.0.0.1 at 2013-07-22 20:04:46 -0300
+Served asset /imoveis.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/principal.css?body=1" for 127.0.0.1 at 2013-07-22 20:04:46 -0300
+Served asset /principal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-07-22 20:04:46 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_scaffold.css?body=1" for 127.0.0.1 at 2013-07-22 20:04:46 -0300
+Served asset /active_scaffold.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:46 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:46 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:46 -0300
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:46 -0300
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:46 -0300
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:46 -0300
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:46 -0300
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:47 -0300
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:47 -0300
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:47 -0300
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:47 -0300
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:47 -0300
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:47 -0300
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:47 -0300
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:47 -0300
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:47 -0300
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:47 -0300
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/imoveis.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:47 -0300
+Served asset /imoveis.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/principal.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:47 -0300
+Served asset /principal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:47 -0300
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-timepicker-addon.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:47 -0300
+Served asset /jquery-ui-timepicker-addon.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/active_scaffold.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:47 -0300
+Served asset /jquery/active_scaffold.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/jquery.editinplace.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:47 -0300
+Served asset /jquery/jquery.editinplace.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/date_picker_bridge.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:47 -0300
+Served asset /jquery/date_picker_bridge.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/draggable_lists.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:47 -0300
+Served asset /jquery/draggable_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_scaffold.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:47 -0300
+Served asset /active_scaffold.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:47 -0300
+Served asset /application.js - 200 OK (2ms)
+
+
+Started GET "/assets/active_scaffold/indicator.gif" for 127.0.0.1 at 2013-07-22 20:04:47 -0300
+Served asset /active_scaffold/indicator.gif - 304 Not Modified (0ms)
+
+
+Started GET "/apartamentos" for 127.0.0.1 at 2013-07-22 20:04:50 -0300
+Processing by ApartamentosController#index as HTML
+  [1m[35mUsuario Load (0.7ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = 1 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "apartamentos" [0m
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_header.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_column_headings.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_messages.html.erb (0.2ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_messages.html.erb (4.0ms)
+  [1m[35mApartamento Load (0.4ms)[0m  SELECT "apartamentos".* FROM "apartamentos" ORDER BY "apartamentos"."id" ASC LIMIT 15 OFFSET 0
+  [1m[36mImovel Load (0.4ms)[0m  [1mSELECT "imoveis".* FROM "imoveis" WHERE "imoveis"."id" IN (1)[0m
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_record.html.erb (11.8ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_pagination.html.erb (0.2ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list.html.erb (38.4ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_with_header.html.erb (47.0ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/list.html.erb within layouts/application (51.0ms)
+Completed 200 OK in 128ms (Views: 68.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-07-22 20:04:50 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2013-07-22 20:04:50 -0300
+Served asset /twitter-bootstrap-static/fontawesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-22 20:04:50 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2013-07-22 20:04:50 -0300
+Served asset /twitter-bootstrap-static/bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-22 20:04:50 -0300
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-07-22 20:04:50 -0300
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/imoveis.css?body=1" for 127.0.0.1 at 2013-07-22 20:04:50 -0300
+Served asset /imoveis.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/principal.css?body=1" for 127.0.0.1 at 2013-07-22 20:04:50 -0300
+Served asset /principal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-07-22 20:04:50 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_scaffold.css?body=1" for 127.0.0.1 at 2013-07-22 20:04:50 -0300
+Served asset /active_scaffold.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:50 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:50 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:50 -0300
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:50 -0300
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:51 -0300
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:51 -0300
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:51 -0300
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:51 -0300
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:51 -0300
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:51 -0300
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:51 -0300
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:51 -0300
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:51 -0300
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:51 -0300
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/imoveis.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:51 -0300
+Served asset /imoveis.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:51 -0300
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:51 -0300
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:51 -0300
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/principal.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:51 -0300
+Served asset /principal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:51 -0300
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-timepicker-addon.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:51 -0300
+Served asset /jquery-ui-timepicker-addon.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/active_scaffold.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:51 -0300
+Served asset /jquery/active_scaffold.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/jquery.editinplace.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:51 -0300
+Served asset /jquery/jquery.editinplace.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/draggable_lists.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:51 -0300
+Served asset /jquery/draggable_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_scaffold.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:51 -0300
+Served asset /active_scaffold.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/date_picker_bridge.js?body=1" for 127.0.0.1 at 2013-07-22 20:04:51 -0300
+Served asset /jquery/date_picker_bridge.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_scaffold/indicator.gif" for 127.0.0.1 at 2013-07-22 20:04:51 -0300
+Served asset /active_scaffold/indicator.gif - 304 Not Modified (0ms)
+
+
+Started GET "/apartamentos/new" for 127.0.0.1 at 2013-07-22 20:05:03 -0300
+Processing by ApartamentosController#new as JS
+  [1m[35mUsuario Load (0.6ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = 1 LIMIT 1
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_form_messages.html.erb (0.2ms)
+  [1m[36mImovel Load (0.4ms)[0m  [1mSELECT "imoveis".* FROM "imoveis" [0m
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_form.html.erb (7.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_base_form.html.erb (17.0ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_create_form.html.erb (20.7ms)
+Completed 200 OK in 28ms (Views: 23.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/apartamentos" for 127.0.0.1 at 2013-07-22 20:06:29 -0300
+Processing by ApartamentosController#index as HTML
+  [1m[35mUsuario Load (0.4ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = 1 LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "apartamentos" [0m
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_header.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_column_headings.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_messages.html.erb (0.0ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_messages.html.erb (3.1ms)
+  [1m[35mApartamento Load (0.6ms)[0m  SELECT "apartamentos".* FROM "apartamentos" ORDER BY "apartamentos"."id" ASC LIMIT 15 OFFSET 0
+  [1m[36mImovel Load (0.4ms)[0m  [1mSELECT "imoveis".* FROM "imoveis" WHERE "imoveis"."id" IN (1)[0m
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_record.html.erb (44.0ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_pagination.html.erb (0.2ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list.html.erb (63.5ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_with_header.html.erb (69.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/list.html.erb within layouts/application (72.3ms)
+Completed 200 OK in 91ms (Views: 85.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-22 20:06:29 -0300
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2013-07-22 20:06:29 -0300
+Served asset /twitter-bootstrap-static/fontawesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-07-22 20:06:29 -0300
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2013-07-22 20:06:29 -0300
+Served asset /twitter-bootstrap-static/bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-22 20:06:29 -0300
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-07-22 20:06:29 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/imoveis.css?body=1" for 127.0.0.1 at 2013-07-22 20:06:29 -0300
+Served asset /imoveis.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/principal.css?body=1" for 127.0.0.1 at 2013-07-22 20:06:29 -0300
+Served asset /principal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-07-22 20:06:29 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_scaffold.css?body=1" for 127.0.0.1 at 2013-07-22 20:06:29 -0300
+Served asset /active_scaffold.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-22 20:06:29 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-22 20:06:29 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-22 20:06:29 -0300
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-22 20:06:29 -0300
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-22 20:06:29 -0300
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-22 20:06:29 -0300
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-22 20:06:30 -0300
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-22 20:06:30 -0300
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-22 20:06:30 -0300
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-22 20:06:30 -0300
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-22 20:06:30 -0300
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-22 20:06:30 -0300
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-22 20:06:30 -0300
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-22 20:06:30 -0300
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-22 20:06:30 -0300
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-22 20:06:30 -0300
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-22 20:06:30 -0300
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/imoveis.js?body=1" for 127.0.0.1 at 2013-07-22 20:06:30 -0300
+Served asset /imoveis.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/principal.js?body=1" for 127.0.0.1 at 2013-07-22 20:06:30 -0300
+Served asset /principal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-07-22 20:06:30 -0300
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-timepicker-addon.js?body=1" for 127.0.0.1 at 2013-07-22 20:06:30 -0300
+Served asset /jquery-ui-timepicker-addon.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/active_scaffold.js?body=1" for 127.0.0.1 at 2013-07-22 20:06:30 -0300
+Served asset /jquery/active_scaffold.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/jquery.editinplace.js?body=1" for 127.0.0.1 at 2013-07-22 20:06:30 -0300
+Served asset /jquery/jquery.editinplace.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/date_picker_bridge.js?body=1" for 127.0.0.1 at 2013-07-22 20:06:30 -0300
+Served asset /jquery/date_picker_bridge.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/draggable_lists.js?body=1" for 127.0.0.1 at 2013-07-22 20:06:30 -0300
+Served asset /jquery/draggable_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_scaffold.js?body=1" for 127.0.0.1 at 2013-07-22 20:06:30 -0300
+Served asset /active_scaffold.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-22 20:06:30 -0300
+Served asset /application.js - 200 OK (1ms)
+
+
+Started GET "/assets/active_scaffold/indicator.gif" for 127.0.0.1 at 2013-07-22 20:06:30 -0300
+Served asset /active_scaffold/indicator.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-timepicker-addon.js?body=1" for 127.0.0.1 at 2013-07-22 20:06:30 -0300
+Served asset /jquery-ui-timepicker-addon.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/active_scaffold.js?body=1" for 127.0.0.1 at 2013-07-22 20:06:30 -0300
+Served asset /jquery/active_scaffold.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/jquery.editinplace.js?body=1" for 127.0.0.1 at 2013-07-22 20:06:30 -0300
+Served asset /jquery/jquery.editinplace.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/date_picker_bridge.js?body=1" for 127.0.0.1 at 2013-07-22 20:06:30 -0300
+Served asset /jquery/date_picker_bridge.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/draggable_lists.js?body=1" for 127.0.0.1 at 2013-07-22 20:06:30 -0300
+Served asset /jquery/draggable_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_scaffold.js?body=1" for 127.0.0.1 at 2013-07-22 20:06:30 -0300
+Served asset /active_scaffold.js - 304 Not Modified (0ms)
+
+
+Started GET "/apartamentos/1/edit" for 127.0.0.1 at 2013-07-22 20:06:32 -0300
+Processing by ApartamentosController#edit as JS
+  Parameters: {"id"=>"1"}
+  [1m[35mUsuario Load (0.7ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = 1 LIMIT 1
+  [1m[36mApartamento Load (0.3ms)[0m  [1mSELECT "apartamentos".* FROM "apartamentos" WHERE "apartamentos"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_form_messages.html.erb (0.3ms)
+  [1m[35mImovel Load (0.5ms)[0m  SELECT "imoveis".* FROM "imoveis" WHERE "imoveis"."id" = 1 LIMIT 1
+  [1m[36mImovel Load (0.3ms)[0m  [1mSELECT "imoveis".* FROM "imoveis" [0m
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_form.html.erb (11.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_base_form.html.erb (22.4ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_update_form.html.erb (27.8ms)
+Completed 200 OK in 38ms (Views: 32.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/apartamentos" for 127.0.0.1 at 2013-07-22 20:08:20 -0300
+Processing by ApartamentosController#index as HTML
+  [1m[35mUsuario Load (0.4ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = 1 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "apartamentos" [0m
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_header.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_column_headings.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_messages.html.erb (0.1ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_messages.html.erb (4.3ms)
+  [1m[35mApartamento Load (0.4ms)[0m  SELECT "apartamentos".* FROM "apartamentos" ORDER BY "apartamentos"."id" ASC LIMIT 15 OFFSET 0
+  [1m[36mImovel Load (0.4ms)[0m  [1mSELECT "imoveis".* FROM "imoveis" WHERE "imoveis"."id" IN (1)[0m
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_record.html.erb (8.8ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_pagination.html.erb (0.2ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list.html.erb (27.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_with_header.html.erb (34.4ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/list.html.erb within layouts/application (36.8ms)
+Completed 200 OK in 95ms (Views: 90.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-22 20:08:20 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2013-07-22 20:08:20 -0300
+Served asset /twitter-bootstrap-static/fontawesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-07-22 20:08:20 -0300
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2013-07-22 20:08:20 -0300
+Served asset /twitter-bootstrap-static/bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-07-22 20:08:20 -0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-22 20:08:20 -0300
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/imoveis.css?body=1" for 127.0.0.1 at 2013-07-22 20:08:20 -0300
+Served asset /imoveis.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/principal.css?body=1" for 127.0.0.1 at 2013-07-22 20:08:20 -0300
+Served asset /principal.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-07-22 20:08:20 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_scaffold.css?body=1" for 127.0.0.1 at 2013-07-22 20:08:20 -0300
+Served asset /active_scaffold.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-22 20:08:21 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-22 20:08:21 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-22 20:08:21 -0300
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-22 20:08:21 -0300
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-22 20:08:21 -0300
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-22 20:08:21 -0300
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-22 20:08:21 -0300
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-22 20:08:21 -0300
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-22 20:08:21 -0300
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-22 20:08:21 -0300
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-22 20:08:21 -0300
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-22 20:08:21 -0300
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-22 20:08:21 -0300
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-22 20:08:21 -0300
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-22 20:08:21 -0300
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-22 20:08:21 -0300
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-22 20:08:21 -0300
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/imoveis.js?body=1" for 127.0.0.1 at 2013-07-22 20:08:21 -0300
+Served asset /imoveis.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/principal.js?body=1" for 127.0.0.1 at 2013-07-22 20:08:21 -0300
+Served asset /principal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-07-22 20:08:21 -0300
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-timepicker-addon.js?body=1" for 127.0.0.1 at 2013-07-22 20:08:21 -0300
+Served asset /jquery-ui-timepicker-addon.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/active_scaffold.js?body=1" for 127.0.0.1 at 2013-07-22 20:08:21 -0300
+Served asset /jquery/active_scaffold.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/jquery.editinplace.js?body=1" for 127.0.0.1 at 2013-07-22 20:08:21 -0300
+Served asset /jquery/jquery.editinplace.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/date_picker_bridge.js?body=1" for 127.0.0.1 at 2013-07-22 20:08:21 -0300
+Served asset /jquery/date_picker_bridge.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/draggable_lists.js?body=1" for 127.0.0.1 at 2013-07-22 20:08:21 -0300
+Served asset /jquery/draggable_lists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_scaffold.js?body=1" for 127.0.0.1 at 2013-07-22 20:08:21 -0300
+Served asset /active_scaffold.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-22 20:08:21 -0300
+Served asset /application.js - 200 OK (2ms)
+
+
+Started GET "/assets/active_scaffold/indicator.gif" for 127.0.0.1 at 2013-07-22 20:08:21 -0300
+Served asset /active_scaffold/indicator.gif - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-22 20:09:03 -0300
+Processing by PrincipalController#index as HTML
+Completed 401 Unauthorized in 0ms
+
+
+Started GET "/usuarios/sign_in" for 127.0.0.1 at 2013-07-22 20:09:03 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-22 20:09:04 -0300
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2013-07-22 20:09:04 -0300
+Served asset /twitter-bootstrap-static/fontawesome.css - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-07-22 20:09:04 -0300
+Served asset /bootstrap.css - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-07-22 20:09:04 -0300
+Served asset /bootstrap-responsive.css - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-22 20:09:04 -0300
+Served asset /bootstrap_and_overrides.css - 200 OK (0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2013-07-22 20:09:04 -0300
+Served asset /twitter-bootstrap-static/bootstrap.css - 200 OK (0ms)
+
+
+Started GET "/assets/imoveis.css?body=1" for 127.0.0.1 at 2013-07-22 20:09:04 -0300
+Served asset /imoveis.css - 200 OK (0ms)
+
+
+Started GET "/assets/principal.css?body=1" for 127.0.0.1 at 2013-07-22 20:09:04 -0300
+Served asset /principal.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-07-22 20:09:04 -0300
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/active_scaffold.css?body=1" for 127.0.0.1 at 2013-07-22 20:09:04 -0300
+Served asset /active_scaffold.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-22 20:09:04 -0300
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-22 20:09:04 -0300
+Served asset /twitter/bootstrap/bootstrap-transition.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-22 20:09:04 -0300
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-22 20:09:04 -0300
+Served asset /twitter/bootstrap/bootstrap-alert.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-22 20:09:04 -0300
+Served asset /twitter/bootstrap/bootstrap-modal.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-22 20:09:04 -0300
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-22 20:09:04 -0300
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-22 20:09:04 -0300
+Served asset /twitter/bootstrap/bootstrap-tab.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-22 20:09:04 -0300
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-22 20:09:04 -0300
+Served asset /twitter/bootstrap/bootstrap-popover.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-22 20:09:04 -0300
+Served asset /twitter/bootstrap/bootstrap-button.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-22 20:09:04 -0300
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-22 20:09:04 -0300
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-22 20:09:04 -0300
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-22 20:09:04 -0300
+Served asset /twitter/bootstrap/bootstrap-affix.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-22 20:09:04 -0300
+Served asset /twitter/bootstrap.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-22 20:09:04 -0300
+Served asset /bootstrap.js - 200 OK (0ms)
+
+
+Started GET "/assets/imoveis.js?body=1" for 127.0.0.1 at 2013-07-22 20:09:04 -0300
+Served asset /imoveis.js - 200 OK (0ms)
+
+
+Started GET "/assets/principal.js?body=1" for 127.0.0.1 at 2013-07-22 20:09:04 -0300
+Served asset /principal.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-07-22 20:09:04 -0300
+Served asset /jquery-ui.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery-ui-timepicker-addon.js?body=1" for 127.0.0.1 at 2013-07-22 20:09:04 -0300
+Served asset /jquery-ui-timepicker-addon.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery/jquery.editinplace.js?body=1" for 127.0.0.1 at 2013-07-22 20:09:04 -0300
+Served asset /jquery/jquery.editinplace.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery/active_scaffold.js?body=1" for 127.0.0.1 at 2013-07-22 20:09:04 -0300
+Served asset /jquery/active_scaffold.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery/date_picker_bridge.js?body=1" for 127.0.0.1 at 2013-07-22 20:09:04 -0300
+Served asset /jquery/date_picker_bridge.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery/draggable_lists.js?body=1" for 127.0.0.1 at 2013-07-22 20:09:04 -0300
+Served asset /jquery/draggable_lists.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-22 20:09:04 -0300
+Served asset /application.js - 200 OK (37ms)
+
+
+Started GET "/assets/active_scaffold.js?body=1" for 127.0.0.1 at 2013-07-22 20:09:04 -0300
+Served asset /active_scaffold.js - 200 OK (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (93.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateApartamentos (20130407203626)
+Migrating to CreateLeituras (20130407204958)
+Migrating to CreateApartamentosLeituras (20130407205858)
+Migrating to AddCamposToApartamentoLeitura (20130602003208)
+Migrating to CreateImoveis (20130722183410)
+Migrating to AddImovelToApartamento (20130722183807)
+Migrating to AddEnderecoToImovel (20130722184326)
+Migrating to CreateEstados (20130722184610)
+Migrating to CreateCidades (20130722184655)
+Migrating to AddNumeroToImovel (20130722185842)
+Migrating to DeviseCreateUsuarios (20130722191311)
+Migrating to AddImovelAndApartamentoToUsuario (20130722191538)
+Migrating to AddRolesMaskToUsuario (20130722202225)
+Migrating to AddPagaToLeitura (20130722230946)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (5.0ms)[0m  [1mALTER TABLE "leituras" ADD COLUMN "paga" boolean[0m
+  [1m[35m (0.7ms)[0m  ALTER TABLE "apartamentos_leituras" ADD COLUMN "paga" boolean
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130722230946')[0m
+  [1m[35m (78.0ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+
+
+Started POST "/usuarios/sign_in" for 127.0.0.1 at 2013-07-22 20:11:04 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dr6crLooMprw8r2ADbGzkDiQhVrIvlgbN6uaQoutd1M=", "usuario"=>{"email"=>"mauriciokj@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Acessar"}
+  [1m[35mUsuario Load (1.1ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."email" = 'mauriciokj@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.7ms)[0m  UPDATE "usuarios" SET "last_sign_in_at" = '2013-07-22 23:01:42.229176', "current_sign_in_at" = '2013-07-22 23:11:04.234196', "sign_in_count" = 6, "updated_at" = '2013-07-22 23:11:04.236246' WHERE "usuarios"."id" = 1
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 159ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-22 20:11:04 -0300
+Processing by PrincipalController#index as HTML
+  [1m[35mUsuario Load (0.5ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = 1 LIMIT 1
+  [1m[36mApartamento Load (0.5ms)[0m  [1mSELECT "apartamentos".* FROM "apartamentos" WHERE "apartamentos"."id" = 1 LIMIT 1[0m
+  [1m[35mApartamentoLeitura Load (1.1ms)[0m  SELECT "apartamentos_leituras".* FROM "apartamentos_leituras" WHERE "apartamentos_leituras"."apartamento_id" = 1 ORDER BY created_at DESC
+  [1m[36mLeitura Load (0.6ms)[0m  [1mSELECT "leituras".* FROM "leituras" WHERE "leituras"."id" = 9 LIMIT 1[0m
+  [1m[35mLeitura Load (0.7ms)[0m  SELECT "leituras".* FROM "leituras" WHERE "leituras"."id" = 8 LIMIT 1
+  [1m[36mLeitura Load (0.4ms)[0m  [1mSELECT "leituras".* FROM "leituras" WHERE "leituras"."id" = 7 LIMIT 1[0m
+  [1m[35mLeitura Load (0.4ms)[0m  SELECT "leituras".* FROM "leituras" WHERE "leituras"."id" = 6 LIMIT 1
+  [1m[36mLeitura Load (0.4ms)[0m  [1mSELECT "leituras".* FROM "leituras" WHERE "leituras"."id" = 5 LIMIT 1[0m
+  [1m[35mLeitura Load (0.3ms)[0m  SELECT "leituras".* FROM "leituras" WHERE "leituras"."id" = 4 LIMIT 1
+  [1m[36mLeitura Load (0.3ms)[0m  [1mSELECT "leituras".* FROM "leituras" WHERE "leituras"."id" = 3 LIMIT 1[0m
+  [1m[35mLeitura Load (0.5ms)[0m  SELECT "leituras".* FROM "leituras" WHERE "leituras"."id" = 2 LIMIT 1
+  Rendered principal/index.html.erb within layouts/application (49.8ms)
+Completed 200 OK in 81ms (Views: 49.7ms | ActiveRecord: 17.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-22 20:11:07 -0300
+Processing by PrincipalController#index as HTML
+  [1m[36mUsuario Load (0.5ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = 1 LIMIT 1[0m
+  [1m[35mApartamento Load (0.4ms)[0m  SELECT "apartamentos".* FROM "apartamentos" WHERE "apartamentos"."id" = 1 LIMIT 1
+  [1m[36mApartamentoLeitura Load (0.5ms)[0m  [1mSELECT "apartamentos_leituras".* FROM "apartamentos_leituras" WHERE "apartamentos_leituras"."apartamento_id" = 1 ORDER BY created_at DESC[0m
+  [1m[35mLeitura Load (0.3ms)[0m  SELECT "leituras".* FROM "leituras" WHERE "leituras"."id" = 9 LIMIT 1
+  [1m[36mLeitura Load (0.3ms)[0m  [1mSELECT "leituras".* FROM "leituras" WHERE "leituras"."id" = 8 LIMIT 1[0m
+  [1m[35mLeitura Load (0.4ms)[0m  SELECT "leituras".* FROM "leituras" WHERE "leituras"."id" = 7 LIMIT 1
+  [1m[36mLeitura Load (0.4ms)[0m  [1mSELECT "leituras".* FROM "leituras" WHERE "leituras"."id" = 6 LIMIT 1[0m
+  [1m[35mLeitura Load (0.4ms)[0m  SELECT "leituras".* FROM "leituras" WHERE "leituras"."id" = 5 LIMIT 1
+  [1m[36mLeitura Load (0.3ms)[0m  [1mSELECT "leituras".* FROM "leituras" WHERE "leituras"."id" = 4 LIMIT 1[0m
+  [1m[35mLeitura Load (0.4ms)[0m  SELECT "leituras".* FROM "leituras" WHERE "leituras"."id" = 3 LIMIT 1
+  [1m[36mLeitura Load (0.4ms)[0m  [1mSELECT "leituras".* FROM "leituras" WHERE "leituras"."id" = 2 LIMIT 1[0m
+  Rendered principal/index.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 32ms (Views: 25.8ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/apartamentos" for 127.0.0.1 at 2013-07-22 20:11:15 -0300
+Processing by ApartamentosController#index as HTML
+  [1m[35mUsuario Load (0.5ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = 1 LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "apartamentos" [0m
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_header.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_column_headings.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_messages.html.erb (0.1ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_messages.html.erb (3.0ms)
+  [1m[35mApartamento Load (0.7ms)[0m  SELECT "apartamentos".* FROM "apartamentos" ORDER BY "apartamentos"."id" ASC LIMIT 15 OFFSET 0
+  [1m[36mImovel Load (0.5ms)[0m  [1mSELECT "imoveis".* FROM "imoveis" WHERE "imoveis"."id" IN (1)[0m
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_record.html.erb (9.0ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_pagination.html.erb (0.2ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list.html.erb (36.6ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_with_header.html.erb (44.2ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/list.html.erb within layouts/application (46.7ms)
+Completed 200 OK in 70ms (Views: 59.5ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/active_scaffold/add.png" for 127.0.0.1 at 2013-07-22 20:11:15 -0300
+Served asset /active_scaffold/add.png - 200 OK (0ms)
+
+
+Started GET "/assets/active_scaffold/indicator.gif" for 127.0.0.1 at 2013-07-22 20:11:15 -0300
+Served asset /active_scaffold/indicator.gif - 200 OK (0ms)
+
+
+Started GET "/assets/active_scaffold/magnifier.png" for 127.0.0.1 at 2013-07-22 20:11:15 -0300
+Served asset /active_scaffold/magnifier.png - 200 OK (0ms)
+
+
+Started GET "/apartamentos/new?adapter=_list_inline_adapter" for 127.0.0.1 at 2013-07-22 20:11:17 -0300
+Processing by ApartamentosController#new as JS
+  Parameters: {"adapter"=>"_list_inline_adapter"}
+  [1m[35mUsuario Load (0.6ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = 1 LIMIT 1
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_form_messages.html.erb (0.2ms)
+  [1m[36mImovel Load (0.3ms)[0m  [1mSELECT "imoveis".* FROM "imoveis" [0m
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_form.html.erb (8.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_base_form.html.erb (17.4ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_create_form.html.erb (21.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_messages.html.erb (0.1ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_inline_adapter.html.erb (3.8ms)
+Completed 200 OK in 41ms (Views: 7.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/active_scaffold/close.png" for 127.0.0.1 at 2013-07-22 20:11:18 -0300
+Served asset /active_scaffold/close.png - 200 OK (6ms)
+
+
+Started GET "/leitura" for 127.0.0.1 at 2013-07-22 20:11:24 -0300
+
+ActionController::RoutingError (No route matches [GET] "/leitura"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/leituras" for 127.0.0.1 at 2013-07-22 20:11:28 -0300
+Processing by LeiturasController#index as HTML
+  [1m[35mUsuario Load (0.5ms)[0m  SELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = 1 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "leituras" [0m
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_header.html.erb (3.3ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_column_headings.html.erb (4.6ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_messages.html.erb (0.1ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_messages.html.erb (2.9ms)
+  [1m[35mLeitura Load (1.0ms)[0m  SELECT "leituras".* FROM "leituras" ORDER BY "leituras"."data_leitura" DESC LIMIT 15 OFFSET 0
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_record.html.erb (28.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_pagination.html.erb (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list.html.erb (52.0ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_with_header.html.erb (61.1ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/list.html.erb within layouts/application (63.6ms)
+Completed 200 OK in 88ms (Views: 80.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/active_scaffold/arrow_down.png" for 127.0.0.1 at 2013-07-22 20:11:28 -0300
+Served asset /active_scaffold/arrow_down.png - 200 OK (4ms)
+
+
+Started GET "/leituras/new?adapter=_list_inline_adapter" for 127.0.0.1 at 2013-07-22 20:11:35 -0300
+Processing by LeiturasController#new as JS
+  Parameters: {"adapter"=>"_list_inline_adapter"}
+  [1m[36mUsuario Load (0.5ms)[0m  [1mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = 1 LIMIT 1[0m
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_form_messages.html.erb (0.2ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_form.html.erb (17.8ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_base_form.html.erb (26.1ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_create_form.html.erb (30.1ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_messages.html.erb (0.1ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p362/bundler/gems/active_scaffold-bd85bfc97add/app/views/active_scaffold_overrides/_list_inline_adapter.html.erb (4.5ms)
+Completed 200 OK in 48ms (Views: 8.0ms | ActiveRecord: 0.5ms)
