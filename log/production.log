@@ -1,0 +1,27 @@
+Compiled jquery.js  (2ms)  (pid 4617)
+Compiled jquery_ujs.js  (0ms)  (pid 4617)
+Compiled twitter/bootstrap/bootstrap-transition.js  (0ms)  (pid 4617)
+Compiled twitter/bootstrap/bootstrap-alert.js  (0ms)  (pid 4617)
+Compiled twitter/bootstrap/bootstrap-modal.js  (0ms)  (pid 4617)
+Compiled twitter/bootstrap/bootstrap-dropdown.js  (0ms)  (pid 4617)
+Compiled twitter/bootstrap/bootstrap-scrollspy.js  (0ms)  (pid 4617)
+Compiled twitter/bootstrap/bootstrap-tab.js  (0ms)  (pid 4617)
+Compiled twitter/bootstrap/bootstrap-tooltip.js  (0ms)  (pid 4617)
+Compiled twitter/bootstrap/bootstrap-popover.js  (0ms)  (pid 4617)
+Compiled twitter/bootstrap/bootstrap-button.js  (0ms)  (pid 4617)
+Compiled twitter/bootstrap/bootstrap-collapse.js  (0ms)  (pid 4617)
+Compiled twitter/bootstrap/bootstrap-carousel.js  (0ms)  (pid 4617)
+Compiled twitter/bootstrap/bootstrap-typeahead.js  (0ms)  (pid 4617)
+Compiled twitter/bootstrap/bootstrap-affix.js  (0ms)  (pid 4617)
+Compiled twitter/bootstrap.js  (182ms)  (pid 4617)
+Compiled bootstrap.js  (909ms)  (pid 4617)
+Compiled imoveis.js  (182ms)  (pid 4617)
+Compiled principal.js  (149ms)  (pid 4617)
+Compiled jquery-ui.js  (5ms)  (pid 4617)
+Compiled jquery-ui-timepicker-addon.js  (0ms)  (pid 4617)
+Compiled jquery/active_scaffold.js  (0ms)  (pid 4617)
+Compiled jquery/jquery.editinplace.js  (1ms)  (pid 4617)
+ActiveScaffold: Missing date picker localization for your locale: en
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
