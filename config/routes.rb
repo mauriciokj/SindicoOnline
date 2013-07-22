@@ -26,6 +26,7 @@ SindicoOnline::Application.routes.draw do
 
   # Sample of named route:
     match 'calcular_valores' => 'apartamentos_leituras#calcular_valores', :as => :calcular_valores
+    match 'principal' => 'principal#index', :as => :principal
   # This route can be invoked with purchase_url(:id => product.id)
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
