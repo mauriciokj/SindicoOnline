@@ -6,7 +6,7 @@ class Apartamento < ActiveRecord::Base
   has_many :usuario
 
   def to_label
-    "Bloco: #{bloco} - Numero: #{numero}"
+    "Bloco: #{bloco} - Nro: #{numero}"
   end
 
   rails_admin do

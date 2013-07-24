@@ -1,4 +1,5 @@
 class ApartamentoLeitura < ActiveRecord::Base
+	
 	belongs_to :apartamento
 	belongs_to :leitura
 	attr_accessible :consumo, :data, :leitura_apartamento, :valor,:diferenca_ajustada, :porcentagem,
@@ -36,9 +37,19 @@ class ApartamentoLeitura < ActiveRecord::Base
 			field :apartamento
 			field :data
 			field :leitura
-			field :consumo
+			field :consumo do
+				pretty_value do # used in list view columns and show views, defaults to formatted_value for non-association fields
+					value.round(2) rescue value
+				end
+			end
 			field :leitura_apartamento
+			field :valor do
+				pretty_value do # used in list view columns and show views, defaults to formatted_value for non-association fields
+					ActionController::Base.helpers.number_to_currency(value)
+				end
+			end
 			field :paga
+
 		end
 
 	end
