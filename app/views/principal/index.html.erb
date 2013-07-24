@@ -6,13 +6,13 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</a>
-			<a class="brand" href="/">Apartamento número: <%= @apartamento.numero %> bloco: <%= @apartamento.bloco %></a>
+			<a class="brand" href="/"><%= @apartamento.imovel.nome %> - Apto: <%= @apartamento.numero %>, bloco: <%= @apartamento.bloco %></a>
 			<div class="nav-collapse">
 				<% if usuario_signed_in? %>
 				<ul class="nav pull-right">
-					<!-- <li> -->
-					<!-- <a href="/contas/">Contas</a> -->
-					<!-- </li> -->
+					<li>
+					<a href="/admin/">Admin</a>
+					</li>
 
 					<li>
 						<a href="/">Home</a>

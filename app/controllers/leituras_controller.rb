@@ -1,9 +1,7 @@
 class LeiturasController < ApplicationController
-	before_filter :authenticate_usuario!
-	active_scaffold :leitura do |conf|
-		conf.list.columns.exclude   [:apartamentos_leituras, :created_at, :updated_at]
-		conf.create.columns.exclude   [:apartamentos_leituras]
-		conf.nested.add_link :apartamentos_leituras
-		conf.list.sorting = { :data_leitura => :desc }
-	end
+	def calcular_valores
+		leitura = Leitura.find(params[:format])
+		leitura.calcular_valores
+		redirect_to rails_admin_path
+	end	
 end

@@ -1,15 +1,46 @@
 class ApartamentoLeitura < ActiveRecord::Base
 	belongs_to :apartamento
 	belongs_to :leitura
-	attr_accessible :consumo, :data, :leitura_apartamento, :valor,:diferenca_ajustada, :porcentagem
+	attr_accessible :consumo, :data, :leitura_apartamento, :valor,:diferenca_ajustada, :porcentagem,
+	:apartamento_id, :leitura_id, :paga
 	
 
 	validates :apartamento, :presence => true
 	validates :data, :presence => true
 
-	def calcula_consumo(apartamento)
-		self.consumo = self.leitura_apartamento - (apartamento.apartamentos_leituras.last.leitura_apartamento rescue 0)
+	before_save :calcula_consumo, :if => :new_record?
+
+	alias_attribute :name, :to_label
+
+	def to_label
+		"#{self.apartamento.to_label rescue ""} - #{self.leitura.to_label rescue ""}" 
+	end
+
+	def calcula_consumo
+		self.consumo = self.leitura_apartamento - (self.apartamento.apartamentos_leituras.last.leitura_apartamento rescue 0)
 	end	
 
+	rails_admin do
+		
+		label "Leituras dos apartamentos"
+
+		edit do
+			field :apartamento
+			field :leitura
+			field :data
+			field :leitura_apartamento
+			field :paga
+		end
+
+		list do
+			field :apartamento
+			field :data
+			field :leitura
+			field :consumo
+			field :leitura_apartamento
+			field :paga
+		end
+
+	end
 
 end

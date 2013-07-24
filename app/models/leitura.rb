@@ -1,10 +1,13 @@
 class Leitura < ActiveRecord::Base
-	attr_accessible :consumo, :data_leitura, :data_vencimento, :leitura_anterior, :leitura_atual, :matricula, :valor
 	has_many :apartamentos_leituras
+	attr_accessible :consumo, :data_leitura, :data_vencimento, :leitura_anterior, :leitura_atual, :matricula, :valor, :paga, :apartamento_leitura_ids
+	
 
 	def to_label
-		"#{matricula}"
+		"#{I18n.l(data_leitura) rescue ""}, valor: #{valor}"
 	end
+
+	alias_attribute :name, :to_label
 
 	def calcular_valores
 		soma_das_diferencas = self.apartamentos_leituras.sum(:consumo)
@@ -17,6 +20,33 @@ class Leitura < ActiveRecord::Base
 		end 
 		self.save
 	end	
+
+	rails_admin do
+		label "Leituras"
+
+		edit do
+			field :matricula
+			field :data_leitura
+			field :data_vencimento
+			field :consumo
+			field :leitura_anterior
+			field :leitura_atual
+			field :valor
+			field :paga
+			field :apartamentos_leituras
+		end
+
+		list do
+			field :data_leitura
+			field :data_vencimento
+			field :consumo
+			field :leitura_anterior
+			field :leitura_atual
+			field :valor
+			field :paga
+		end
+
+	end
 
 
 end

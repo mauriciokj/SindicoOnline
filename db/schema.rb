@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130722230946) do
+ActiveRecord::Schema.define(:version => 20130723030117) do
 
   create_table "apartamentos", :force => true do |t|
     t.integer  "numero"
@@ -65,6 +65,7 @@ ActiveRecord::Schema.define(:version => 20130722230946) do
     t.string   "responsavel"
     t.string   "telefone_responsavel"
     t.string   "numero"
+    t.string   "email_responsavel"
   end
 
   create_table "leituras", :force => true do |t|
@@ -79,6 +80,19 @@ ActiveRecord::Schema.define(:version => 20130722230946) do
     t.datetime "updated_at",       :null => false
     t.boolean  "paga"
   end
+
+  create_table "rails_admin_histories", :force => true do |t|
+    t.text     "message"
+    t.string   "username"
+    t.integer  "item"
+    t.string   "table"
+    t.integer  "month",      :limit => 2
+    t.integer  "year",       :limit => 8
+    t.datetime "created_at",              :null => false
+    t.datetime "updated_at",              :null => false
+  end
+
+  add_index "rails_admin_histories", ["item", "table", "month", "year"], :name => "index_rails_admin_histories"
 
   create_table "usuarios", :force => true do |t|
     t.string   "email",                  :default => "", :null => false

@@ -1,21 +1,16 @@
 SindicoOnline::Application.routes.draw do
 
+  match 'calcular_valores' => 'leituras#calcular_valores', :as => :calcular_valores
+  match 'principal' => 'principal#index', :as => :principal
+
+  mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
 
   devise_for :usuarios
 
-  resources :cidades do as_routes end
-
-  resources :estados do as_routes end
-
-  resources :imoveis do as_routes end
 
 
-  resources :apartamentos_leituras do as_routes end
-
-  resources :leituras do as_routes end
 
 
-  resources :apartamentos do as_routes end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -25,8 +20,7 @@ SindicoOnline::Application.routes.draw do
   # Keep in mind you can assign values other than :controller and :action
 
   # Sample of named route:
-    match 'calcular_valores' => 'apartamentos_leituras#calcular_valores', :as => :calcular_valores
-    match 'principal' => 'principal#index', :as => :principal
+  
   # This route can be invoked with purchase_url(:id => product.id)
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):

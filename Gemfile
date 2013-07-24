@@ -7,7 +7,6 @@ gem 'rails', '3.2.11'
 
 gem 'pg'
 
-gem 'active_scaffold', :git => 'git://github.com/activescaffold/active_scaffold.git'
 gem 'rb-fsevent', '~> 0.9.1'
 gem 'rails-i18n'
 gem 'devise-i18n', git: 'git://github.com/tigrish/devise-i18n.git'
@@ -31,6 +30,7 @@ gem 'role_model'
 gem 'rails-i18n'
 gem 'devise-i18n', git: 'git://github.com/tigrish/devise-i18n.git'
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
+gem 'rails_admin'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

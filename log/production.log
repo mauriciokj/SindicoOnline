@@ -1315,3 +1315,4 @@ Compiled jquery-ui.css  (0ms)  (pid 6465)
 Compiled active_scaffold_extensions.css  (0ms)  (pid 6465)
 Compiled active_scaffold.css  (801ms)  (pid 6465)
 Compiled application.css  (942ms)  (pid 6465)
+Connecting to database specified by database.yml
