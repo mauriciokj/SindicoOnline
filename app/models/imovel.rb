@@ -4,8 +4,10 @@ class Imovel < ActiveRecord::Base
 	attr_accessible :nome, :cidade_id, :bairro,:rua, :cep, :numero, :responsavel, :telefone_responsavel, :email_responsavel, :apartamento_ids
 
 	belongs_to :cidade
-	alias_attribute :to_label, :nome
-	alias_attribute :name, :to_label
+
+	def name
+		nome rescue nil
+	end
 
 	validates :nome, :presence => true
 	validates :cidade, :presence => true
