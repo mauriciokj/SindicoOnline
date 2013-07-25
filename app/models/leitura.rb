@@ -21,6 +21,10 @@ class Leitura < ActiveRecord::Base
 		self.save
 	end	
 
+	def status
+		paga? ? "PAGA" : "PENDENTE"
+	end
+
 	rails_admin do
 		label "Leituras"
 

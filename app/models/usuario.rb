@@ -1,71 +1,86 @@
-# -*- encoding : utf-8 -*-
-class Usuario < ActiveRecord::Base
-  # Include default devise modules. Others available are:
-  # :token_authenticatable, :confirmable,
-  # :registerable, :timeoutable and :omniauthable
-  belongs_to :apartamento
-  belongs_to :imovel
-  devise :database_authenticatable, :lockable,
-  :recoverable, :rememberable, :trackable, :validatable
+  # -*- encoding : utf-8 -*-
+  class Usuario < ActiveRecord::Base
+    # Include default devise modules. Others available are:
+    # :token_authenticatable, :confirmable,
+    # :registerable, :timeoutable and :omniauthable
+    belongs_to :apartamento
+    belongs_to :imovel
+    devise :database_authenticatable, :lockable,
+    :recoverable, :rememberable, :trackable, :validatable
 
-  alias_attribute :name, :email
+    alias_attribute :name, :email
 
 
-  include RoleModel
-  # Setup accessible (or protected) attributes for your model
-  attr_accessible :email, :password, :password_confirmation, :remember_me, :apartamento_id, :imovel_id,:roles_mask
-  # attr_accessible :title, :body
+    include RoleModel
+    # Setup accessible (or protected) attributes for your model
+    attr_accessible :email, :password, :password_confirmation, :remember_me, :apartamento_id, :imovel_id,:roles_mask
+    # attr_accessible :title, :body
 
-  roles_attribute :roles_mask
+    roles_attribute :roles_mask
 
-  #Não mudar a ordem
-  roles :admin, :sindico, :usuario
+    #Não mudar a ordem
+    roles :admin, :sindico, :usuario
 
-  def roles_mask_enum
-    [[:admin, 1], [:sindico, 2], [:usuario, 4]]
-  end
-
-  rails_admin do
-    label "Usuário"
-
-    show do
-      field :apartamento
-      field :email
-      field :roles_mask, :enum do
-        label "Tipo de usuario"
-      end
-      ;
+    def roles_mask_enum
+      [[:admin, 1], [:sindico, 2], [:usuario, 4]]
     end
 
-    edit do
+    rails_admin do
+      label "Usuário"
 
-      field :email
-      field :password
-      field :password_confirmation
-      field :apartamento_id, :enum do
-        label "Apartamento"
-        enum do          
+      show do
+        field :apartamento
+        field :email
+        field :roles_mask, :enum do
+          label "Tipo de usuario"
+        end
+        ;
+      end
+
+      edit do
+
+        field :email
+        field :password
+        field :password_confirmation
+        field :apartamento_id, :enum do
+          visible do
+           bindings[:view]._current_user.admin? || bindings[:view]._current_user.sindico?
+         end
+         label "Apartamento"
+         enum do          
           Apartamento.all.collect { |c| [c.to_label, c.id] }
         end
       end
       field :imovel_id, :enum do
-        label "Imóvel"
-        enum do          
-          Imovel.all.collect { |c| [c.nome, c.id] }
-        end
-      end
-      field :roles_mask, :enum do
-        label "Tipo de usuário"
-        enum do
-          [[:admin, 1], [:sindico, 2], [:usuario, 4]]
-        end
+        visible do
+         bindings[:view]._current_user.admin? 
+       end
+       label "Imóvel"
+       enum do          
+        Imovel.all.collect { |c| [c.nome, c.id] }
       end
     end
+    field :roles_mask, :enum do
+      label "Tipo de usuario"
 
-    list do
-      field :email
+      enum do
+        if bindings[:view]._current_user.admin?
+          [[:admin, 1], [:sindico, 2], [:usuario, 4]]
+        elsif bindings[:view]._current_user.sindico? 
+          [[:sindico, 2],[:usuario, 4]]
+        elsif bindings[:view]._current_user.usuario?
+          [[:usuario, 4]]  
+        end
+
+      end
     end
 
   end
+
+  list do
+    field :email
+  end
+
+end
 
 end

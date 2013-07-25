@@ -1,5 +1,5 @@
 class ApartamentoLeitura < ActiveRecord::Base
-	
+
 	belongs_to :apartamento
 	belongs_to :leitura
 	attr_accessible :consumo, :data, :leitura_apartamento, :valor,:diferenca_ajustada, :porcentagem,
@@ -20,6 +20,10 @@ class ApartamentoLeitura < ActiveRecord::Base
 	def calcula_consumo
 		self.consumo = self.leitura_apartamento - (self.apartamento.apartamentos_leituras.last.leitura_apartamento rescue 0)
 	end	
+
+	def status
+		paga? ? "PAGA" : "PENDENTE"
+	end
 
 	rails_admin do
 		

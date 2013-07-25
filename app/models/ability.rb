@@ -5,12 +5,18 @@ class Ability
     # Define abilities for the passed in user here. For example:
     #
       user ||= usuario.new # guest user (not logged in)
+      can :access, :rails_admin # only allow admin users to access Rails Admin
+      can :dashboard
       if user.admin?
         can :manage, :all
       elsif user.sindico?
-        can :manage, Apartamento, :imovel_id => user.imovel_id
-      elsif user.sindico?
-        can :manage, Apartamento, :apartamento_id => user.apartamento_id  
+        can :read, Apartamento, :imovel_id => user.imovel_id, :id => user.apartamento_id
+        can :manage, Leitura#, :imovel_id => user.imovel_id
+        can :manage, ApartamentoLeitura#, :imovel_id => user.imovel_id
+        can :manage, Usuario, :imovel_id => user.imovel_id
+      elsif user.usuario?
+        can :read, Apartamento, :id => user.apartamento_id  
+        can :manage, Usuario,:id => user.id, :imovel_id => user.imovel_id
       end
     #
     # The first argument to `can` is the action you are giving the user 
