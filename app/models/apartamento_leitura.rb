@@ -25,13 +25,13 @@ class ApartamentoLeitura < ActiveRecord::Base
 		
 		label "Leituras dos apartamentos"
 
-		# edit do
-		# 	field :apartamento
-		# 	field :leitura
-		# 	field :data
-		# 	field :leitura_apartamento
-		# 	field :paga
-		# end
+		edit do
+			field :apartamento
+			field :leitura
+			field :data
+			field :leitura_apartamento
+			field :paga
+		end
 
 		list do
 			field :apartamento
