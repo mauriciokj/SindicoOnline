@@ -1,5 +1,6 @@
 class Leitura < ActiveRecord::Base
 	has_many :apartamentos_leituras
+	belongs_to :imovel
 	attr_accessible :consumo, :data_leitura, :data_vencimento, :leitura_anterior, :leitura_atual, :matricula, :valor, :paga, :apartamento_leitura_ids
 	
 

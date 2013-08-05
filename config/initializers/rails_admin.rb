@@ -14,11 +14,17 @@ RailsAdmin.config do |config|
               delete
               member :calcular_valores do
                 visible do
-                  bindings[:abstract_model].model.to_s == 'Leitura'
+                  bindings[:abstract_model].model.to_s == 'Leitura' || bindings[:abstract_model].model.to_s == 'Conta'
                 end
                 register_instance_option :controller do
-                  Proc.new do
-                    redirect_to main_app.calcular_valores_path(@object)
+                  if bindings[:abstract_model].model.to_s == 'Leitura'
+                    Proc.new do
+                      redirect_to main_app.calcular_valores_path(@object)
+                    end
+                  elsif bindings[:abstract_model].model.to_s == 'Conta'
+                    Proc.new do
+                      redirect_to main_app.calcular_valores_da_conta_path(@object)
+                    end
                   end
                 end
 

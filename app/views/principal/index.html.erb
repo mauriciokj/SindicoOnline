@@ -6,12 +6,17 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</a>
-			<a class="brand" href="/"><%= @apartamento.imovel.nome %> - Apto: <%= @apartamento.numero %>, bloco: <%= @apartamento.bloco %></a>
+			<a class="brand" href="/"><%= @apartamento.imovel.nome %> - Apto: <%= @apartamento.numero %>, bloco: <%= @apartamento.bloco %> </a>
 			<div class="nav-collapse">
 				<% if usuario_signed_in? %>
 				<ul class="nav pull-right">
 					<li>
-					<a href="/admin/">Admin</a>
+						<a rel="nofollow">
+							<span class="label"><%= @usuario.email%></span>
+						</a>
+					</li>
+					<li>
+						<a href="/admin/">Admin</a>
 					</li>
 
 					<li>
@@ -33,37 +38,27 @@
 </div>
 
 <div id="principal" style='padding-top: 45px;'>
+	<h1  class='text-right' ><%= number_to_currency(@tota_a_pagar) %></h1>
 
 	<div class="well">
 		<table class="table">
 			<thead>
 				<tr>
 					<th>Conta</th>
-					<th>Leitura total</th>
-					<th>Leitura apartamento</th>
-					<th>Consumo total</th>
-					<th>Consumo apartamento</th>
-					<th>Data de leitura</th>
-					<th>Data de vencimento</th>
+					<th>Vencimento</th>
 					<th>Status</th>
-					<th>Valor total (R$)</th>
-					<th>Valor apartamento (R$)</th>
+					<th>Valor (R$)</th>
+					<th>Detalhes</th>
 				</tr>
 			</thead>
 			<tbody>
-				<% @apartamento.apartamentos_leituras.order("created_at DESC").each do |leitura| %>
+				<% @contas.each do |conta| %>
 				<tr>
-					<td>Agua</td>
-					<td><%= leitura.leitura.leitura_atual %></td>
-					<td><%= leitura.leitura_apartamento %></td>
-					<td><%= leitura.leitura.consumo %></td>
-					<td><%= leitura.consumo %></td>
-					<td><%= I18n.l(leitura.leitura.data_leitura) %></td>
-					<td><%= I18n.l(leitura.leitura.data_vencimento) %></td>
-					<td><%= leitura.status %></td>
-					<td class='text-right'><%= number_to_currency(leitura.leitura.valor) %></td>
-					<td class='text-right'><%= number_to_currency(leitura.valor)  %></td>
-
+					<td><%= conta['tipo'] %></td>
+					<td><%= I18n.l(conta['vencimento']) %></td>
+					<td><%= conta['status'] %></td>
+					<td class='text-right'><%= number_to_currency(conta['valor'])  %></td>
+					<td><a href="#">Detalhes</a></td>
 				</tr>
 				<% end%>	
 			</tbody>

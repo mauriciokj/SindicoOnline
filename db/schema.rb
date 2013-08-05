@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130723030117) do
+ActiveRecord::Schema.define(:version => 20130730140807) do
 
   create_table "apartamentos", :force => true do |t|
     t.integer  "numero"
@@ -46,6 +46,30 @@ ActiveRecord::Schema.define(:version => 20130723030117) do
   end
 
   add_index "cidades", ["estado_id"], :name => "index_cidades_on_estado_id"
+
+  create_table "contas", :force => true do |t|
+    t.integer  "imovel_id"
+    t.string   "descricao"
+    t.boolean  "paga"
+    t.float    "valor"
+    t.date     "vencimento"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "contas_por_apartamentos", :force => true do |t|
+    t.integer  "conta_id"
+    t.integer  "apartamento_id"
+    t.float    "valor"
+    t.integer  "imovel_id"
+    t.boolean  "paga"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
+
+  add_index "contas_por_apartamentos", ["apartamento_id"], :name => "index_contas_por_apartamentos_on_apartamento_id"
+  add_index "contas_por_apartamentos", ["conta_id"], :name => "index_contas_por_apartamentos_on_conta_id"
+  add_index "contas_por_apartamentos", ["imovel_id"], :name => "index_contas_por_apartamentos_on_imovel_id"
 
   create_table "estados", :force => true do |t|
     t.string   "nome"

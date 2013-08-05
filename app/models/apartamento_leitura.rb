@@ -2,6 +2,7 @@ class ApartamentoLeitura < ActiveRecord::Base
 
 	belongs_to :apartamento
 	belongs_to :leitura
+	belongs_to :imovel
 	attr_accessible :consumo, :data, :leitura_apartamento, :valor,:diferenca_ajustada, :porcentagem,
 	:apartamento_id, :leitura_id, :paga
 	
