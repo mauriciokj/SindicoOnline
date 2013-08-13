@@ -57,7 +57,7 @@
 					<td><%= conta['tipo'] %></td>
 					<td><%= I18n.l(conta['vencimento']) %></td>
 					<td><%= conta['status'] %></td>
-					<td class='text-right'><%= number_to_currency(conta['valor'])  %></td>
+					<td class='text-right'><%= number_to_currency(conta['valor']) rescue 0   %></td>
 					<td><a href="#">Detalhes</a></td>
 				</tr>
 				<% end%>	
