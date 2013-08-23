@@ -11,16 +11,16 @@
 				<% if usuario_signed_in? %>
 				<ul class="nav pull-right">
 					<li>
-						<a rel="nofollow">
-							<span class="label"><%= @usuario.email%></span>
-						</a>
-					</li>
-					<li>
-						<a href="/admin/">Admin</a>
+						<a href="/admin/">Configurações</a>
 					</li>
 
 					<li>
 						<a href="/">Home</a>
+					</li>
+					<li>
+						<a rel="nofollow">
+							<span><%= @usuario.email%></span>
+						</a>
 					</li>
 
 					<li>
@@ -38,7 +38,7 @@
 </div>
 
 <div id="principal" style='padding-top: 45px;'>
-	<h1  class='text-right' ><%= number_to_currency(@tota_a_pagar) %></h1>
+	<h1  class='text-right' >Total: <%= number_to_currency(@tota_a_pagar) %></h1>
 
 	<div class="well">
 		<table class="table">

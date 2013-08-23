@@ -9,6 +9,7 @@ class ApartamentoLeitura < ActiveRecord::Base
 
 	validates :apartamento, :presence => true
 	validates :data, :presence => true
+	validates :leitura_apartamento, :presence => true
 
 	before_save :calcula_consumo, :if => :new_record?
 
