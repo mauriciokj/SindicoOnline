@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130730140807) do
+ActiveRecord::Schema.define(:version => 20130827190000) do
 
   create_table "apartamentos", :force => true do |t|
     t.integer  "numero"
@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(:version => 20130730140807) do
     t.float    "diferenca_ajustada"
     t.float    "porcentagem"
     t.boolean  "paga"
+    t.integer  "tipo_id"
   end
 
   add_index "apartamentos_leituras", ["apartamento_id"], :name => "index_apartamentos_leituras_on_apartamento_id"
@@ -103,6 +104,7 @@ ActiveRecord::Schema.define(:version => 20130730140807) do
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
     t.boolean  "paga"
+    t.integer  "tipo_id"
   end
 
   create_table "rails_admin_histories", :force => true do |t|
@@ -117,6 +119,12 @@ ActiveRecord::Schema.define(:version => 20130730140807) do
   end
 
   add_index "rails_admin_histories", ["item", "table", "month", "year"], :name => "index_rails_admin_histories"
+
+  create_table "tipos", :force => true do |t|
+    t.string   "descricao"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "usuarios", :force => true do |t|
     t.string   "email",                  :default => "", :null => false

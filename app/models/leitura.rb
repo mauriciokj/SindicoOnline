@@ -1,7 +1,8 @@
 class Leitura < ActiveRecord::Base
 	has_many :apartamentos_leituras
+	belongs_to :tipo
 	belongs_to :imovel
-	attr_accessible :consumo, :data_leitura, :data_vencimento, :leitura_anterior, :leitura_atual, :matricula, :valor, :paga, :apartamento_leitura_ids
+	attr_accessible :consumo, :data_leitura, :data_vencimento, :leitura_anterior, :leitura_atual, :matricula, :valor, :paga, :apartamento_leitura_ids, :tipo_id
 	
 
 	def to_label
@@ -12,9 +13,10 @@ class Leitura < ActiveRecord::Base
 
 	def calcular_valores
 		soma_das_diferencas = self.apartamentos_leituras.sum(:consumo)
-		diferenca_geral = (soma_das_diferencas - self.consumo) / self.apartamentos_leituras.count
+		diferenca_geral = (soma_das_diferencas - self.consumo rescue 0) / self.apartamentos_leituras.count
 		self.apartamentos_leituras.each do |al|
 			al.diferenca_ajustada =  al.consumo - diferenca_geral
+			self.consumo = diferenca_geral if self.consumo.blank?
 			al.porcentagem = (al.diferenca_ajustada * 100) / self.consumo
 			al.valor = (self.valor * al.porcentagem)/100
 			al.save
@@ -30,6 +32,7 @@ class Leitura < ActiveRecord::Base
 		label "Leituras"
 
 		edit do
+			field :tipo
 			field :matricula
 			field :data_leitura
 			field :data_vencimento
@@ -42,6 +45,7 @@ class Leitura < ActiveRecord::Base
 		end
 
 		list do
+			field :tipo
 			field :data_leitura
 			field :data_vencimento
 			field :consumo

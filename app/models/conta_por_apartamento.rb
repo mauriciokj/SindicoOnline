@@ -8,7 +8,7 @@ class ContaPorApartamento < ActiveRecord::Base
 	delegate :descricao, :to => :conta
 
 	def name
-		"#{self.apartamento.bloco} - #{self.apartamento.numero}: #{self.valor}"
+		"#{self.apartamento.bloco} - #{self.apartamento.numero}: #{self.valor}" rescue nil
 	end
 
 	def status
