@@ -18,7 +18,7 @@ class ApartamentoLeitura < ActiveRecord::Base
 		}
 	}
 
-	before_save :atualiza_dados, :if => :new_record?
+	before_save :calcula_consumo, :if => :new_record?
 
 	alias_attribute :name, :to_label
 
@@ -27,10 +27,7 @@ class ApartamentoLeitura < ActiveRecord::Base
 		"#{self.apartamento.to_label rescue ''} - #{self.leitura.to_label rescue ''}" 
 	end
 
-	def atualiza_dados
-		if self.leitura
-			self.tipo = self.leitura.tipo rescue nil
-		end
+	def calcula_consumo
 		self.consumo = self.leitura_apartamento - (self.apartamento.apartamentos_leituras.do_tipo(self.tipo).last.leitura_apartamento rescue 0)
 	end	
 
@@ -43,6 +40,7 @@ class ApartamentoLeitura < ActiveRecord::Base
 		label "Leituras dos apartamentos"
 
 		edit do
+			field :tipo
 			field :apartamento
 			field :leitura
 			field :data
@@ -54,7 +52,6 @@ class ApartamentoLeitura < ActiveRecord::Base
 			field :apartamento
 			field :tipo
 			field :data
-			field :leitura
 			field :consumo do
 				pretty_value do # used in list view columns and show views, defaults to formatted_value for non-association fields
 					value.round(2) rescue value

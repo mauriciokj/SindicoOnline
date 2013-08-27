@@ -10,7 +10,7 @@ class PrincipalController < ApplicationController
 		@contas = []
 
 		@leituras_em_aberto.each do |l|
-			@contas << {"tipo" =>  "Agua", "vencimento" => l.data, "valor" => l.valor, "status" => l.status}
+			@contas << {"tipo" =>  l.tipo.descricao, "vencimento" => l.data, "valor" => l.valor, "status" => l.status}
 		end
 
 		@contas_em_aberto.each do |l|
