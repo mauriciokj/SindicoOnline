@@ -9,6 +9,6 @@ class Tipo < ActiveRecord::Base
 	alias_attribute :name, :to_label
 	rails_admin do
 		
-		label "Tipos e leituras"
+		label "Tipos de leituras"
 	end
 end

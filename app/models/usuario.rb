@@ -79,6 +79,9 @@
 
   list do
     field :email
+    field :current_sign_in_at do
+      label "Ultimo acesso"
+    end
   end
 
 end
