@@ -10,7 +10,7 @@ class PrincipalController < ApplicationController
 		@contas = []
 
 		@leituras_em_aberto.each do |l|
-			@contas << {"tipo" =>  l.tipo.descricao, "vencimento" => l.data, "valor" => l.valor, "status" => l.status}
+			@contas << {"tipo" =>  l.tipo.descricao, "vencimento" => (l.leitura.data_vencimento rescue "10/#{Date.today.month + 1}/#{Date.today.year}"), "valor" => l.valor, "status" => l.status}
 		end
 
 		@contas_em_aberto.each do |l|
