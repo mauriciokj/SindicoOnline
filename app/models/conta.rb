@@ -26,7 +26,7 @@ class Conta < ActiveRecord::Base
 		label "Conta"
 		edit do
 			field :descricao
-			field :vencimento
+			field :vencimento 
 			field :valor
 			field :paga
 			field :imovel_id, :enum do

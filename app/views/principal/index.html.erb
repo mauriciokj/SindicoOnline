@@ -11,6 +11,16 @@
 				<% if usuario_signed_in? %>
 				<ul class="nav pull-right">
 					<li>
+						<a id='botao_mensagem' href="#">Mensagens
+							<% if @nao_lidas.count > 0  %>
+							<span class="badge badge-important"> <%= @nao_lidas.count %> </span>
+							
+							<% else %>
+							<span class="badge"> <%= @nao_lidas.count %></span>
+							<% end %>
+						</a>
+					</li>
+					<li>
 						<a href="/admin/">Configurações</a>
 					</li>
 
@@ -36,9 +46,12 @@
 		</div>
 	</div>
 </div>
-
 <div id="principal" style='padding-top: 45px;'>
 	<h1  class='text-right' >Total: <%= number_to_currency(@tota_a_pagar) %></h1>
+
+	<div id='mensagens' class='well' style=' display:none'>
+		<%= render :partial =>'mensagens/mensagens'%>
+	</div>
 
 	<div class="well">
 		<table class="table">

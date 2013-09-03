@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130827190000) do
+ActiveRecord::Schema.define(:version => 20130902190324) do
 
   create_table "apartamentos", :force => true do |t|
     t.integer  "numero"
@@ -107,6 +107,36 @@ ActiveRecord::Schema.define(:version => 20130827190000) do
     t.integer  "tipo_id"
   end
 
+  create_table "mensagens", :force => true do |t|
+    t.integer  "de"
+    t.integer  "para"
+    t.text     "mensagem"
+    t.boolean  "lida"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "pessoas", :force => true do |t|
+    t.string   "nome"
+    t.string   "tipo"
+    t.string   "cpf_cnpj"
+    t.string   "email"
+    t.string   "rg_ie"
+    t.string   "rua"
+    t.string   "bairro"
+    t.string   "cep"
+    t.integer  "cidade_id"
+    t.string   "telefone"
+    t.string   "celular"
+    t.date     "nascimento"
+    t.integer  "apartamento_id"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
+
+  add_index "pessoas", ["apartamento_id"], :name => "index_pessoas_on_apartamento_id"
+  add_index "pessoas", ["cidade_id"], :name => "index_pessoas_on_cidade_id"
+
   create_table "rails_admin_histories", :force => true do |t|
     t.text     "message"
     t.string   "username"
@@ -145,6 +175,7 @@ ActiveRecord::Schema.define(:version => 20130827190000) do
     t.integer  "imovel_id"
     t.integer  "apartamento_id"
     t.integer  "roles_mask"
+    t.integer  "pessoa_id"
   end
 
   add_index "usuarios", ["email"], :name => "index_usuarios_on_email", :unique => true

@@ -70,9 +70,9 @@ pt-BR:
         breadcrumb: "Editar"
         link: "Editar este %{model_label}"
         done: "atualizado"
-      calcular_valores:
+      auditar:
         title: "Auditar %{model_label} '%{object_label}'"
-        menu: "Calcular valores por apartamento"
+        menu: "Auditar"
         breadcrumb: "Remover"
         link: "Auditar '%{object_label}'"
         done: "auditando"

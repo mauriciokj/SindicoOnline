@@ -3,10 +3,13 @@ class PrincipalController < ApplicationController
 	def index
 		@usuario = current_usuario
 		@apartamento = current_usuario.apartamento
+		@apartamentos = @apartamento.imovel.apartamentos
 		@leituras_em_aberto = Apartamento.do_bloco(@apartamento.bloco).do_numero(@apartamento.numero).leituras_em_aberto.first.apartamentos_leituras rescue []
 		@contas_em_aberto = Apartamento.do_bloco(@apartamento.bloco).do_numero(@apartamento.numero).contas_em_aberto.first.contas_por_apartamentos rescue []
 		@tota_a_pagar = @apartamento.total_a_pagar
-
+		@enviadas = @apartamento.mensagens_enviadas
+		@lidas = @apartamento.mensagens_recebidas.lidas
+		@nao_lidas = @apartamento.mensagens_recebidas.nao_lidas
 		@contas = []
 
 		@leituras_em_aberto.each do |l|

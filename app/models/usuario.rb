@@ -5,6 +5,7 @@
     # :registerable, :timeoutable and :omniauthable
     belongs_to :apartamento
     belongs_to :imovel
+    belongs_to :pessoa
     devise :database_authenticatable, :lockable,
     :recoverable, :rememberable, :trackable, :validatable
 
@@ -13,7 +14,7 @@
 
     include RoleModel
     # Setup accessible (or protected) attributes for your model
-    attr_accessible :email, :password, :password_confirmation, :remember_me, :apartamento_id, :imovel_id,:roles_mask
+    attr_accessible :email, :password, :password_confirmation, :remember_me, :apartamento_id, :imovel_id,:roles_mask, :pessoa_id
     # attr_accessible :title, :body
 
     roles_attribute :roles_mask
@@ -42,6 +43,7 @@
         field :email
         field :password
         field :password_confirmation
+        field :pessoa
         field :apartamento_id, :enum do
           visible do
            bindings[:view]._current_user.admin? || bindings[:view]._current_user.sindico?

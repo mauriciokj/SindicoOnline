@@ -1,7 +1,10 @@
 class Apartamento < ActiveRecord::Base
-	attr_accessible :bloco, :numero, :imovel_id, :usuario_ids
+	attr_accessible :bloco, :numero, :imovel_id, :usuario_ids, :pessoa_ids
 	has_many :apartamentos_leituras
+	has_many :mensagens_enviadas, :class_name => "Mensagem", :foreign_key => "de"
+	has_many :mensagens_recebidas, :class_name => "Mensagem", :foreign_key => "para"
 	has_many :contas_por_apartamentos
+	has_many :pessoas
 	belongs_to :imovel
 	alias_attribute :name, :to_label
 	has_many :usuario
@@ -72,6 +75,7 @@ class Apartamento < ActiveRecord::Base
 			field :numero
 			field :imovel
 			field :usuario
+			field :pessoas
 		end
 
 	end

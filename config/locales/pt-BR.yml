@@ -11,7 +11,7 @@ pt-BR:
     formats:
       default: "%d/%m/%Y"
       short: "%d de %B"
-      long: "%d de %B de %Y"
+      long: '%d %B %Y' 
       only_day: "%d"
       default_pt_br: "%d/%m/%Y"
     
@@ -27,7 +27,7 @@ pt-BR:
       time: "%H:%M hs"
       picker: "%d/%m/%Y %H:%M %p"
       short: "%d/%m, %H:%M hs"
-      long: "%A, %d de %B de %Y, %H:%M hs"
+      long: "%A, %d %B %Y, %H:%M hs"
       only_second: "%S"
       datetime:
         formats:
