@@ -27,9 +27,17 @@ class PrincipalController < ApplicationController
 		@usuario = current_usuario
 		@apartamentos = @usuario.imovel.apartamentos
 		@totais = []
+		@total = []
 		@apartamentos.each do |apartamento| 
 			@total_a_pagar += apartamento.total_a_pagar
-			@totais << {'apartamento' => apartamento.to_label, 'valor' => apartamento.total_a_pagar}
+			(Apartamento.do_bloco(apartamento.bloco).do_numero(apartamento.numero).leituras_em_aberto.first.apartamentos_leituras rescue []).each do |l|
+				@total << {"tipo" =>  l.tipo.descricao, "vencimento" => (l.leitura.data_vencimento rescue "10/#{Date.today.month + 1}/#{Date.today.year}"), "valor" => l.valor, "status" => l.status}
+			end
+			(Apartamento.do_bloco(apartamento.bloco).do_numero(apartamento.numero).contas_em_aberto.first.contas_por_apartamentos rescue []).each do |l|
+				@total << {"tipo" =>  l.descricao, "vencimento" => l.vencimento, "valor" => l.valor, "status" => l.status}
+			end
+			@totais << {'contas' => @total , 'id' => apartamento.id, 'apartamento' => apartamento.to_label, 'valor' => apartamento.total_a_pagar}
+
 		end
 		render  formats: [:js]
 	end

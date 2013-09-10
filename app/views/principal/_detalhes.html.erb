@@ -1,0 +1,33 @@
+	<div id="modal-detalhes-<%= id %>" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h3 id="myModalLabel">Detalhes do apartamento </h3>
+		</div>
+		<div class="modal-body">
+			<table class="table table-condensed">
+				<h4 id="myModalLabel"> <%= apartamento%>  </h4>
+				<thead>
+					<tr>
+						<th>Conta</th>
+						<th>Vencimento</th>
+						<th>Status</th>
+						<th>Valor (R$)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<% contas.each do |conta| %>
+					<tr>
+						<td><%= conta['tipo'] %></td>
+						<td><%= I18n.l(conta['vencimento']) %></td>
+						<td><%= conta['status'] %></td>
+						<td class='text-right'><%= number_to_currency(conta['valor']) rescue 0   %></td>
+					</tr>
+					<% end%>	
+				</tbody>
+			</table>
+		</div>
+		<div class="modal-footer">
+			<button class="btn" data-dismiss="modal" aria-hidden="true">Fechar</button>
+			
+		</div>
+	</div>
