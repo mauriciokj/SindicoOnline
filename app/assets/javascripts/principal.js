@@ -7,14 +7,15 @@ $(document).ready(function () {
 	});
 
 	$("#pagar").on("click", function (event){
-		apartamento_id = $(this).attr("value")
-		$.ajax({
-			type: "GET",
-			url: "/pagar/" + apartamento_id
+		if (confirm('Você tem certeza que deseja fazer isso?')) {
+			apartamento_id = $(this).attr("value")
+			$.ajax({
+				type: "GET",
+				url: "/pagar/" + apartamento_id
 
 
+			});}
 		});
-	});
 
 
 });
