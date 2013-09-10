@@ -12,6 +12,7 @@
 			</thead>
 			<tbody>
 				<% @totais.each do |total| %>
+				<% if (total['valor'].to_f rescue 0) > 0 %>
 				<tr>
 					<td><%= total['apartamento'] %></td>
 					<td ><%= number_to_currency(total['valor']) rescue 0   %></td>
@@ -24,10 +25,11 @@
 							:apartamento => total['apartamento'], 
 							:id => total['id'],
 							:contas => total['contas']} %>
-					</td>
-					<td><a href="#">Pagar</a></td>
-				</tr>
-				<% end%>	
-			</tbody>
-		</table>
-	</div>
+						</td>
+						<td><a href="#">Pagar</a></td>
+					</tr>
+					<% end%>	
+					<% end%>	
+				</tbody>
+			</table>
+		</div>
