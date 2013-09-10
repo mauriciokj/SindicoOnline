@@ -26,6 +26,10 @@ class PrincipalController < ApplicationController
 		@total_a_pagar = 0
 		@usuario = current_usuario
 		@apartamentos = @usuario.imovel.apartamentos
+		@apartamento = current_usuario.apartamento
+		@enviadas = @apartamento.mensagens_enviadas
+		@lidas = @apartamento.mensagens_recebidas.lidas
+		@nao_lidas = @apartamento.mensagens_recebidas.nao_lidas
 		@totais = []
 		@total = []
 		@apartamentos.each do |apartamento| 
