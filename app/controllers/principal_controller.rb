@@ -22,6 +22,21 @@ class PrincipalController < ApplicationController
 		
 	end
 
+	def pagar
+		puts ">>>>>>>>>>>"
+		puts params.inspect
+		apartamento = Apartamento.find(params['apartamento_id'])
+		Apartamento.do_bloco(apartamento.bloco).do_numero(apartamento.numero).leituras_em_aberto.first.apartamentos_leituras.each do |al|
+			al.paga = true
+			al.save
+		end
+		(Apartamento.do_bloco(apartamento.bloco).do_numero(apartamento.numero).contas_em_aberto.first.contas_por_apartamentos rescue []).each do |al|
+			al.paga = true
+			al.save
+		end
+		redirect_to totais_apartamento_path
+	end
+
 	def totais_apartamento
 		@total_a_pagar = 0
 		@usuario = current_usuario
