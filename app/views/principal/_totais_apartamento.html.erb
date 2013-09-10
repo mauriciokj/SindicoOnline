@@ -1,0 +1,24 @@
+	<h1  class='text-right' >Total: <%= number_to_currency(@total_a_pagar) %></h1>
+
+	<div class="well">
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Apartamento</th>
+					<th>Valor (R$)</th>
+					<th>Detalhes</th>
+					<th>Pagar</th>
+				</tr>
+			</thead>
+			<tbody>
+				<% @totais.each do |total| %>
+				<tr>
+					<td><%= total['apartamento'] %></td>
+					<td class='text-right'><%= number_to_currency(total['valor']) rescue 0   %></td>
+					<td><a href="#">Detalhes</a></td>
+					<td><a href="#">Pagar</a></td>
+				</tr>
+				<% end%>	
+			</tbody>
+		</table>
+	</div>

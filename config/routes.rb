@@ -3,6 +3,7 @@ SindicoOnline::Application.routes.draw do
   match 'calcular_valores' => 'leituras#calcular_valores', :as => :calcular_valores
   match 'calcular_valores_da_conta' => 'contas#calcular_valores', :as => :calcular_valores_da_conta
   match 'principal' => 'principal#index', :as => :principal
+  match 'totais_apartamento' => 'principal#totais_apartamento', :as => :totais_apartamento
 
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
 

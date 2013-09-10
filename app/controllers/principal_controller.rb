@@ -21,4 +21,16 @@ class PrincipalController < ApplicationController
 		end
 		
 	end
+
+	def totais_apartamento
+		@total_a_pagar = 0
+		@usuario = current_usuario
+		@apartamentos = @usuario.imovel.apartamentos
+		@totais = []
+		@apartamentos.each do |apartamento| 
+			@total_a_pagar += apartamento.total_a_pagar
+			@totais << {'apartamento' => apartamento.to_label, 'valor' => apartamento.total_a_pagar}
+		end
+		render  formats: [:js]
+	end
 end

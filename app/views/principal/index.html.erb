@@ -20,6 +20,11 @@
 							<% end %>
 						</a>
 					</li>
+					<% if current_usuario.admin? || current_usuario.sindico? %>
+					<li>
+						<a id="link-valores" href="#">Totais</a>
+					</li>
+					<% end %>
 					<li>
 						<a href="/admin/">Configurações</a>
 					</li>
