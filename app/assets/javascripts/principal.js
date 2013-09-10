@@ -22,8 +22,7 @@ $(document).ready(function () {
 
 $(document).ajaxComplete(function () {
 	$("#pagar").on("click", function (event){
-		console.log('chegou aqui')
-		console.log($(this).attr("value"))
+		
 		if (confirm('Você tem certeza que deseja fazer isso?')) {
 			apartamento_id = $(this).attr("value")
 			$.ajax({

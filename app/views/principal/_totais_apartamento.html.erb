@@ -16,24 +16,24 @@
 			</thead>
 			<tbody>
 				<% @totais.each do |total| %>
-				<% if (total['valor'].to_f rescue 0) > 0 %>
-				<tr>
-					<td><%= total['apartamento'] %></td>
-					<td ><%= number_to_currency(total['valor']) rescue 0   %></td>
-					<td>
-						<a href="#modal-detalhes-<%= total['id'] %>" data-toggle="modal" class='btn btn-primary link-detalhes' data-apartamento-id="<%= total['id'] %>">
-							<i class='icon-plus'></i>
-							Detalhes
-						</a>
-						<%= render :partial => 'detalhes', :locals => {
-							:apartamento => total['apartamento'], 
-							:id => total['id'],
-							:contas => total['contas']} %>
-						</td>
-						<td><a id='pagar' value="<%= total['id']%>" href="#">Pagar</a></td>
-					</tr>
-					<% end%>	
-					<% end%>	
+					<% if (total['valor'].to_f rescue 0) > 0 %>
+						<tr>
+							<td><%= total['apartamento'] %></td>
+							<td ><%= number_to_currency(total['valor']) rescue 0   %></td>
+							<td>
+								<a href="#modal-detalhes-<%= total['id'] %>" data-toggle="modal" class='btn btn-primary link-detalhes' data-apartamento-id="<%= total['id'] %>">
+									<i class='icon-plus'></i>
+									Detalhes
+								</a>
+								<%= render :partial => 'detalhes', :locals => {
+									:apartamento => total['apartamento'], 
+									:id => total['id'],
+									:contas => total['contas']} %>
+								</td>
+								<td><a id='pagar' value="<%= total['id']%>" href="#">Pagar</a></td>
+						</tr>
+					<% end %>	
+				<% end %>	
 				</tbody>
 			</table>
 		</div>
