@@ -8,6 +8,7 @@
 				<h4 id="myModalLabel"> <%= apartamento%>  </h4>
 				<thead>
 					<tr>
+						<th>Apartamento</th>
 						<th>Conta</th>
 						<th>Vencimento</th>
 						<th>Status</th>
@@ -17,6 +18,7 @@
 				<tbody>
 					<% contas.each do |conta| %>
 					<tr>
+						<td><%= conta['apartamento'] %></td>
 						<td><%= conta['tipo'] %></td>
 						<td><%= I18n.l(conta['vencimento']) %></td>
 						<td><%= conta['status'] %></td>
