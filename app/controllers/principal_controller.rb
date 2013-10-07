@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class PrincipalController < ApplicationController
 	before_filter :authenticate_usuario!
 	def index
@@ -23,15 +24,23 @@ class PrincipalController < ApplicationController
 	end
 
 	def pagar
+		puts ">>>>>>>>>>>>>>>"
+		puts "ENTROU NO PAGAR"
 		if current_usuario.admin? || current_usuario.sindico?
+			puts "O usuario é admin ou sindico"
 			apartamento = Apartamento.find(params['apartamento_id'])
+			puts "Apartamento carregado = #{apartamento.inspect}"
 			Apartamento.do_bloco(apartamento.bloco).do_numero(apartamento.numero).leituras_em_aberto.first.apartamentos_leituras.each do |al|
+				puts "Leituras"
+				puts al.inspect
 				al.paga = true
-				al.save
+				puts al.save
 			end
 			(Apartamento.do_bloco(apartamento.bloco).do_numero(apartamento.numero).contas_em_aberto.first.contas_por_apartamentos rescue []).each do |al|
+				puts "contas"
+				puts al.inspect
 				al.paga = true
-				al.save
+				puts al.save
 			end
 		end
 		redirect_to totais_apartamento_path
@@ -57,10 +66,13 @@ class PrincipalController < ApplicationController
 				(Apartamento.do_bloco(apartamento.bloco).do_numero(apartamento.numero).contas_em_aberto.first.contas_por_apartamentos rescue []).each do |l|
 					@total[apartamento.id] << {'apartamento' => apartamento.to_label ,"tipo" =>  l.descricao, "vencimento" => l.vencimento, "valor" => l.valor, "status" => l.status}
 				end
-				@totais << {'contas' => @total[apartamento.id] , 'id' => apartamento.id, 'apartamento' => apartamento.to_label, 'valor' => apartamento.total_a_pagar}
+				@totais << {'pessoas' => apartamento.nome_das_pessoas, 'contas' => @total[apartamento.id] , 'id' => apartamento.id, 'apartamento' => apartamento.to_label, 'valor' => apartamento.total_a_pagar}
 
 			end
 		end
+		puts ">>>>>>>>>>>>>>>>"
+		puts @totais.count
+		puts @totais.inspect
 		render  formats: [:js]
 	end
 end

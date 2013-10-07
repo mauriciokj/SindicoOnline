@@ -17,7 +17,7 @@
 					<% contas.each do |conta| %>
 					<tr>
 						<td><%= conta['tipo'] %></td>
-						<td><%= I18n.l(conta['vencimento']) %></td>
+						<td><%= I18n.l(conta['vencimento']) rescue '' %></td>
 						<td class='text-right'><%= number_to_currency(conta['valor']) rescue 0   %></td>
 					</tr>
 					<% end%>	

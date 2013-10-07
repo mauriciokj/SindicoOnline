@@ -56,7 +56,17 @@ module SindicoOnline
 
     # Enable the asset pipeline
     config.assets.enabled = true
+
+    ActionMailer::Base.delivery_method = :smtp
+    ActionMailer::Base.smtp_settings = {
+      :address => "mail.aftersixapps.com",
+      :port => 25,
+      :domain => "aftersixapps.com",
+      :authentication => :login,
+      :user_name => "admin@aftersixapps.com",
+      :password => "pastelFrango13",
+  }
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
-  end
+end
 end

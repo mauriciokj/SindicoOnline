@@ -46,6 +46,8 @@ class ApartamentoLeitura < ActiveRecord::Base
 			field :data
 			field :leitura_apartamento
 			field :paga
+			field :valor
+			
 		end
 
 		list do

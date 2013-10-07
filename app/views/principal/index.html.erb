@@ -6,7 +6,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</a>
-			<a class="brand" href="/"><%= @apartamento.imovel.nome %> - Apto: <%= @apartamento.numero %>, bloco: <%= @apartamento.bloco %> </a>
+			<a class="brand" href="/"> Apto: <%= @apartamento.numero %>, bloco: <%= @apartamento.bloco %> </a>
 			<div class="nav-collapse">
 				<% if usuario_signed_in? %>
 				<ul class="nav pull-right">
@@ -20,17 +20,28 @@
 							<% end %>
 						</a>
 					</li>
+					
 					<% if current_usuario.admin? || current_usuario.sindico? %>
-					<li>
-						<a id="link-valores" href="#">Totais</a>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Sindico <b class="caret"></b>
+						</a>
+						<ul class="dropdown-menu">
+							
+							<li>
+								<a id="link-valores" href="#">Totais</a>
+							</li>
+							
+						</ul>
 					</li>
 					<% end %>
+					
 					<li>
 						<a href="/admin/">Configurações</a>
 					</li>
 
 					<li>
-						<a href="/">Home</a>
+						<a href="/">Minhas contas</a>
 					</li>
 					<li>
 						<a rel="nofollow">

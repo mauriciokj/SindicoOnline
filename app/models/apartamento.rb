@@ -48,6 +48,10 @@ class Apartamento < ActiveRecord::Base
 		}
 	}
 
+	def nome_das_pessoas
+		self.pessoas.pluck(:nome).join(",")
+	end
+
 
 
 	def to_label
@@ -67,6 +71,7 @@ class Apartamento < ActiveRecord::Base
 			field :numero
 			field :imovel
 			field :usuario
+			field :pessoas
 			
 		end
 

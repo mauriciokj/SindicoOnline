@@ -9,6 +9,7 @@
 			<thead>
 				<tr>
 					<th>Apartamento</th>
+					<th>Pessoas</th>
 					<th >Valor (R$)</th>
 					<th>Detalhes</th>
 					<th>Pagar</th>
@@ -19,6 +20,7 @@
 					<% if (total['valor'].to_f rescue 0) > 0 %>
 						<tr>
 							<td><%= total['apartamento'] %></td>
+							<td><%= total['pessoas'] %></td>
 							<td ><%= number_to_currency(total['valor']) rescue 0   %></td>
 							<td>
 								<a href="#modal-detalhes-<%= total['id'] %>" data-toggle="modal" class='btn btn-primary link-detalhes' data-apartamento-id="<%= total['id'] %>">
@@ -30,7 +32,13 @@
 									:id => total['id'],
 									:contas => total['contas']} %>
 								</td>
-								<td><a id='pagar' value="<%= total['id']%>" href="#">Pagar</a></td>
+								 
+								<td>
+									<a class='btn btn-success ' id='pagar' value="<%= total['id']%>" >
+									<i class='icon-check'></i>	
+									Pagar
+								</a>
+								</td>
 						</tr>
 					<% end %>	
 				<% end %>	
