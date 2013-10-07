@@ -21,7 +21,7 @@ $(document).ready(function () {
 });
 
 $(document).ajaxComplete(function () {
-	$("#pagar").on("click", function (event){
+	$(".pagar_conta").on("click", function (event){
 		
 		if (confirm('Você tem certeza que deseja fazer isso?')) {
 			apartamento_id = $(this).attr("value")
