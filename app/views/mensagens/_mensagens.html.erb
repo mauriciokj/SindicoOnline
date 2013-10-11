@@ -2,7 +2,6 @@
   <li class="active"><a href="#nao_lidas" data-toggle="tab">Não lidas</a></li>
   <li><a href="#lidas" data-toggle="tab">Lidas</a></li>
   <li><a href="#enviar" data-toggle="tab">Enviar</a></li>
-  <li><a href="#enviadas" data-toggle="tab">Enviadas</a></li>
 </ul>
 <div id="myTabContent" class="tab-content">
   <div class="tab-pane active in" id="nao_lidas">
@@ -12,9 +11,8 @@
     <%= render :partial => 'mensagens/lidas'%>
   </div>
   <div class="tab-pane fade" id="enviar">
-    <%= render :partial => 'mensagens/enviar_mensagem'%>
+    <%= render :partial => 'mensagens/enviar_mensagem' %>
   </div>
-  <div class="tab-pane fade" id="enviadas">
-    <%= render :partial => 'mensagens/enviadas'%>
-  </div>
+  <!-- <div class="tab-pane fade" id="enviadas">
+  </div> -->
 </div>

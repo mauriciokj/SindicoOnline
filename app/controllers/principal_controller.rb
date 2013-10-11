@@ -12,6 +12,7 @@ class PrincipalController < ApplicationController
 		@lidas = @apartamento.mensagens_recebidas.lidas
 		@nao_lidas = @apartamento.mensagens_recebidas.nao_lidas
 		@contas = []
+		@mensagem = Mensagem.new
 
 		@leituras_em_aberto.each do |l|
 			@contas << {"tipo" =>  l.tipo.descricao, "vencimento" => (l.leitura.data_vencimento rescue "10/#{Date.today.month + 1}/#{Date.today.year}"), "valor" => l.valor, "status" => l.status}
@@ -24,23 +25,15 @@ class PrincipalController < ApplicationController
 	end
 
 	def pagar
-		puts ">>>>>>>>>>>>>>>"
-		puts "ENTROU NO PAGAR"
 		if current_usuario.admin? || current_usuario.sindico?
-			puts "O usuario é admin ou sindico"
 			apartamento = Apartamento.find(params['apartamento_id'])
-			puts "Apartamento carregado = #{apartamento.inspect}"
 			Apartamento.do_bloco(apartamento.bloco).do_numero(apartamento.numero).leituras_em_aberto.first.apartamentos_leituras.each do |al|
-				puts "Leituras"
-				puts al.inspect
 				al.paga = true
-				puts al.save
+				al.save
 			end
 			(Apartamento.do_bloco(apartamento.bloco).do_numero(apartamento.numero).contas_em_aberto.first.contas_por_apartamentos rescue []).each do |al|
-				puts "contas"
-				puts al.inspect
 				al.paga = true
-				puts al.save
+				al.save
 			end
 		end
 		redirect_to totais_apartamento_path
@@ -70,9 +63,6 @@ class PrincipalController < ApplicationController
 
 			end
 		end
-		puts ">>>>>>>>>>>>>>>>"
-		puts @totais.count
-		puts @totais.inspect
 		render  formats: [:js]
 	end
 end

@@ -11,7 +11,7 @@
   <tbody>
     <% @lidas.each do |mensagem| %>
     <tr>
-      <td><input type="checkbox"> <a href="#"></a></td>
+      <td><input class='mensagem' type="checkbox" id="<%= mensagem.id %>"> </td>
       <td><strong><%= mensagem.de.bloco %> - <%= mensagem.de.numero %></strong></td>
       <!-- <td><span class="label pull-right">Notifications</span></td> -->
       <td><strong><%= mensagem.mensagem%></strong></td>
@@ -21,8 +21,8 @@
   </tbody>
 </table>
 <div class="form-actions">
-  <button type="button" class="btn btn-primary">Deletar</button>
-  <button type="submit" class="btn btn-primary">Marcar como não lida</button>
+  <button id='deletar_mensagens' class="btn btn-primary">Deletar</button>
+  <button id='marcar_como_nao_lida' class="btn btn-primary">Marcar como não lida</button>
 </div>
 
 <% else %>

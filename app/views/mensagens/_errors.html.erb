@@ -1,0 +1,12 @@
+  <% if mensagem.errors.any?  %>
+  <div id="error_explanation"  class="alert alert-error">
+    <h4><%= pluralize(mensagem.errors.count, "erro") %> ao enviar mensagem:</h4>
+
+    <ul>
+      <% mensagem.errors.full_messages.each do |msg| %>
+      <li><%= msg.gsub('Para', 'Apartamento destinatario ') %></li>
+      <% end %>
+    </ul>
+  </div>
+  <% end %>
+  <%= bootstrap_flash %>

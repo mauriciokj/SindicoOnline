@@ -11,7 +11,7 @@
   <tbody>
     <% @enviadas.each do |mensagem| %>
     <tr>
-      <td><input type="checkbox"> <a href="#"></a></td>
+      <td><input class='mensagem' type="checkbox" id="<%= mensagem.id %>"> </td>
       <td><strong><%= mensagem.para.bloco %> - <%= mensagem.para.numero %></strong></td>
       <!-- <td><span class="label pull-right">Notifications</span></td> -->
       <td><strong><%= mensagem.mensagem%></strong></td>
@@ -21,10 +21,6 @@
   </tbody>
 </table>
 
-<div class="form-actions">
-  <button type="button" class="btn btn-primary">Deletar</button>
-  <button type="submit" class="btn btn-primary">Reenviar</button>
-</div>
 <% else %>
 <div class="alert alert-block">
   <h4>Nenhuma mensagem encontrada

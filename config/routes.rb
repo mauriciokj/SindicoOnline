@@ -5,6 +5,10 @@ SindicoOnline::Application.routes.draw do
   match 'principal' => 'principal#index', :as => :principal
   match 'totais_apartamento' => 'principal#totais_apartamento', :as => :totais_apartamento
   match 'pagar/:apartamento_id' => 'principal#pagar', :as => :pagar
+  match 'enviar_mensagem' => 'mensagens#enviar_mensagem', :as => :enviar_mensagem
+  match 'marcar_como_lida' => 'mensagens#marcar_como_lida', :as => :marcar_como_lida
+  match 'marcar_como_nao_lida' => 'mensagens#marcar_como_nao_lida', :as => :marcar_como_nao_lida
+  match 'deletar_mensagens' => 'mensagens#deletar_mensagens', :as => :deletar_mensagens
 
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
 

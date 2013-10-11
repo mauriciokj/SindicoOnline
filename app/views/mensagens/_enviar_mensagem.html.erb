@@ -1,14 +1,15 @@
-<div class="span6">
-  <form>
-    <div class="controls controls-row">
-      <%= select_tag 'Destinatario', options_for_select(@apartamentos.collect { |u| ["#{u.bloco} - #{u.numero}", u] }), {:id => 'seleciona-apartamento',:prompt => 'Selecione um apartamento', 'data-apartamento' => @apartamento.id} %>
-    </div>
-    <div class="controls">
-      <textarea id="message" name="message" class="span6" placeholder="Digite aqui sua mensagem" rows="5"></textarea>
-    </div>
+<div id="messages_and_erros">
 
-    <div class="controls">
-      <button id="contact-submit" type="submit" class="btn btn-primary input-medium pull-right">Enviar</button>
-    </div>
-  </form>
+</div>
+<div class="span6">
+  <div class="controls controls-row">
+    <%= select_tag 'Destinatario', options_for_select(@apartamentos.collect { |u| ["#{u.bloco} - #{u.numero}", u.id] }), {:id => 'seleciona-apartamento',:prompt => 'Selecione um apartamento', 'data-apartamento' => @apartamento.id} %>
+  </div>
+  <div class="controls">
+    <textarea id="message" name="message" class="span6" placeholder="Digite aqui sua mensagem" rows="5"></textarea>
+  </div>
+
+  <div class="controls">
+    <button id="contact-submit" class="btn btn-primary input-medium pull-right">Enviar</button>
+  </div>
 </div>
