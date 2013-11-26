@@ -2,8 +2,8 @@
 	<%= render :partial =>'mensagens/mensagens'%>
 </div>
 <div  class='form .form-stacked'>
-	<%= form_for @leitura, url: leituras_path(@leitura), html: {class: 'form-horizontal', method: 'post', 
-		id: 'form-leitura'}, remote: true do |f| %>
+	<%= form_for @leitura, url: gerar_apartamentos_leituras_path(@leitura), html: {class: 'form-horizontal', method: 'post', 
+		id: 'form-leitura'}, remote: true do %>
 
 		<div class="container">
 			<div class="row">
@@ -19,40 +19,36 @@
 						<input class="search" />
 						<div class="span4">
 							<div class='control-group string_type nome_field' id='leitura_matricula_field'>
-								<%= f.label :matricula %>
-								<%= f.text_field :matricula %><br/>
+								<%= label_tag :matricula %>
+								<%= text_field_tag :matricula %><br/>
 							</div>
 							<div class='control-group string_type nome_field' id='leitura_tipo_field'>
-								<%= f.label :tipo %>
-								<%= f.select :tipo, options_for_select(@tipos.collect { |u| [u.descricao, u] }), {:class=> "selectpicker", :id => 'seleciona-tipo', 'data-leitura' => @leitura.id} %>
+								<%= label_tag :tipo %>
+								<%= select_tag :tipo, options_for_select(@tipos.collect { |u| [u.descricao, u.id] }), {:class=> "selectpicker", :id => 'seleciona-tipo', 'data-leitura' => @leitura.id} %>
 							</div>
 							<div class='control-group string_type nome_field' id='leitura_data_leitura_field'>
-								<%= f.label :data_leitura %>
-								<%= f.text_field :data_leitura %><br/>
+								<%= label_tag :data_leitura %>
+								<%= text_field_tag :data_leitura %><br/>
 							</div>
 							<div class='control-group string_type nome_field' id='leitura_data_vencimento_field'>
-								<%= f.label :data_vencimento %>
-								<%= f.text_field :data_vencimento %><br/>
+								<%= label_tag :data_vencimento %>
+								<%= text_field_tag :data_vencimento %><br/>
 							</div>
 							<div class='control-group string_type nome_field' id='leitura_consumo_field'>
-								<%= f.label :consumo %>
-								<%= f.text_field :consumo %><br/>
+								<%= label_tag :consumo %>
+								<%= text_field_tag :consumo %><br/>
 							</div>
 							<div class='control-group string_type nome_field' id='leitura_leitura_anterior_field'>
-								<%= f.label :leitura_anterior %>
-								<%= f.text_field :leitura_anterior %><br/>
+								<%= label_tag :leitura_anterior %>
+								<%= text_field_tag :leitura_anterior %><br/>
 							</div>
 							<div class='control-group string_type nome_field' id='leitura_leitura_atual_field'>
-								<%= f.label :leitura_atual %>
-								<%= f.text_field :leitura_atual %><br/>
-							</div>
-							<div class='control-group string_type nome_field' id='leitura_consumo_field'>
-								<%= f.label :consumo %>
-								<%= f.text_field :consumo %><br/>
+								<%= label_tag :leitura_atual %>
+								<%= text_field_tag :leitura_atual %><br/>
 							</div>
 							<div class='control-group string_type nome_field' id='leitura_valor_field'>
-								<%= f.label :valor %>
-								<%= f.text_field :valor %><br/>
+								<%= label_tag :valor %>
+								<%= text_field_tag :valor %><br/>
 							</div>
 
 
@@ -77,8 +73,8 @@
 											
 										</p>
 										<div class='control-group string_type nome_field' id='leitura_apartamento_<%=apartamento.id%>_field'>
-											<%= label_tag :valor %>
-											<%= f.text_field :valor %><br/>
+											<%= label_tag :leitura %>
+											<%= text_field_tag "leitura_apartamento[#{apartamento.id}]['leitura']"  %><br/>
 										</div>
 										
 									</div>

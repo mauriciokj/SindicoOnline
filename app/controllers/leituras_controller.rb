@@ -11,4 +11,12 @@ class LeiturasController < ApplicationController
 		@leitura = Leitura.new
 		render  formats: [:js]
 	end
+
+	def gerar_apartamentos_leituras
+		puts ">>>>>>>>>>>>>>>>>>>>>>>>"
+		puts params.inspect
+		apartamentos =  params['leitura_apartamento'].keys
+		puts apartamentos
+		render :nothing => true
+	end
 end
