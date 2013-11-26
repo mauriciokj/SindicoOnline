@@ -1,0 +1,116 @@
+<div id='mensagens' class='well' style=' display:none'>
+	<%= render :partial =>'mensagens/mensagens'%>
+</div>
+<div  class='form .form-stacked'>
+	<%= form_for @leitura, url: leituras_path(@leitura), html: {class: 'form-horizontal', method: 'post', 
+		id: 'form-leitura'}, remote: true do |f| %>
+
+		<div class="container">
+			<div class="row">
+				<div class="span12">
+					<div class="row">
+						<div class="span8">
+							<h4 style="margin-left:5px;">
+								<strong><a href="#"><%= imovel.nome%></a></strong>
+							</h4>
+						</div>
+					</div>
+					<div class="row" id="lista_de_apartamentos">
+						<input class="search" />
+						<div class="span4">
+							<div class='control-group string_type nome_field' id='leitura_matricula_field'>
+								<%= f.label :matricula %>
+								<%= f.text_field :matricula %><br/>
+							</div>
+							<div class='control-group string_type nome_field' id='leitura_tipo_field'>
+								<%= f.label :tipo %>
+								<%= f.select :tipo, options_for_select(@tipos.collect { |u| [u.descricao, u] }), {:class=> "selectpicker", :id => 'seleciona-tipo', 'data-leitura' => @leitura.id} %>
+							</div>
+							<div class='control-group string_type nome_field' id='leitura_data_leitura_field'>
+								<%= f.label :data_leitura %>
+								<%= f.text_field :data_leitura %><br/>
+							</div>
+							<div class='control-group string_type nome_field' id='leitura_data_vencimento_field'>
+								<%= f.label :data_vencimento %>
+								<%= f.text_field :data_vencimento %><br/>
+							</div>
+							<div class='control-group string_type nome_field' id='leitura_consumo_field'>
+								<%= f.label :consumo %>
+								<%= f.text_field :consumo %><br/>
+							</div>
+							<div class='control-group string_type nome_field' id='leitura_leitura_anterior_field'>
+								<%= f.label :leitura_anterior %>
+								<%= f.text_field :leitura_anterior %><br/>
+							</div>
+							<div class='control-group string_type nome_field' id='leitura_leitura_atual_field'>
+								<%= f.label :leitura_atual %>
+								<%= f.text_field :leitura_atual %><br/>
+							</div>
+							<div class='control-group string_type nome_field' id='leitura_consumo_field'>
+								<%= f.label :consumo %>
+								<%= f.text_field :consumo %><br/>
+							</div>
+							<div class='control-group string_type nome_field' id='leitura_valor_field'>
+								<%= f.label :valor %>
+								<%= f.text_field :valor %><br/>
+							</div>
+
+
+						</div>
+						<div class="span6">
+							<div class="tabbable tabs-left" >
+								
+								<ul class="nav nav-tabs list" style="padding-top:15px;margin-left:-20px;">
+									<% apartamentos.each do |apartamento|%>
+									<li>
+										<a class="apartamento" href="#<%= apartamento.id%>" data-toggle="tab">Bloco <%= apartamento.bloco %> -  Apartamento <%= apartamento.numero %></a>
+									</li>
+									<% end %>
+								</ul>
+
+								<div class="tab-content">
+									<% apartamentos.each do |apartamento|%>
+									<div class="tab-pane" id="<%= apartamento.id %>">
+										<p>
+											<span class="label label-success" ><%= apartamento.nome_das_pessoas%></span> 
+											<span class="label label-info" ><%= apartamento.bloco%> - <%= apartamento.numero%> </span> 
+											
+										</p>
+										<div class='control-group string_type nome_field' id='leitura_apartamento_<%=apartamento.id%>_field'>
+											<%= label_tag :valor %>
+											<%= f.text_field :valor %><br/>
+										</div>
+										
+									</div>
+									<% end %>
+								</div>
+							</div> <!-- /tabbable -->
+						</div>
+					</div>
+					<div class="row">
+						<div class="span8" style="margin-bottom:0px;">
+							<p style="margin-left:5px;">
+								Sindico: <a href="#"><%= current_usuario.pessoa.nome rescue current_usuario.email%> </a> | <%= I18n.l(Date.today) %> 
+								<button id="salvar-leitura" class="btn btn-primary pull-right" style="margin-right:5px;">Lançar contas
+									<%= image_tag(path_to_asset("spinner-dots.gif"), :id => "spinner", :style => "display: none") %>
+								</button>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+		<% end%>   
+	</div>
+
+	<script>
+	var options = {
+		valueNames: [  'apartamento' ]
+	};
+
+	var ListaApartamentos = new List('lista_de_apartamentos', options);
+
+	</script>
+	

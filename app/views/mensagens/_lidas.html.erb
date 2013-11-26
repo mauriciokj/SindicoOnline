@@ -1,4 +1,4 @@
-<% if @lidas.count > 0 %>
+<% if current_usuario.apartamento.mensagens_recebidas.lidas.count > 0 %>
 <table class="table table-condensed table-hover">
   <thead>
     <tr>
@@ -9,7 +9,7 @@
     </tr>
   </thead>
   <tbody>
-    <% @lidas.each do |mensagem| %>
+    <% current_usuario.apartamento.mensagens_recebidas.lidas.each do |mensagem| %>
     <tr>
       <td><input class='mensagem' type="checkbox" id="<%= mensagem.id %>"> </td>
       <td><strong><%= mensagem.de.bloco %> - <%= mensagem.de.numero %></strong></td>

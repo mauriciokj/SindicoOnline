@@ -6,6 +6,14 @@ $(document).ready(function () {
 		});
 	});
 
+	$("#link-lancamentos").on("click", function (event){
+
+		$.ajax({
+			type: "GET",
+			url: "/leituras/"
+		});
+	});
+
 	$("#pagar").on("click", function (event){
 		if (confirm('Você tem certeza que deseja fazer isso?')) {
 			apartamento_id = $(this).attr("value")

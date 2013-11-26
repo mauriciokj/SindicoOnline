@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SindicoOnline</title>
+	<%= stylesheet_link_tag    "application", :media => "all" %>
+	<%= javascript_include_tag "application" %>
+	<%= csrf_meta_tags %>
+</head>
+<body>
+
+	<%= yield %>
+
+	<div class="navbar navbar-fluid-top navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container-fluid">
+				<a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</a>
+				<a class="brand" href="/"> Apto: <%= current_usuario.apartamento.numero %>, bloco: <%= current_usuario.apartamento.bloco %> </a>
+				<div class="nav-collapse">
+					<% if usuario_signed_in? %>
+					<ul class="nav pull-right">
+						<li>
+							<a id='botao_mensagem' href="#">Mensagens
+								<% if current_usuario.apartamento.mensagens_recebidas.nao_lidas.count > 0  %>
+								<span class="badge badge-important"> <%= @nao_lidas.count %> </span>
+								
+								<% else %>
+								<span class="badge"> <%= current_usuario.apartamento.mensagens_recebidas.nao_lidas.count %></span>
+								<% end %>
+							</a>
+						</li>
+						
+						<% if current_usuario.admin? || current_usuario.sindico? %>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								Sindico <b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu">
+								
+								<li>
+									<a id="link-valores" href="#">Totais</a>
+								</li>
+								<li>
+									<a id="link-lancamentos" href="#">Lançar Contas</a>
+								</li>
+								
+							</ul>
+						</li>
+						<% end %>
+						
+						<li>
+							<a href="/admin/">Configurações</a>
+						</li>
+
+						<li>
+							<a href="/">Minhas contas</a>
+						</li>
+						<li>
+							<a rel="nofollow">
+								<span><%= current_usuario.email%></span>
+							</a>
+						</li>
+
+						<li>
+							<a rel="nofollow" data-method="delete" href="/usuarios/sign_out">
+								<span class="label label-important">Terminar Sessão</span>
+							</a>
+						</li>
+
+					</ul>
+					<% end %>
+				</div><!--/.nav-collapse -->
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>

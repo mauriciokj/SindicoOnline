@@ -12,9 +12,10 @@ class Leitura < ActiveRecord::Base
 	alias_attribute :name, :to_label
 
 	def calcular_valores
-		soma_das_diferencas = self.apartamentos_leituras.sum(:consumo)
+		soma_das_diferencas = self.apartamentos_leituras.where("consumo >= 1").sum(:consumo)
+		
 		puts "SOMA DAS DIFERENCAS #{soma_das_diferencas}"
-		diferenca_geral = (soma_das_diferencas - self.consumo rescue 0) / self.apartamentos_leituras.count
+		diferenca_geral = (soma_das_diferencas - self.consumo rescue 0) / self.apartamentos_leituras.where("consumo >= 1").count
 		puts "DIFERENCA GERAL #{diferenca_geral}"
 		self.apartamentos_leituras.each do |al|
 			al.diferenca_ajustada =  al.consumo - diferenca_geral
@@ -23,7 +24,7 @@ class Leitura < ActiveRecord::Base
 			puts "self.consumo #{self.consumo}"
 			al.porcentagem = (al.diferenca_ajustada * 100) / self.consumo
 			puts "al.porcentagem #{al.porcentagem}"
-			al.valor = (self.valor * al.porcentagem)/100
+			al.valor = al.consumo >= 1 ? (self.valor * al.porcentagem)/100 : 0
 			al.save
 		end 
 		self.save

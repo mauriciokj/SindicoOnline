@@ -1,5 +1,6 @@
 # -*- encoding : utf-8 -*-
 class PrincipalController < ApplicationController
+	layout 'principal'
 	before_filter :authenticate_usuario!
 	def index
 		@usuario = current_usuario
