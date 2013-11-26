@@ -56,6 +56,7 @@ module SindicoOnline
 
     # Enable the asset pipeline
     config.assets.enabled = true
+    config.assets.initialize_on_precompile = false
 
     ActionMailer::Base.delivery_method = :smtp
     ActionMailer::Base.smtp_settings = {
