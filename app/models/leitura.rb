@@ -12,19 +12,21 @@ class Leitura < ActiveRecord::Base
 	alias_attribute :name, :to_label
 
 	def calcular_valores
-		soma_das_diferencas = self.apartamentos_leituras.where("consumo >= 1").sum(:consumo)
+		soma_das_diferencas = self.apartamentos_leituras.where("consumo >= 1").sum(:consumo).round(2)
 		
 		puts "SOMA DAS DIFERENCAS #{soma_das_diferencas}"
 		diferenca_geral = (soma_das_diferencas - self.consumo rescue 0) / self.apartamentos_leituras.where("consumo >= 1").count
 		puts "DIFERENCA GERAL #{diferenca_geral}"
 		self.apartamentos_leituras.each do |al|
-			al.diferenca_ajustada =  al.consumo - diferenca_geral
+			al.diferenca_ajustada =  al.consumo.round(2) - diferenca_geral.round(2)
 			puts "al.diferenca_ajustada #{al.diferenca_ajustada}"
-			self.consumo = soma_das_diferencas if (self.consumo.blank? || self.consumo == 0)
+			self.consumo = soma_das_diferencas.round(2) if (self.consumo.blank? || self.consumo == 0)
 			puts "self.consumo #{self.consumo}"
-			al.porcentagem = (al.diferenca_ajustada * 100) / self.consumo
+			al.porcentagem = (al.diferenca_ajustada.round(2) * 100) / self.consumo.round(2)
 			puts "al.porcentagem #{al.porcentagem}"
-			al.valor = al.consumo >= 1 ? (self.valor * al.porcentagem)/100 : 0
+			puts "self #{self}"
+			puts "self.valor #{self.valor}"
+			al.valor = al.consumo >= 1 ? (self.valor.round(2) * al.porcentagem.round(2))/100 : 0
 			al.save
 		end 
 		self.save
