@@ -34,7 +34,7 @@ class PrincipalController < ApplicationController
 					al.save
 				end
 			end
-			(Apartamento.do_bloco(apartamento.bloco).do_numero(apartamento.numero).contas_em_aberto.count > 0
+			if Apartamento.do_bloco(apartamento.bloco).do_numero(apartamento.numero).contas_em_aberto.count > 0
 				(Apartamento.do_bloco(apartamento.bloco).do_numero(apartamento.numero).contas_em_aberto.first.contas_por_apartamentos rescue []).each do |al|
 					al.paga = true
 					al.save
