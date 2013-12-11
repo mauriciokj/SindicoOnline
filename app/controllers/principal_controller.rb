@@ -28,13 +28,17 @@ class PrincipalController < ApplicationController
 	def pagar
 		if current_usuario.admin? || current_usuario.sindico?
 			apartamento = Apartamento.find(params['apartamento_id'])
-			Apartamento.do_bloco(apartamento.bloco).do_numero(apartamento.numero).leituras_em_aberto.first.apartamentos_leituras.each do |al|
-				al.paga = true
-				al.save
+			if Apartamento.do_bloco(apartamento.bloco).do_numero(apartamento.numero).leituras_em_aberto.count > 0
+				Apartamento.do_bloco(apartamento.bloco).do_numero(apartamento.numero).leituras_em_aberto.first.apartamentos_leituras.each do |al|
+					al.paga = true
+					al.save
+				end
 			end
-			(Apartamento.do_bloco(apartamento.bloco).do_numero(apartamento.numero).contas_em_aberto.first.contas_por_apartamentos rescue []).each do |al|
-				al.paga = true
-				al.save
+			(Apartamento.do_bloco(apartamento.bloco).do_numero(apartamento.numero).contas_em_aberto.count > 0
+				(Apartamento.do_bloco(apartamento.bloco).do_numero(apartamento.numero).contas_em_aberto.first.contas_por_apartamentos rescue []).each do |al|
+					al.paga = true
+					al.save
+				end
 			end
 		end
 		redirect_to totais_apartamento_path
