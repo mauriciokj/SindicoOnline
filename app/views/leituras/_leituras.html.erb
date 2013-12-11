@@ -30,11 +30,12 @@
 							</div>
 							<div class='control-group string_type nome_field' id='leitura_data_leitura_field'>
 								<%= label_tag :data_leitura %>
-								<%= text_field_tag :data_leitura %><br/>
+								<%= text_field_tag :data_leitura, nil,:class => 'data_picker',"data-date-format" =>"dd/mm/yyyy" %>
+								<br/>
 							</div>
 							<div class='control-group string_type nome_field' id='leitura_data_vencimento_field'>
 								<%= label_tag :data_vencimento %>
-								<%= text_field_tag :data_vencimento %><br/>
+								<%= text_field_tag :data_vencimento,nil,:class => 'data_picker',"data-date-format" =>"dd/mm/yyyy" %><br/>
 							</div>
 							<div class='control-group string_type nome_field' id='leitura_consumo_field'>
 								<%= label_tag :consumo %>

@@ -37,8 +37,9 @@ class LeiturasController < ApplicationController
 			@leitura.apartamentos_leituras << al
 		end
 		@leitura.save
+		@leitura.consumo_condominio
 		@leitura.calcular_valores
 		
-		render :nothing => true
+		redirect_to root_path
 	end
 end

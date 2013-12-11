@@ -28,7 +28,7 @@ class ApartamentoLeitura < ActiveRecord::Base
 	end
 
 	def calcula_consumo
-		self.consumo = self.leitura_apartamento - (self.apartamento.apartamentos_leituras.do_tipo(self.tipo).last.leitura_apartamento rescue 0)
+		self.consumo = self.leitura_apartamento - (self.apartamento.apartamentos_leituras.do_tipo(self.tipo).last.leitura_apartamento rescue 0) unless self.apartamento.pertence_ao_condominio?
 	end	
 
 	def status

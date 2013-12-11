@@ -1,4 +1,5 @@
 $(document).ready(function () {
+	// $('.data_picker').datepicker({ dateFormat:"dd/mm/yy" });
 	$("#link-valores").on("click", function (event){
 		$.ajax({
 			type: "GET",
@@ -29,6 +30,8 @@ $(document).ready(function () {
 });
 
 $(document).ajaxComplete(function () {
+	
+	$('.data_picker').datepicker({ dateFormat:"dd/mm/yy" });
 	$(".pagar_conta").on("click", function (event){
 		
 		if (confirm('Você tem certeza que deseja fazer isso?')) {

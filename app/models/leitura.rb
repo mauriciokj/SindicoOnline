@@ -11,6 +11,22 @@ class Leitura < ActiveRecord::Base
 
 	alias_attribute :name, :to_label
 
+	def consumo_condominio
+		puts "CONSUMO_CONDOMINIO"
+		 consumo_do_condominio = self.consumo -  self.apartamentos_leituras.where("consumo >= 1").sum(:consumo).round(2)
+		 apartamento = Apartamento.where(:pertence_ao_condominio => true).first
+		 puts apartamento.inspect
+			apartamento_leitura = ApartamentoLeitura.new
+			apartamento_leitura.apartamento = apartamento
+			apartamento_leitura.leitura_apartamento = self.apartamentos_leituras.last.consumo + consumo_do_condominio
+			apartamento_leitura.tipo = self.tipo
+			apartamento_leitura.data = self.data_leitura
+			apartamento_leitura.consumo = consumo_do_condominio
+			puts apartamento_leitura.inspect
+			apartamento_leitura.save
+			self.apartamentos_leituras << apartamento_leitura
+	end
+
 	def calcular_valores
 		soma_das_diferencas = self.apartamentos_leituras.where("consumo >= 1").sum(:consumo).round(2)
 		
