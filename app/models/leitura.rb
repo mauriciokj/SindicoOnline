@@ -4,6 +4,7 @@ class Leitura < ActiveRecord::Base
 	belongs_to :imovel
 	attr_accessible :consumo, :data_leitura, :data_vencimento, :leitura_anterior, :leitura_atual, :matricula, :valor, :paga, :apartamento_leitura_ids, :tipo_id
 	
+	validates :data_leitura, :data_vencimento, :valor, :presence => true
 
 	def to_label
 		"#{I18n.l(data_leitura) rescue ""}, valor: #{valor}"
@@ -12,7 +13,6 @@ class Leitura < ActiveRecord::Base
 	alias_attribute :name, :to_label
 
 	def consumo_condominio
-		puts "CONSUMO_CONDOMINIO"
 		 consumo_do_condominio = self.consumo -  self.apartamentos_leituras.where("consumo >= 1").sum(:consumo).round(2)
 		 apartamento = Apartamento.where(:pertence_ao_condominio => true).first
 		 puts apartamento.inspect

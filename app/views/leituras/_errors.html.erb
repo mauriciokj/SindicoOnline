@@ -1,0 +1,12 @@
+  <div id="error_explanation"  class="alert alert-error">
+    <%= puts "Chegou aqui ehhhhh"%>
+    <h4><%= pluralize(leitura.errors.count, "erro") %> ao lançar contas:</h4>
+
+    <ul>
+      <% leitura.errors.full_messages.each do |msg| %>
+      <%= puts msg%>
+      <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+  <%= bootstrap_flash %>

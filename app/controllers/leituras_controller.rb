@@ -13,7 +13,6 @@ class LeiturasController < ApplicationController
 	end
 
 	def gerar_apartamentos_leituras
-		puts ">>>>>>>>>>>>>>>>>>>>>>>>"
 		@leitura = Leitura.new
 		@leitura.matricula = params[:matricula]
 		@tipo = Tipo.find(params[:tipo])
@@ -26,20 +25,24 @@ class LeiturasController < ApplicationController
 		@leitura.valor= params[:valor]
 		apartamentos =  params['leitura_apartamento']
 		apartamentos_com_gastos = apartamentos.inject({}){|r,h|  r[h[0]] = h[1] if !h[1].blank?;r}
-		apartamentos_com_gastos.each do |k,v|
-			apartamento = Apartamento.find(k)
-			al = ApartamentoLeitura.new
-			al.apartamento = apartamento
-			al.leitura_apartamento = v
-			al.tipo = @tipo
-			al.data = @leitura.data_leitura
-			# al.save
-			@leitura.apartamentos_leituras << al
+
+		if @leitura.valid?
+			apartamentos_com_gastos.each do |k,v|
+				apartamento = Apartamento.find(k)
+				al = ApartamentoLeitura.new
+				al.apartamento = apartamento
+				al.leitura_apartamento = v
+				al.tipo = @tipo
+				al.data = @leitura.data_leitura
+				# al.save
+				@leitura.apartamentos_leituras << al
+			end
+			@leitura.save
+			@leitura.consumo_condominio
+			@leitura.calcular_valores
+			redirect_to root_path
+		else
+			render :action => 'salvar_leitura', formats: [:js]
 		end
-		@leitura.save
-		@leitura.consumo_condominio
-		@leitura.calcular_valores
-		
-		redirect_to root_path
 	end
 end

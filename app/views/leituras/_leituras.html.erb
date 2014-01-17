@@ -2,10 +2,14 @@
 	<%= render :partial =>'mensagens/mensagens'%>
 </div>
 <div  class='form .form-stacked'>
-	<%= form_for @leitura, url: gerar_apartamentos_leituras_path(@leitura), html: {class: 'form-horizontal', method: 'post', 
-		id: 'form-leitura'}, remote: true do %>
-
+	<%= form_for @leitura, url: gerar_apartamentos_leituras_path(@leitura), 
+		html: {class: 'form-horizontal', 
+		method: 'post', 
+		id: 'form-leitura', remote: true} do %>
+		
 		<div class="container">
+			<div id="erros">
+		</div>
 			<div class="row">
 				<div class="span12">
 					<div class="row">
@@ -17,7 +21,7 @@
 					</div>
 					<div class="row" id="lista_de_apartamentos">
 						<!-- <div class='control-group string_type search_field' id='search_field'> -->
-							<input class="search string_type" type="text" placeholder='Filtro de apartamentos'/>
+						<input class="search string_type" type="text" placeholder='Filtro de apartamentos'/>
 						<!-- </div> -->
 						<div class="span4">
 							<div class='control-group string_type nome_field' id='leitura_matricula_field'>
