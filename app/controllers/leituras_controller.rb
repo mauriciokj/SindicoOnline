@@ -32,6 +32,7 @@ class LeiturasController < ApplicationController
 				al = ApartamentoLeitura.new
 				al.apartamento = apartamento
 				al.leitura_apartamento = v
+				al.paga = false
 				al.tipo = @tipo
 				al.data = @leitura.data_leitura
 				# al.save
@@ -40,7 +41,7 @@ class LeiturasController < ApplicationController
 			@leitura.save
 			@leitura.consumo_condominio
 			@leitura.calcular_valores
-			redirect_to root_path
+			render :js => "window.location = '#{principal_path}'"
 		else
 			render :action => 'salvar_leitura', formats: [:js]
 		end
