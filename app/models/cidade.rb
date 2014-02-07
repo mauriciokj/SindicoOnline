@@ -4,7 +4,7 @@ class Cidade < ActiveRecord::Base
 	delegate :sigla, :to => :estado, :allow_nil => true
 	alias_attribute :name, :to_label
 
-	validates :cidade, :presence => true
+	validates :nome, :presence => true
 	validates :estado, :presence => true
 
 	def to_label

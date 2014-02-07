@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row">
+        <div class="span12">
+            <table class="table table-condensed table-hover">
+                <thead>
+                    <tr>
+                        
+                        <th>Apartamentos</th>
+                        <th>Gerar Conta</th>
+                   
+                    </tr>
+                </thead>
+                <tbody>
+                    <% @condominio.apartamentos_ativos.each do |apartamento| %>
+                    <tr>
+                        
+                        <td><%= apartamento.to_label %></td>
+                        <td>
+                            <label class="checkbox">
+                                <%= check_box_tag 'apartamento', 'Lançar', true, {"data-id" => apartamento.id} %> Lançar
+                            </label>
+                        </td>
+                       
+                    </tr>
+                    <% end %>
+                    <tr>
+                        <td> </td>
+                        <td>
+
+                            <a class="btn btn-success" href="#"> $ Lançar »</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

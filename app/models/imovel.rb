@@ -1,9 +1,10 @@
 # -*- encoding : utf-8 -*-
 class Imovel < ActiveRecord::Base
 	has_many :apartamentos
-	attr_accessible :nome, :cidade_id, :bairro,:rua, :cep, :numero, :responsavel, :telefone_responsavel, :email_responsavel, :apartamento_ids
+	attr_accessible :nome, :cidade_id, :bairro,:rua, :cep, :numero, :responsavel, :telefone_responsavel, :email_responsavel, :apartamento_ids, :valor_do_condominio
 
 	belongs_to :cidade
+
 
 	def name
 		nome rescue nil
@@ -11,6 +12,10 @@ class Imovel < ActiveRecord::Base
 
 	validates :nome, :presence => true
 	validates :cidade, :presence => true
+
+	def apartamentos_ativos
+		self.apartamentos.where(:ativo => true)
+	end
 
 	rails_admin do
 		label "Imóveis"
@@ -35,6 +40,7 @@ class Imovel < ActiveRecord::Base
 			end
 
 			field :apartamentos
+			field :valor_do_condominio
 			
 
 		end
@@ -43,7 +49,7 @@ class Imovel < ActiveRecord::Base
 			field :nome
 			field :cidade 
 			field :apartamentos
-			
+			field :valor_do_condominio
 		end
 
 	end

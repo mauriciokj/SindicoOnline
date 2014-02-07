@@ -10,6 +10,7 @@ SindicoOnline::Application.routes.draw do
   match 'marcar_como_nao_lida' => 'mensagens#marcar_como_nao_lida', :as => :marcar_como_nao_lida
   match 'deletar_mensagens' => 'mensagens#deletar_mensagens', :as => :deletar_mensagens
   match 'leituras' => 'leituras#leituras', :as => :leituras
+  match 'lancar_condominios' => 'condominios#lancar_condominios', :as => :lancar_condominios
   match 'gerar_apartamentos_leituras' => 'leituras#gerar_apartamentos_leituras', :as => :gerar_apartamentos_leituras
 
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'

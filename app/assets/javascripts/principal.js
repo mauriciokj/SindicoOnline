@@ -15,6 +15,13 @@ $(document).ready(function () {
 		});
 	});
 
+$("#link-lancar-condominios").on("click", function (event){
+		$.ajax({
+			type: "GET",
+			url: "/lancar_condominios/"
+		});
+	});
+
 	$("#pagar").on("click", function (event){
 		if (confirm('Você tem certeza que deseja fazer isso?')) {
 			apartamento_id = $(this).attr("value")
