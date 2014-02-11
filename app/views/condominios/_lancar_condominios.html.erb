@@ -1,36 +1,61 @@
 <div class="container">
-    <div class="row">
+    <div class="row-fluid">
         <div class="span12">
-            <table class="table table-condensed table-hover">
-                <thead>
-                    <tr>
-                        
-                        <th>Apartamentos</th>
-                        <th>Gerar Conta</th>
-                   
-                    </tr>
-                </thead>
-                <tbody>
-                    <% @condominio.apartamentos_ativos.each do |apartamento| %>
-                    <tr>
-                        
-                        <td><%= apartamento.to_label %></td>
-                        <td>
-                            <label class="checkbox">
-                                <%= check_box_tag 'apartamento', 'Lançar', true, {"data-id" => apartamento.id} %> Lançar
-                            </label>
-                        </td>
-                       
-                    </tr>
-                    <% end %>
-                    <tr>
-                        <td> </td>
-                        <td>
+            <div  class='form .form-stacked'>
+                <%= form_for @condominio, url: gerar_condominios_path(@condominio), 
+                        html: {class: 'form-horizontal', 
+                        method: 'post', 
+                        id: 'form-leitura'} do %>
+                    <fieldset>
+                        <div id="legend">
+                            <legend class="">
+                                Lançamento de condominio
+                            </legend>
+                        </div>                    
+                        <div id="erros">
+                        </div>
+                        <div class="control-group">
+                            <%= label_tag :valor %>
+                            <%= text_field_tag :valor, @condominio.valor_do_condominio %>
+                        </div>
+                        <div class="control-group">
+                            <%= label_tag :data %>
+                            <% vencimento = "#{@condominio.dia_de_vencimento_do_condominio || Time.now.day}/#{Time.now.month}/#{Time.now.year}".to_date + 1.month %>
+                            <%= text_field_tag :data, vencimento.strftime("%d/%m/%Y") ,:class => 'data_picker',"data-date-format" =>"dd/mm/yyyy" %><br/>
+                        </div>
+                    </fieldset>
+                <table class="table table-condensed table-hover">
+                    <thead>
+                        <tr>
+                            <th>Apartamentos</th>
+                            <th>Gerar Conta</th>
 
-                            <a class="btn btn-success" href="#"> $ Lançar »</a></td>
-                    </tr>
-                </tbody>
-            </table>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% @condominio.apartamentos_ativos.each do |apartamento| %>
+                        <tr>
+
+                            <td><%= apartamento.to_label %></td>
+                            <td>
+                                <label class="checkbox">
+                                    <%= check_box_tag "apartamento_ids[]", apartamento.id, true, {"data-id" => apartamento.id} %> Lançar
+                                </label>
+                            </td>
+
+                        </tr>
+                        <% end %>
+                        <tr>
+                            <td> </td>
+                            <td>
+                                <button id="salvar-leitura" class="btn btn-success pull-right" style="margin-right:5px;"> $ Lançar »
+                                    <%= image_tag(path_to_asset("spinner-dots.gif"), :id => "spinner", :style => "display: none") %>
+                            </tr>
+                        </tbody>
+                </table>
+                <% end%>   
+            </div>
+            </div>
         </div>
     </div>
 </div>

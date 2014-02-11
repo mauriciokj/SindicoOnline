@@ -12,6 +12,7 @@ SindicoOnline::Application.routes.draw do
   match 'leituras' => 'leituras#leituras', :as => :leituras
   match 'lancar_condominios' => 'condominios#lancar_condominios', :as => :lancar_condominios
   match 'gerar_apartamentos_leituras' => 'leituras#gerar_apartamentos_leituras', :as => :gerar_apartamentos_leituras
+  match 'gerar_condominios' => 'condominios#gerar_condominios', :as => :gerar_condominios
 
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
 
