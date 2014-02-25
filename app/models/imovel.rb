@@ -1,7 +1,7 @@
 # -*- encoding : utf-8 -*-
 class Imovel < ActiveRecord::Base
 	has_many :apartamentos
-	attr_accessible :nome, :cidade_id, :bairro,:rua, :cep, :numero, :responsavel, :telefone_responsavel, :email_responsavel, :apartamento_ids, :valor_do_condominio
+	attr_accessible :nome, :cidade_id, :bairro,:rua, :cep, :numero, :responsavel, :telefone_responsavel, :email_responsavel, :apartamento_ids, :valor_do_condominio, :dia_de_vencimento_do_condominio
 
 	belongs_to :cidade
 
@@ -41,6 +41,7 @@ class Imovel < ActiveRecord::Base
 
 			field :apartamentos
 			field :valor_do_condominio
+			field :dia_de_vencimento_do_condominio
 			
 
 		end
@@ -50,6 +51,7 @@ class Imovel < ActiveRecord::Base
 			field :cidade 
 			field :apartamentos
 			field :valor_do_condominio
+			field :dia_de_vencimento_do_condominio
 		end
 
 	end

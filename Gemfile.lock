@@ -8,6 +8,12 @@ GIT
       rails (>= 3.1)
       railties (>= 3.1)
 
+GIT
+  remote: git://github.com/tigrish/devise-i18n.git
+  revision: 08ad396de6221b0ca0d57378a0d4186666e711a0
+  specs:
+    devise-i18n (0.10.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -179,6 +185,7 @@ DEPENDENCIES
   cancan
   coffee-rails (~> 3.2.1)
   devise
+  devise-i18n!
   jquery-rails
   pg
   rails (= 3.2.11)
