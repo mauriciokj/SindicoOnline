@@ -2,7 +2,7 @@ class ContaPorApartamento < ActiveRecord::Base
 	belongs_to :conta
 	belongs_to :apartamento
 	belongs_to :imovel
-	attr_accessible :paga, :valor, :apartamento_id, :imovel_id
+	attr_accessible :paga, :valor, :apartamento_id, :imovel_id, :apartamento, :imovel
 
 	delegate :vencimento, :to => :conta
 	delegate :descricao, :to => :conta

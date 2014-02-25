@@ -1,6 +1,7 @@
 class Conta < ActiveRecord::Base
 	has_many :contas_por_apartamentos
-	attr_accessible :descricao, :paga, :valor, :vencimento, :imovel_id, :conta_por_apartamento_ids
+	belongs_to :imovel
+	attr_accessible :descricao, :paga, :valor, :vencimento, :imovel_id, :conta_por_apartamento_ids, :imovel
 	
 
 	def status
@@ -38,7 +39,7 @@ class Conta < ActiveRecord::Base
 		end
 
 		list do
-			field :imovel_id
+			field :imovel
 			field :descricao
 			field :valor
 			field :paga

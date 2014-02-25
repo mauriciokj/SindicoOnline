@@ -39,6 +39,7 @@ $("#link-lancar-condominios").on("click", function (event){
 $(document).ajaxComplete(function () {
 	
 	$('.data_picker').datepicker({ dateFormat:"dd/mm/yy" });
+	$(".pagar_conta").unbind( "click" );
 	$(".pagar_conta").on("click", function (event){
 		
 		if (confirm('Você tem certeza que deseja fazer isso?')) {

@@ -33,6 +33,7 @@ gem 'rails-i18n'
 gem 'devise-i18n', git: 'git://github.com/tigrish/devise-i18n.git'
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 gem 'rails_admin'
+gem 'thin'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

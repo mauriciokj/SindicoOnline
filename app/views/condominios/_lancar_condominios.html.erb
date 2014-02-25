@@ -2,7 +2,7 @@
     <div class="row-fluid">
         <div class="span12">
             <div  class='form .form-stacked'>
-                <%= form_for @condominio, url: gerar_condominios_path(@condominio), 
+                <%= form_for @condominio, remote: true ,url: gerar_condominios_path(@condominio), 
                         html: {class: 'form-horizontal', 
                         method: 'post', 
                         id: 'form-leitura'} do %>
